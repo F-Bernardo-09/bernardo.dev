@@ -18,11 +18,141 @@
 
     <!-- CSS page -->
     <style>
-
+        
     </style>
 
 </head>
 <body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="brand-logo">Bernardo Alencar</a>
+                
+                <button class="theme-toggle" type="button" aria-label="Toggle theme">
+                    <svg class="theme-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+
+                <ul class="navigation-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="src/page/about-me.html" class="nav-link">About Me</a></li>
+                    <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-container">
+                <img class="profile-image" src="src/img/profile-photo.jpg" alt="Bernardo Alencar Profile Photo">
+
+                <div class="hero-content">
+                    <h1 class="hero-greeting">Hello, I'm Bernardo</h1>
+                    <div class="hero-specialties">Graphic Designer Freelancer | Systems Analysis Student | Web Designer | UI & UX Design</div>
+                    <div class="hero-description">
+                        <p>I'm a graphic designer studying Systems Analysis and Development. I love transforming ideas into visual and functional projects, whether developing identities, interfaces or digital content.</p>
+                    </div>
+                    <a href="#about-section" class="btn-primary">About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Personal Projects</h2>
+                <p class="section-subtitle">A selection of my favorite projects</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project Name</h3>
+                        <p class="project-tech">Developed with HTML, CSS, JavaScript</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project Name</h3>
+                        <p class="project-tech">Developed with React, Node.js</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project Name</h3>
+                        <p class="project-tech">Developed with Vue.js, Express</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-button-wrapper">
+                <a href="src/page/projects.html" class="btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">If you want to get in touch, you can contact me using the following methods.</p>
+            </div>
+
+            <div class="social-networks-grid">
+                <div class="social-network-card">
+                    <h3 class="social-network-title">LinkedIn</h3>
+                    <a href="https://linkedin.com/in/bernardoalencar" class="social-network-link">linkedin.com/in/bernardoalencar</a>
+                </div>
+
+                <div class="social-network-card">
+                    <h3 class="social-network-title">GitHub</h3>
+                    <a href="https://github.com/bernardoalencar" class="social-network-link">github.com/in/bernardoalencar</a>
+                </div>
+
+                <div class="social-network-card">
+                    <h3 class="social-network-title">Instagram</h3>
+                    <a href="https://instagram.com/bernardoalencar" class="social-network-link">@bernardoalencar</a>
+                </div>
+
+                <div class="social-network-card">
+                    <h3 class="social-network-title">Behance</h3>
+                    <a href="https://behance.net/bernardoalencar" class="social-network-link">behance.net/bernardoalencar</a>
+                </div>
+
+                <div class="social-network-card">
+                    <h3 class="social-network-title">Email</h3>
+                    <a href="mailto:contato@bernardoalencar.com" class="social-network-link">contato@bernardoalencar.com</a>
+                </div>
+
+                <div class="social-network-card">
+                    <h3 class="social-network-title">WhatsApp</h3>
+                    <a href="https://wa.me/5511999999999" class="social-network-link">+55 (11) 99999-9999</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copyright">2025 - 2026 / Bernardo Alencar</p>
+                <a href="https://github.com/bernardoalencar/portfolio" class="footer-link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
