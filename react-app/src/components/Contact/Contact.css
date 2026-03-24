@@ -1,0 +1,21 @@
+.social-networks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md) var(--spacing-xl);
+}
+
+.social-network-title {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.social-network-link {
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+  transition: color 0.3s ease;
+}
+
+.social-network-link:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
