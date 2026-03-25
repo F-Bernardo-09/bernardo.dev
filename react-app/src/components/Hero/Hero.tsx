@@ -28,9 +28,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <a href="#" className="btn-primary">
-              About Me
-            </a>
+            <button className="btn-primary">About Me</button>
           </div>
         </div>
       </div>
