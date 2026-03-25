@@ -1,9 +1,11 @@
+import "./Header.css";
+
 export default function Header() {
   return (
     <header className="header">
       <div className="container">
         <nav className="navbar">
-          <a href="index.html" className="brand-logo">
+          <a href="#" className="brand-logo">
             Bernardo Alencar
           </a>
 
@@ -19,17 +21,17 @@ export default function Header() {
 
           <ul className="navigation-menu">
             <li>
-              <a href="index.html" className="nav-link active">
+              <a href="#" className="nav-link active">
                 Home
               </a>
             </li>
             <li>
-              <a href="src/page/about-me.html" className="nav-link">
+              <a href="#" className="nav-link">
                 About Me
               </a>
             </li>
             <li>
-              <a href="#contact-section" className="nav-link">
+              <a href="#" className="nav-link">
                 Contact
               </a>
             </li>

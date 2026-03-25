@@ -138,54 +138,6 @@ section {
   max-width: 65%;
 }
 
-/* --- Header (Global) --- */
-.header {
-  margin: 0;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: var(--spacing-md) 0;
-  background-color: var(--bg-dark);
-  z-index: 1000;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand-logo {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-md);
-  color: var(--text-primary);
-}
-
-.navigation-menu {
-  display: flex;
-}
-
-.navigation-menu li {
-  margin-left: var(--spacing-lg);
-}
-
-.nav-link {
-  color: var(--text-secondary);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--accent-green);
-}
-
-.theme-toggle {
-  display: none;
-}
-
 /* --- Footer (Global) --- */
 .footer {
   padding: var(--spacing-lg) 0;
