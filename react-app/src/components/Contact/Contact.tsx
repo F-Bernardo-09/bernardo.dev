@@ -1,9 +1,12 @@
+import { SectionHeader } from "../SectionHeader/SectionHeader";
 import "./Contact.css";
 
 export default function Contact() {
   return (
     <section className="contact-section" id="contact-section">
       <div className="container">
+        <SectionHeader />
+
         <div className="social-networks-grid">
           <div className="social-network-card">
             <h3 className="social-network-title">LinkedIn</h3>
