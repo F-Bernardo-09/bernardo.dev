@@ -1,3 +1,6 @@
+import NaveMenu from "../NaveMenu/NaveMenu";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
+
 import "./Header.css";
 
 export default function Header() {
@@ -9,32 +12,10 @@ export default function Header() {
             Bernardo Alencar
           </a>
 
-          <button
-            className="theme-toggle"
-            type="button"
-            aria-label="Toggle theme"
-          >
-            <svg className="theme-icon" viewBox="0 0 24 24">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-            </svg>
-          </button>
+          <ThemeToggle />
 
           <ul className="navigation-menu">
-            <li>
-              <a href="#" className="nav-link active">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
-                About Me
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
-                Contact
-              </a>
-            </li>
+            <NaveMenu />
           </ul>
         </nav>
       </div>

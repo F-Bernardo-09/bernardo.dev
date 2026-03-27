@@ -1,11 +1,9 @@
-import About from "./About";
-
 export default function About() {
   return (
-    <section class="about-section">
-      <div class="container">
-        <h2 class="about-title">Sobre mim</h2>
-        <div class="about-content">
+    <section className="about-section">
+      <div className="container">
+        <h2 className="about-title">Sobre mim</h2>
+        <div className="about-content">
           <p>
             Me chamo Bernardo Alencar. Trabalho em uma agência criativa, onde
             ajudo marcas e pessoas a transformarem ideias em experiências
@@ -36,7 +34,7 @@ export default function About() {
             façam diferença para quem usa.
           </p>
 
-          <a href="#" class="btn-primary" download>
+          <a href="#" className="btn-primary" download>
             Download do currículo
           </a>
         </div>
