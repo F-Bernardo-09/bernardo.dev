@@ -1,10 +1,15 @@
-export const SectionHeader = () => {
+import "./SectionHeader.css";
+
+interface SectionHeaderProps {
+  title: string;
+  subtitle: string;
+}
+
+export const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
   return (
     <div className="section-header">
-      <h2 className="section-title">Educação</h2>
-      <p className="section-subtitle">
-        Uma seleção dos meus projetos favoritos
-      </p>
+      <h2 className="section-title">{title}</h2>
+      <p className="section-subtitle">{subtitle}</p>
     </div>
   );
 };

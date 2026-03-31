@@ -1,0 +1,81 @@
+{
+  "header": {
+    "name": "Bernardo Alencar",
+    "title": "Designer e Desenvolvedor Web",
+    "nav": {
+      "home": { "label": "Início", "link": "#home" },
+      "about": { "label": "Sobre", "link": "#about" },
+      "contact": { "label": "Contato", "link": "#contact" }
+    }
+  },
+
+  "hero": {
+    "greeting": "Olá, sou o Bernardo",
+    "specialties": "Graphic Designer Freelancer | Systems Analysis Student | Web Designer | UI & UX Design",
+    "description": "Sou designer gráfico estudando Análise e Desenvolvimento de Sistemas. Adoro transformar ideias em projetos visuais e funcionais.",
+    "aboutButton": "Sobre Mim",
+    "image": { "alt": "Imagem de Bernardo Alencar" }
+  },
+
+  "about": {
+    "title": "Sobre mim",
+    "paragraphs": [
+      "Me chamo Bernardo Alencar. Trabalho em uma agência criativa, onde ajudo marcas e pessoas a transformarem ideias em experiências visuais marcantes.",
+      "Paralelamente, venho desenvolvendo meus próprios projetos, sempre buscando aprender e aplicar novas técnicas e ferramentas.",
+      "Mais recentemente, atuei na Soiliv, agência em que colaborei no desenvolvimento de identidades visuais e estratégias digitais para diferentes clientes. Antes disso, estagiei na assessoria de imprensa da Câmara de Gonçalves, onde tive contato direto com comunicação institucional e campanhas eleitorais.",
+      "Minha trajetória começou pelo design gráfico, mas logo percebi o quanto a tecnologia poderia ampliar meu trabalho. Isso me levou ao curso de Análise e Desenvolvimento de Sistemas, onde aprofundo meus conhecimentos em lógica C e Python, e em desenvolvimento web, me especializando para HTML, CSS, JavaScript, TypeScript, Node.js, Angular, SQL e Java.",
+      "Sempre estive entre o design e a engenharia, mas o ponto em comum é meu propósito: entregar soluções funcionais, bonitas e que realmente façam diferença para quem usa."
+    ],
+    "cvButton": "Download do currículo",
+    "cvLink": "/assets/cv-bernardo-pt.pdf"
+  },
+
+  "education": {
+    "title": "Educação",
+    "subtitle": "Minha trajetória acadêmica",
+    "items": [
+      {
+        "course": "Análise e Desenvolvimento de Sistemas, IFPB",
+        "date": "2024 - Presente"
+      },
+      { "course": "Técnico em Administração, EEEP", "date": "2021 - 2023" }
+    ]
+  },
+
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Uma seleção dos meus projetos favoritos",
+    "button": { "label": "Ver Todos os Projetos", "link": "/pages/Projects" },
+    "items": [
+      {
+        "title": "Projeto 1",
+        "description": "Descrição do projeto 1",
+        "image": "/assets/project1.jpg",
+        "alt": "Imagem do Projeto 1",
+        "tech": ["Design", "Web"],
+        "link": "#",
+        "linkLabel": "Ver Projeto"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar",
+    "social": [
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/bernardo-alencar"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/F-Bernardo-09/bernardo.dev"
+      }
+    ]
+  },
+
+  "footer": {
+    "copyright": "2025 - 2026 / Bernardo Alencar",
+    "viewProject": "Visualizar Projeto"
+  }
+}

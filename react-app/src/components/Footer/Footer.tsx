@@ -1,18 +1,13 @@
-import "./Footer.css";
+import pt from "../../locales/pt-br.json";
 
 export default function Footer() {
+  const { footer } = pt;
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <p className="footer-copyright">2025 - 2026 / Bernardo Alencar</p>
-          <a
-            href="https://github.com/F-Bernardo-09/bernardo.dev"
-            className="footer-link"
-            target="_blank"
-          >
-            View Project
-          </a>
+          <p className="footer-copyright">{footer.copyright}</p>
         </div>
       </div>
     </footer>

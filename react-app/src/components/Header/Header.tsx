@@ -1,3 +1,4 @@
+import pt from "../../locales/pt-br.json";
 import NaveMenu from "../NaveMenu/NaveMenu";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
@@ -9,7 +10,7 @@ export default function Header() {
       <div className="container">
         <nav className="navbar">
           <a href="#" className="brand-logo">
-            Bernardo Alencar
+            {pt.header.name}
           </a>
 
           <ThemeToggle />

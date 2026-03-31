@@ -1,12 +1,24 @@
-export default function SocialNetworkCard() {
+import "./SocialNetworkCard.css";
+
+interface SocialNetworkCardProps {
+  name: string;
+  link: string;
+}
+
+export default function SocialNetworkCard({
+  name,
+  link,
+}: SocialNetworkCardProps) {
   return (
     <div className="social-network-card">
-      <h3 className="social-network-title">LinkedIn</h3>
+      <h3 className="social-network-title">{name}</h3>
       <a
-        href="https://linkedin.com/in/bernardo-alencar"
+        href={link}
         className="social-network-link"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        linkedin.com/in/bernardo-alencar
+        {link}
       </a>
     </div>
   );

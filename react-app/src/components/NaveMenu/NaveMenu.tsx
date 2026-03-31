@@ -1,9 +1,23 @@
+import pt from "../../locales/pt-br.json";
+
 export default function NaveMenu() {
   return (
-    <li>
-      <a href="#" className="nav-link active">
-        Home
-      </a>
-    </li>
+    <>
+      <li>
+        <a href={pt.header.nav.home.link} className="nav-link">
+          {pt.header.nav.home.label}
+        </a>
+      </li>
+      <li>
+        <a href={pt.header.nav.about.link} className="nav-link">
+          {pt.header.nav.about.label}
+        </a>
+      </li>
+      <li>
+        <a href={pt.header.nav.contact.link} className="nav-link">
+          {pt.header.nav.contact.label}
+        </a>
+      </li>
+    </>
   );
 }
