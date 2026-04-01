@@ -2,12 +2,16 @@ import "./SocialNetworkCard.css";
 
 interface SocialNetworkCardProps {
   name: string;
+  label: string;
   link: string;
+  ariaLabel: string;
 }
 
 export default function SocialNetworkCard({
   name,
+  label,
   link,
+  ariaLabel,
 }: SocialNetworkCardProps) {
   return (
     <div className="social-network-card">
@@ -17,8 +21,9 @@ export default function SocialNetworkCard({
         className="social-network-link"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={ariaLabel}
       >
-        {link}
+        {label}
       </a>
     </div>
   );

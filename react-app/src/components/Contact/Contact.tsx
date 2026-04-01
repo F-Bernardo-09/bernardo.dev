@@ -5,7 +5,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <section className="contact-section" id="contact-section">
+    <section className="contact-section" id="contact">
       <div className="container">
         <SectionHeader
           title={pt.contact.title}
@@ -17,7 +17,9 @@ export default function Contact() {
             <SocialNetworkCard
               key={index}
               name={network.name}
+              label={network.label}
               link={network.link}
+              ariaLabel={network.ariaLabel}
             />
           ))}
         </div>

@@ -4,17 +4,29 @@ export default function NaveMenu() {
   return (
     <>
       <li>
-        <a href={pt.header.nav.home.link} className="nav-link">
+        <a
+          href={pt.header.nav.home.link}
+          className="nav-link"
+          aria-label={pt.header.nav.home.ariaLabel}
+        >
           {pt.header.nav.home.label}
         </a>
       </li>
       <li>
-        <a href={pt.header.nav.about.link} className="nav-link">
+        <a
+          href={pt.header.nav.about.link}
+          className="nav-link"
+          aria-label={pt.header.nav.about.ariaLabel}
+        >
           {pt.header.nav.about.label}
         </a>
       </li>
       <li>
-        <a href={pt.header.nav.contact.link} className="nav-link">
+        <a
+          href={pt.header.nav.contact.link}
+          className="nav-link"
+          aria-label={pt.header.nav.contact.ariaLabel}
+        >
           {pt.header.nav.contact.label}
         </a>
       </li>

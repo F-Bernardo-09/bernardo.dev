@@ -9,7 +9,12 @@ export default function Header() {
     <header className="header">
       <div className="container">
         <nav className="navbar">
-          <a href="#" className="brand-logo">
+          <a
+            href="#"
+            className="brand-logo"
+            aria-label={pt.header.logoAlt}
+            title={pt.header.title}
+          >
             {pt.header.name}
           </a>
 

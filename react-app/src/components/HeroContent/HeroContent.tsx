@@ -11,7 +11,12 @@ export default function HeroContent() {
         <p>{pt.hero.description}</p>
       </div>
 
-      <button className="btn-primary">{pt.hero.aboutButton}</button>
+      <button
+        className="btn-primary"
+        aria-label={pt.hero.aboutButton.ariaLabel}
+      >
+        {pt.hero.aboutButton.label}
+      </button>
     </div>
   );
 }
