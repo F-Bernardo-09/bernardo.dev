@@ -1,4 +1,5 @@
 import pt from "../../locales/pt-br.json";
+import { SectionHeader } from "../SectionHeader/SectionHeader";
 
 export default function About() {
   const { about } = pt;
@@ -6,7 +7,10 @@ export default function About() {
   return (
     <section className="about-section" id="about">
       <div className="container">
-        <h2 className="about-title">{about.title}</h2>
+        <SectionHeader
+          title={pt.projects.title}
+          subtitle={pt.projects.subtitle}
+        />
         <div className="about-content">
           {about.paragraphs.map((text, index) => (
             <p key={index}>{text}</p>

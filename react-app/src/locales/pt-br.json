@@ -13,17 +13,17 @@
     "nav": {
       "home": {
         "label": "Início",
-        "link": "#home",
+        "link": "/",
         "ariaLabel": "Ir para a seção inicial"
       },
       "about": {
         "label": "Sobre",
-        "link": "#about",
+        "link": "/about",
         "ariaLabel": "Ir para a seção sobre mim"
       },
       "contact": {
         "label": "Contato",
-        "link": "#contact",
+        "link": "/#contact",
         "ariaLabel": "Ir para a seção de contato"
       }
     }
@@ -35,7 +35,7 @@
     "description": "Trabalho na interseção entre design e tecnologia — criando interfaces e identidades visuais com foco em clareza, funcionalidade e propósito.",
     "aboutButton": {
       "label": "Sobre Mim",
-      "link": "#about",
+      "link": "../About",
       "ariaLabel": "Saiba mais sobre Bernardo Alencar"
     },
     "image": {
@@ -46,6 +46,7 @@
 
   "about": {
     "title": "Sobre mim",
+    "subtitle": null,
     "paragraphs": [
       "Me chamo Bernardo Alencar. Atuo na Solitu - Agência criativa, ajudando marcas a construírem presença visual consistente e experiências digitais que fazem sentido para quem as usa.",
       "Minha trajetória começou pelo design gráfico, mas a vontade de entender como as coisas funcionam por dentro me levou ao curso de Análise e Desenvolvimento de Sistemas — onde estudo lógica, desenvolvimento web e construção de software.",
@@ -59,13 +60,12 @@
     }
   },
 
-  "timeline": {
-    "title": "Trajetória",
-    "subtitle": "Educação e experiência",
+  "experience": {
+    "title": "Experiência Profissional",
+    "subtitle": "Minha jornada no mercado",
     "items": [
       {
         "id": "exp-freelancer",
-        "type": "experience",
         "role": "Designer Gráfico Freelancer",
         "organization": "Autônomo",
         "location": "Remoto",
@@ -78,22 +78,7 @@
         "ariaLabel": "Designer Gráfico Freelancer autônomo, remoto, desde setembro de 2020"
       },
       {
-        "id": "edu-eeep",
-        "type": "education",
-        "role": "Técnico em Administração",
-        "organization": "EEEP Prof. Gustavo Augusto Lima",
-        "location": "Icó, CE",
-        "period": {
-          "start": "2021-01",
-          "end": "2023-12",
-          "label": "Jan 2021 — Dez 2023"
-        },
-        "description": "Formação técnica integrada ao ensino médio. O curso começou de forma remota, no final da pandemia, o que exigiu organização e adaptação desde o início. Ao longo dos três anos, participei de projetos científicos e culturais, assumi a vice-liderança da turma e fui reconhecido com certificados de melhor desempenho. Foi também onde comecei a trabalhar com design gráfico e entendi pela primeira vez o que uma identidade visual bem construída é capaz de comunicar.",
-        "ariaLabel": "Técnico em Administração na EEEP Prof. Gustavo Augusto Lima, janeiro de 2021 a dezembro de 2023"
-      },
-      {
         "id": "exp-solitu",
-        "type": "experience",
         "role": "Designer Freelancer",
         "organization": "Solitu — Agência Criativa",
         "location": "Remoto · Portugal",
@@ -106,22 +91,7 @@
         "ariaLabel": "Designer Freelancer na Solitu Agência Criativa, remoto com sede em Portugal, desde agosto de 2024"
       },
       {
-        "id": "edu-ifpb",
-        "type": "education",
-        "role": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
-        "organization": "Instituto Federal da Paraíba — Campus Cajazeiras",
-        "location": "Cajazeiras, PB",
-        "period": {
-          "start": "2024-10",
-          "end": null,
-          "label": "Out 2024 — em andamento"
-        },
-        "description": "Curso superior com foco em desenvolvimento e análise de software. Estudo programação, banco de dados, engenharia de software e desenvolvimento web. Além das disciplinas, tenho participado de projetos práticos, competições e iniciativas de extensão — é onde a parte técnica e a parte criativa do meu trabalho mais se cruzam.",
-        "ariaLabel": "Tecnólogo em Análise e Desenvolvimento de Sistemas no IFPB Campus Cajazeiras, outubro de 2024 até o momento"
-      },
-      {
         "id": "exp-loopis",
-        "type": "experience",
         "role": "Consultor Comercial — Trainee",
         "organization": "Loopis Jr — Empresa Júnior",
         "location": "Remoto",
@@ -132,6 +102,39 @@
         },
         "description": "Faço parte do programa trainee da Loopis Jr, empresa júnior de TI do IFPB Campus Cajazeiras. Na área comercial, o trabalho envolve prospecção, relacionamento com clientes e apoio na elaboração de propostas. É uma oportunidade de aprender sobre vendas e gestão dentro de um ambiente real de empresa.",
         "ariaLabel": "Consultor Comercial Trainee na Loopis Jr, empresa júnior de TI do IFPB Campus Cajazeiras, 2026"
+      }
+    ]
+  },
+
+  "education": {
+    "title": "Formação Acadêmica",
+    "subtitle": "Onde aprendi as bases",
+    "items": [
+      {
+        "id": "edu-eeep",
+        "role": "Técnico em Administração",
+        "organization": "EEEP Prof. Gustavo Augusto Lima",
+        "location": "Icó, CE",
+        "period": {
+          "start": "2021-01",
+          "end": "2023-12",
+          "label": "Jan 2021 — Dez 2023"
+        },
+        "description": "Formação técnica integrada ao ensino médio. O curso começou de forma remota, no final da pandemia, o que exigiu organização e adaptação desde o início. Ao longo dos três anos, participei de projetos científicos e culturais, assumi a vice-liderança da turma e fui reconhecido com certificados de melhor desempenho. Foi também onde comecei a trabalhar com design gráfico e entendi pela primeira vez o que uma identidade visual bem construída é capaz de comunicar.",
+        "ariaLabel": "Técnico em Administração na EEEP Prof. Gustavo Augusto Lima, janeiro de 2021 a dezembro de 2023"
+      },
+      {
+        "id": "edu-ifpb",
+        "role": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+        "organization": "Instituto Federal da Paraíba — Campus Cajazeiras",
+        "location": "Cajazeiras, PB",
+        "period": {
+          "start": "2024-10",
+          "end": null,
+          "label": "Out 2024 — em andamento"
+        },
+        "description": "Curso superior com foco em desenvolvimento e análise de software. Estudo programação, banco de dados, engenharia de software e desenvolvimento web. Além das disciplinas, tenho participado de projetos práticos, competições e iniciativas de extensão — é onde a parte técnica e a parte criativa do meu trabalho mais se cruzam.",
+        "ariaLabel": "Tecnólogo em Análise e Desenvolvimento de Sistemas no IFPB Campus Cajazeiras, outubro de 2024 até o momento"
       }
     ]
   },

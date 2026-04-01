@@ -1,15 +1,25 @@
 import pt from "../../locales/pt-br.json";
-import "./Education.css";
+import { SectionHeader } from "../SectionHeader/SectionHeader";
+import "./TimelineSection.css";
 
-export default function Education() {
-  const { timeline } = pt;
+interface TimelineProps {
+  section: "experience" | "education";
+}
+
+export default function TimelineSection({ section }: TimelineProps) {
+  const sectionData = (pt as any)[section];
+
+  const sortedItems = [...sectionData.items].reverse();
 
   return (
-    <section className="education-section" id="education">
+    <section className="education-section" id={section}>
       <div className="container">
-        <h2 className="section-title">{timeline.title}</h2>
+        <SectionHeader
+          title={sectionData.title}
+          subtitle={sectionData.subtitle}
+        />
         <div className="education-list">
-          {timeline.items.map((item: any) => (
+          {sortedItems.map((item: any) => (
             <article
               className="education-item"
               key={item.id}

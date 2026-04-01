@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pt from "../../locales/pt-br.json";
 
 export default function HeroContent() {
@@ -11,12 +12,13 @@ export default function HeroContent() {
         <p>{pt.hero.description}</p>
       </div>
 
-      <button
+      <Link
         className="btn-primary"
         aria-label={pt.hero.aboutButton.ariaLabel}
+        to={pt.hero.aboutButton.link}
       >
         {pt.hero.aboutButton.label}
-      </button>
+      </Link>
     </div>
   );
 }

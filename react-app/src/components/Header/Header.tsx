@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pt from "../../locales/pt-br.json";
 import NaveMenu from "../NaveMenu/NaveMenu";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
@@ -9,14 +10,14 @@ export default function Header() {
     <header className="header">
       <div className="container">
         <nav className="navbar">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="brand-logo"
             aria-label={pt.header.logoAlt}
             title={pt.header.title}
           >
             {pt.header.name}
-          </a>
+          </Link>
 
           <ThemeToggle />
 
