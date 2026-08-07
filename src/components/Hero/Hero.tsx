@@ -1,17 +1,27 @@
+import styled from "styled-components";
 import HeroImage from "../HeroImage/HeroImage";
 import HeroContent from "../HeroContent/HeroContent";
 
-import "./Hero.css";
+const HeroSection = styled.section`
+  padding: var(--spacing-xl) 0;
+  text-align: left;
+`;
+
+const HeroContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export default function Hero() {
   return (
-    <section className="hero-section">
-      <div className="container">
+    <HeroSection>
+      <HeroContainer>
         <div className="hero-container">
           <HeroImage />
           <HeroContent />
         </div>
-      </div>
-    </section>
+      </HeroContainer>
+    </HeroSection>
   );
 }

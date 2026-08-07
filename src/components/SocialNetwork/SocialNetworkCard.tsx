@@ -1,4 +1,4 @@
-import "./SocialNetworkCard.css";
+import styled from "styled-components";
 
 interface SocialNetworkCardProps {
   name: string;
@@ -7,6 +7,29 @@ interface SocialNetworkCardProps {
   ariaLabel: string;
 }
 
+const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+`;
+
+const Title = styled.h3`
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-xs);
+`;
+
+const SocialLink = styled.a`
+  color: var(--text-secondary);
+  font-size: var(--font-size-base);
+  transition: color 0.3s ease;
+  word-break: break-all;
+
+  &:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+  }
+`;
+
 export default function SocialNetworkCard({
   name,
   label,
@@ -14,17 +37,16 @@ export default function SocialNetworkCard({
   ariaLabel,
 }: SocialNetworkCardProps) {
   return (
-    <div className="social-network-card">
-      <h3 className="social-network-title">{name}</h3>
-      <a
+    <CardWrapper>
+      <Title>{name}</Title>
+      <SocialLink
         href={link}
-        className="social-network-link"
         target="_blank"
         rel="noopener noreferrer"
         aria-label={ariaLabel}
       >
         {label}
-      </a>
-    </div>
+      </SocialLink>
+    </CardWrapper>
   );
 }

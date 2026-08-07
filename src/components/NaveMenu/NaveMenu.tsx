@@ -1,35 +1,45 @@
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 import pt from "../../locales/pt-br.json";
+
+const NavLink = styled(Link)`
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  transition: color 0.3s ease;
+
+  &:hover,
+  &.active {
+    color: var(--accent-green);
+  }
+`;
 
 export default function NaveMenu() {
   return (
     <>
       <li>
-        <Link
+        <NavLink
           to={pt.header.nav.home.link}
-          className="nav-link"
           aria-label={pt.header.nav.home.ariaLabel}
         >
           {pt.header.nav.home.label}
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to={pt.header.nav.about.link}
-          className="nav-link"
           aria-label={pt.header.nav.about.ariaLabel}
         >
           {pt.header.nav.about.label}
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to={pt.header.nav.contact.link}
-          className="nav-link"
           aria-label={pt.header.nav.contact.ariaLabel}
         >
           {pt.header.nav.contact.label}
-        </Link>
+        </NavLink>
       </li>
     </>
   );

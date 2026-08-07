@@ -1,15 +1,20 @@
+import styled from "styled-components";
 import pt from "../../locales/pt-br.json";
+import Button from "../Button/Button";
+
+const ButtonWrapper = styled.div`
+  margin-top: var(--spacing-xl);
+`;
 
 export default function ProjectsButton() {
   return (
-    <div className="projects-button-wrapper">
-      <a
+    <ButtonWrapper>
+      <Button
         href={pt.projects.viewAllButton.link}
-        className="btn-primary"
         aria-label={pt.projects.viewAllButton.ariaLabel}
       >
         {pt.projects.viewAllButton.label}
-      </a>
-    </div>
+      </Button>
+    </ButtonWrapper>
   );
 }

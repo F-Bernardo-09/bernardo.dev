@@ -1,31 +1,36 @@
+import styled from "styled-components";
 import pt from "../../locales/pt-br.json";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
+import Button from "../Button/Button";
+
+const AboutSection = styled.section``;
+
+const AboutContent = styled.div``;
 
 export default function About() {
   const { about } = pt;
 
   return (
-    <section className="about-section" id="about">
+    <AboutSection id="about">
       <div className="container">
         <SectionHeader
           title={pt.projects.title}
           subtitle={pt.projects.subtitle}
         />
-        <div className="about-content">
+        <AboutContent>
           {about.paragraphs.map((text, index) => (
             <p key={index}>{text}</p>
           ))}
 
-          <a
+          <Button
             href={about.cvButton.link}
-            className="btn-primary"
             download
             aria-label={about.cvButton.ariaLabel}
           >
             {about.cvButton.label}
-          </a>
-        </div>
+          </Button>
+        </AboutContent>
       </div>
-    </section>
+    </AboutSection>
   );
 }
