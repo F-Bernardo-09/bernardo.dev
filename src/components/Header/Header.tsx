@@ -40,6 +40,17 @@ const BrandLogo = styled(Link)`
   }
 `;
 
+const NavRight = styled.div`
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+`;
+
 const NavigationMenu = styled.ul`
   display: flex;
 
@@ -73,11 +84,12 @@ export default function Header() {
             {pt.header.name}
           </BrandLogo>
 
-          <ThemeToggle />
-
-          <NavigationMenu>
-            <NaveMenu />
-          </NavigationMenu>
+          <NavRight>
+            <NavigationMenu>
+              <NaveMenu />
+            </NavigationMenu>
+            <ThemeToggle />
+          </NavRight>
         </Navbar>
       </div>
     </HeaderWrapper>

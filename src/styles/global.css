@@ -3,7 +3,6 @@
 
 /* --- Variáveis de Cor e Espaçamento --- */
 :root {
-  /* Cores */
   --bg-dark: #0e1116;
   --bg-dark-accent: #161b22;
   --text-primary: #ffffff;
@@ -41,6 +40,16 @@
   --radius-card: 15px;
   --radius-pill: 50px;
   --radius-circle: 50%;
+}
+
+html[data-theme="light"] {
+  --bg-dark: #ffffff;
+  --bg-dark-accent: #f1f3f5;
+  --text-primary: #0e1116;
+  --text-secondary: #57606a;
+  --accent-green: #17a874;
+  --text-dark: #0e1116;
+  --border-color: #d0d7de;
 }
 
 /* --- Reset e Estilos Globais --- */
