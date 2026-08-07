@@ -9,6 +9,10 @@ const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-lg);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default function Projects() {

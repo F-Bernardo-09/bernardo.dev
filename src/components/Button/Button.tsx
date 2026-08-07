@@ -17,6 +17,12 @@ const StyledButton = styled.a`
   &:hover {
     opacity: 0.85;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
 `;
 
 interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {

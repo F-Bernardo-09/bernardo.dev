@@ -11,6 +11,14 @@ const Wrapper = styled.div`
 const Greeting = styled.h1`
   font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-sm);
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-lg);
+  }
+
+  @media (max-width: 320px) {
+    font-size: var(--font-size-md);
+  }
 `;
 
 const Specialties = styled.div`
@@ -23,6 +31,10 @@ const Specialties = styled.div`
   span {
     color: var(--accent-green);
   }
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-base);
+  }
 `;
 
 const Description = styled.div`
@@ -30,6 +42,10 @@ const Description = styled.div`
     font-size: var(--font-size-base);
     color: var(--text-secondary);
     margin: 0 auto var(--spacing-lg) auto;
+
+    @media (max-width: 480px) {
+      font-size: var(--font-size-sm);
+    }
   }
 `;
 
@@ -37,20 +53,17 @@ export default function HeroContent() {
   return (
     <Wrapper>
       <Greeting>{pt.hero.greeting}</Greeting>
-
       <Specialties>{pt.hero.specialties}</Specialties>
-
       <Description>
         <p>{pt.hero.description}</p>
       </Description>
-
-      <Link
-        className="btn-primary"
+      <Button
+        as={Link}
         aria-label={pt.hero.aboutButton.ariaLabel}
         to={pt.hero.aboutButton.link}
       >
         {pt.hero.aboutButton.label}
-      </Link>
+      </Button>
     </Wrapper>
   );
 }

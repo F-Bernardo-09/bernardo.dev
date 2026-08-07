@@ -12,6 +12,11 @@ const NavLink = styled(Link)`
   &.active {
     color: var(--accent-green);
   }
+
+  @media (max-width: 768px) {
+    display: block;
+    padding: var(--spacing-xs) 0;
+  }
 `;
 
 export default function NaveMenu() {

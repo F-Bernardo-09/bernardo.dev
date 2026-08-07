@@ -11,6 +11,11 @@ const SocialNetworksGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-md) var(--spacing-xl);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
 `;
 
 export default function Contact() {
@@ -21,7 +26,6 @@ export default function Contact() {
           title={pt.contact.title}
           subtitle={pt.contact.subtitle}
         />
-
         <SocialNetworksGrid>
           {pt.contact.social.map((network: any, index: number) => (
             <SocialNetworkCard

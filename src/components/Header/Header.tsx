@@ -13,18 +13,31 @@ const HeaderWrapper = styled.header`
   padding: var(--spacing-md) 0;
   background-color: var(--bg-dark);
   z-index: 1000;
+
+  @media (max-width: 480px) {
+    padding: var(--spacing-sm) 0;
+  }
 `;
 
 const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+  }
 `;
 
 const BrandLogo = styled(Link)`
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-md);
   color: var(--text-primary);
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-base);
+  }
 `;
 
 const NavigationMenu = styled.ul`
@@ -32,6 +45,18 @@ const NavigationMenu = styled.ul`
 
   li {
     margin-left: var(--spacing-lg);
+  }
+
+  @media (max-width: 768px) {
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    margin-top: var(--spacing-sm);
+
+    li {
+      margin-left: 0;
+      margin-bottom: var(--spacing-xs);
+    }
   }
 `;
 

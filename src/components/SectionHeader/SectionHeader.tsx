@@ -18,6 +18,14 @@ const Subtitle = styled.p`
   font-size: var(--font-size-md);
   color: var(--text-secondary);
   max-width: 65%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    font-size: var(--font-size-base);
+  }
 `;
 
 export const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {

@@ -5,6 +5,10 @@ import HeroContent from "../HeroContent/HeroContent";
 const HeroSection = styled.section`
   padding: var(--spacing-xl) 0;
   text-align: left;
+
+  @media (max-width: 480px) {
+    padding: var(--spacing-lg) 0;
+  }
 `;
 
 const HeroContainer = styled.div`
@@ -16,12 +20,12 @@ const HeroContainer = styled.div`
 export default function Hero() {
   return (
     <HeroSection>
-      <HeroContainer>
-        <div className="hero-container">
+      <div className="container">
+        <HeroContainer>
           <HeroImage />
           <HeroContent />
-        </div>
-      </HeroContainer>
+        </HeroContainer>
+      </div>
     </HeroSection>
   );
 }
