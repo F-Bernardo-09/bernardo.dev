@@ -1,17 +1,19 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import {
+  NavLink as RouterNavLink,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
+import { useEffect } from "react";
 import pt from "../../locales/pt-br.json";
+import { useScrollSpy } from "../../hooks/useScrollSpy";
 
-const NavLink = styled(Link)`
+const linkStyles = `
   color: var(--text-secondary);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-sm);
   transition: color 0.3s ease;
-
-  &:hover,
-  &.active {
-    color: var(--accent-green);
-  }
+  cursor: pointer;
 
   @media (max-width: 768px) {
     display: block;
@@ -19,16 +21,89 @@ const NavLink = styled(Link)`
   }
 `;
 
+const NavLink = styled(RouterNavLink)`
+  ${linkStyles}
+
+  &:hover,
+  &.active {
+    color: var(--accent-green);
+  }
+`;
+
+const AnchorLink = styled.a<{ $active?: boolean }>`
+  ${linkStyles}
+  color: ${(p) =>
+    p.$active ? "var(--accent-green)" : "var(--text-secondary)"};
+
+  &:hover {
+    color: var(--accent-green);
+  }
+`;
+
+function waitForImagesThenScroll(id: string) {
+  const images = Array.from(document.images);
+  const pending = images.filter((img) => !img.complete);
+
+  if (pending.length === 0) {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    return;
+  }
+
+  let remaining = pending.length;
+
+  function done() {
+    remaining--;
+    if (remaining <= 0) {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  pending.forEach((img) => {
+    img.addEventListener("load", done, { once: true });
+    img.addEventListener("error", done, { once: true });
+  });
+}
+
 export default function NaveMenu() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
+  const activeSection = useScrollSpy(isHome ? ["home", "contact"] : []);
+
+  const homeIsActive = isHome && activeSection === "home";
+  const contactIsActive = isHome && activeSection === "contact";
+
+  useEffect(() => {
+    if (isHome && location.hash) {
+      const id = location.hash.replace("#", "");
+      waitForImagesThenScroll(id);
+    }
+  }, [isHome, location.hash]);
+
+  function handleAnchorClick(
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string,
+  ) {
+    e.preventDefault();
+    if (isHome) {
+      waitForImagesThenScroll(id);
+      navigate(`/#${id}`, { replace: true });
+    } else {
+      navigate(`/#${id}`);
+    }
+  }
+
   return (
     <>
       <li>
-        <NavLink
-          to={pt.header.nav.home.link}
+        <AnchorLink
+          href="/#home"
           aria-label={pt.header.nav.home.ariaLabel}
+          $active={homeIsActive}
+          onClick={(e) => handleAnchorClick(e, "home")}
         >
           {pt.header.nav.home.label}
-        </NavLink>
+        </AnchorLink>
       </li>
       <li>
         <NavLink
@@ -39,12 +114,14 @@ export default function NaveMenu() {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          to={pt.header.nav.contact.link}
+        <AnchorLink
+          href="/#contact"
           aria-label={pt.header.nav.contact.ariaLabel}
+          $active={contactIsActive}
+          onClick={(e) => handleAnchorClick(e, "contact")}
         >
           {pt.header.nav.contact.label}
-        </NavLink>
+        </AnchorLink>
       </li>
     </>
   );

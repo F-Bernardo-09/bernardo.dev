@@ -19,7 +19,7 @@ const HeroContainer = styled.div`
 
 export default function Hero() {
   return (
-    <HeroSection>
+    <HeroSection id="home">
       <div className="container">
         <HeroContainer>
           <HeroImage />
