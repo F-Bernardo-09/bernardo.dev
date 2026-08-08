@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 
 const StyledFooter = styled.footer`
   padding: var(--spacing-lg) 0;
@@ -30,13 +30,13 @@ const Copyright = styled.p`
 `;
 
 export default function Footer() {
-  const { footer } = pt;
+  const { t } = useTranslation("common");
 
   return (
     <StyledFooter>
       <div className="container">
         <FooterContent>
-          <Copyright>{footer.copyright}</Copyright>
+          <Copyright>{t("footer.copyright")}</Copyright>
         </FooterContent>
       </div>
     </StyledFooter>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 import Button from "../Button/Button";
 
 const Wrapper = styled.div`
@@ -50,19 +50,21 @@ const Description = styled.div`
 `;
 
 export default function HeroContent() {
+  const { t } = useTranslation("common");
+
   return (
     <Wrapper>
-      <Greeting>{pt.hero.greeting}</Greeting>
-      <Specialties>{pt.hero.specialties}</Specialties>
+      <Greeting>{t("hero.greeting")}</Greeting>
+      <Specialties>{t("hero.specialties")}</Specialties>
       <Description>
-        <p>{pt.hero.description}</p>
+        <p>{t("hero.description")}</p>
       </Description>
       <Button
         as={Link}
-        aria-label={pt.hero.aboutButton.ariaLabel}
-        to={pt.hero.aboutButton.link}
+        aria-label={t("hero.aboutButton.ariaLabel")}
+        to={t("hero.aboutButton.link")}
       >
-        {pt.hero.aboutButton.label}
+        {t("hero.aboutButton.label")}
       </Button>
     </Wrapper>
   );

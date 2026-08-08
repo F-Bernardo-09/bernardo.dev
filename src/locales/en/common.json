@@ -1,0 +1,172 @@
+{
+  "_meta": {
+    "version": "2.0.0",
+    "lastUpdated": "2026-04",
+    "author": "Bernardo Alencar",
+    "note": "Portfolio content file. To update project links, edit each project's 'links' array. The 'primaryLink' field defines which link is displayed by default in the interface."
+  },
+
+  "header": {
+    "name": "Bernardo Alencar",
+    "title": "Designer & Web Developer",
+    "logoAlt": "Logo with the letter B representing Bernardo",
+    "nav": {
+      "home": {
+        "label": "Home",
+        "link": "/",
+        "ariaLabel": "Go to the home section"
+      },
+      "about": {
+        "label": "About",
+        "link": "/about",
+        "ariaLabel": "Go to the about section"
+      },
+      "contact": {
+        "label": "Contact",
+        "link": "/#contact",
+        "ariaLabel": "Go to the contact section"
+      }
+    }
+  },
+  "hero": {
+    "greeting": "Hi, I'm Bernardo Alencar",
+    "specialties": "Freelance Graphic Designer · Systems Analysis and Development Student · UI & UX Design",
+    "description": "I work at the intersection of design and technology — creating interfaces and visual identities focused on clarity, functionality and purpose.",
+    "aboutButton": {
+      "label": "About Me",
+      "link": "../About",
+      "ariaLabel": "Learn more about Bernardo Alencar"
+    },
+    "image": {
+      "src": "/assets/profile-photo.jpg",
+      "alt": "Photo of Bernardo Alencar, designer and web developer"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": null,
+    "paragraphs": [
+      "My name is Bernardo Alencar. I work at Solitu - a creative agency, helping brands build a consistent visual presence and digital experiences that make sense for the people who use them.",
+      "My journey started in graphic design, but the drive to understand how things work under the hood led me to the Systems Analysis and Development program — where I study logic, web development and software engineering.",
+      "I have experience with visual identities, UI/UX, social media management and institutional communication. On the technical side, I've been deepening my knowledge of HTML, CSS, JavaScript, TypeScript, Node.js, React, SQL and Java.",
+      "More than delivering projects, I like to understand the problem before proposing a solution. Most of what I do starts from collaboration — and that's something I value a lot."
+    ],
+    "cvButton": {
+      "label": "Download Resume",
+      "link": "/assets/cv-bernardo-en.pdf",
+      "ariaLabel": "Download Bernardo Alencar's resume in PDF"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "My journey in the market",
+    "items": [
+      {
+        "id": "exp-freelancer",
+        "role": "Freelance Graphic Designer",
+        "organization": "Self-employed",
+        "location": "Remote",
+        "period": {
+          "start": "2020-09",
+          "end": null,
+          "label": "Sep 2020 — present"
+        },
+        "description": "I work independently developing visual projects for clients across different segments. The process runs from briefing to final delivery — visual identities, social media pieces, digital campaigns and web layouts.",
+        "ariaLabel": "Self-employed Freelance Graphic Designer, remote, since September 2020"
+      },
+      {
+        "id": "exp-solitu",
+        "role": "Freelance Designer",
+        "organization": "Solitu — Creative Agency",
+        "location": "Remote · Portugal",
+        "period": {
+          "start": "2024-08",
+          "end": null,
+          "label": "Aug 2024 — present"
+        },
+        "description": "Collaboration on international projects focused on visual identity and UI design. Working with clients from different markets brought new perspectives on how to communicate and present creative solutions.",
+        "ariaLabel": "Freelance Designer at Solitu Creative Agency, remote, based in Portugal, since August 2024"
+      },
+      {
+        "id": "exp-loopis",
+        "role": "Commercial Consultant — Trainee",
+        "organization": "Loopis Jr — Junior Enterprise",
+        "location": "Remote",
+        "period": {
+          "start": "2026-01",
+          "end": null,
+          "label": "2026 — present"
+        },
+        "description": "I'm part of the trainee program at Loopis Jr, the IT junior enterprise of IFPB Campus Cajazeiras. In the commercial area, the work involves prospecting, client relationships and support in preparing proposals. It's an opportunity to learn about sales and management in a real business environment.",
+        "ariaLabel": "Commercial Consultant Trainee at Loopis Jr, IT junior enterprise of IFPB Campus Cajazeiras, 2026"
+      }
+    ]
+  },
+  "education": {
+    "title": "Academic Background",
+    "subtitle": "Where I learned the basics",
+    "items": [
+      {
+        "id": "edu-eeep",
+        "role": "Technical Degree in Administration",
+        "organization": "EEEP Prof. Gustavo Augusto Lima",
+        "location": "Icó, CE",
+        "period": {
+          "start": "2021-01",
+          "end": "2023-12",
+          "label": "Jan 2021 — Dec 2023"
+        },
+        "description": "Technical program integrated with high school. It started remotely, at the tail end of the pandemic, which demanded organization and adaptation from day one. Over the three years, I took part in scientific and cultural projects, became vice class-leader and was recognized with top-performance certificates. It was also where I started working with graphic design and first understood what a well-built visual identity is able to communicate.",
+        "ariaLabel": "Technical Degree in Administration at EEEP Prof. Gustavo Augusto Lima, January 2021 to December 2023"
+      },
+      {
+        "id": "edu-ifpb",
+        "role": "Associate Degree in Systems Analysis and Development",
+        "organization": "Instituto Federal da Paraíba — Cajazeiras Campus",
+        "location": "Cajazeiras, PB",
+        "period": {
+          "start": "2024-10",
+          "end": null,
+          "label": "Oct 2024 — ongoing"
+        },
+        "description": "Higher education program focused on software development and analysis. I study programming, databases, software engineering and web development. Besides coursework, I've taken part in practical projects, competitions and outreach initiatives — it's where the technical and creative sides of my work overlap the most.",
+        "ariaLabel": "Associate Degree in Systems Analysis and Development at IFPB Cajazeiras Campus, October 2024 to present"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk",
+    "social": [
+      {
+        "name": "Behance",
+        "label": "https://www.behance.net/bernardoalencar1",
+        "link": "https://www.behance.net/bernardoalencar1",
+        "ariaLabel": "View Bernardo Alencar's design portfolio on Behance"
+      },
+      {
+        "name": "GitHub",
+        "label": "https://github.com/F-Bernardo-09",
+        "link": "https://github.com/F-Bernardo-09",
+        "ariaLabel": "View Bernardo Alencar's repositories on GitHub"
+      },
+      {
+        "name": "LinkedIn",
+        "label": "https://www.linkedin.com/in/bernardo-alencar/",
+        "link": "https://www.linkedin.com/in/bernardo-alencar/",
+        "ariaLabel": "View Bernardo Alencar's professional profile on LinkedIn"
+      },
+      {
+        "name": "Instagram",
+        "label": "https://www.instagram.com/f.bernardo.09/",
+        "link": "https://www.instagram.com/f.bernardo.09/",
+        "ariaLabel": "View Bernardo Alencar's Instagram"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "2025 – 2026 / Bernardo Alencar",
+    "viewProjectLabel": "View Project",
+    "ariaLabel": "Footer of Bernardo Alencar's portfolio"
+  }
+}

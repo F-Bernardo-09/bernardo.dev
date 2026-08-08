@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import pt from "../../locales/pt-br.json";
 
 const ProjectsSection = styled.section``;
 
@@ -16,15 +16,15 @@ const ProjectsGrid = styled.div`
 `;
 
 export default function Projects() {
+  const { t } = useTranslation("projects");
+  const items = t("items", { returnObjects: true }) as any[];
+
   return (
     <ProjectsSection>
       <div className="container">
-        <SectionHeader
-          title={pt.projects.title}
-          subtitle={pt.projects.subtitle}
-        />
+        <SectionHeader title={t("title")} subtitle={t("subtitle")} />
         <ProjectsGrid>
-          {pt.projects.items.map((project: any, index: number) => (
+          {items.map((project: any, index: number) => (
             <ProjectCard key={index} project={project} />
           ))}
         </ProjectsGrid>

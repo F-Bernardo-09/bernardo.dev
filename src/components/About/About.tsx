@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
 import Button from "../Button/Button";
 
@@ -8,26 +8,30 @@ const AboutSection = styled.section``;
 const AboutContent = styled.div``;
 
 export default function About() {
-  const { about } = pt;
+  const { t } = useTranslation(["common", "projects"]);
+  const paragraphs = t("about.paragraphs", {
+    ns: "common",
+    returnObjects: true,
+  }) as string[];
 
   return (
     <AboutSection id="about">
       <div className="container">
         <SectionHeader
-          title={pt.projects.title}
-          subtitle={pt.projects.subtitle}
+          title={t("about.title", { ns: "common" })}
+          subtitle={t("about.subtitle", { ns: "common", defaultValue: "" })}
         />
         <AboutContent>
-          {about.paragraphs.map((text, index) => (
+          {paragraphs.map((text, index) => (
             <p key={index}>{text}</p>
           ))}
 
           <Button
-            href={about.cvButton.link}
+            href={t("about.cvButton.link", { ns: "common" })}
             download
-            aria-label={about.cvButton.ariaLabel}
+            aria-label={t("about.cvButton.ariaLabel", { ns: "common" })}
           >
-            {about.cvButton.label}
+            {t("about.cvButton.label", { ns: "common" })}
           </Button>
         </AboutContent>
       </div>

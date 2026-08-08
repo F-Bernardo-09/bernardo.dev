@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
 import SocialNetworkCard from "../SocialNetwork/SocialNetworkCard";
-import pt from "../../locales/pt-br.json";
 
 const ContactSection = styled.section`
   padding: var(--spacing-xl) 0;
@@ -19,15 +19,18 @@ const SocialNetworksGrid = styled.div`
 `;
 
 export default function Contact() {
+  const { t } = useTranslation("common");
+  const social = t("contact.social", { returnObjects: true }) as any[];
+
   return (
     <ContactSection id="contact">
       <div className="container">
         <SectionHeader
-          title={pt.contact.title}
-          subtitle={pt.contact.subtitle}
+          title={t("contact.title")}
+          subtitle={t("contact.subtitle")}
         />
         <SocialNetworksGrid>
-          {pt.contact.social.map((network: any, index: number) => (
+          {social.map((network: any, index: number) => (
             <SocialNetworkCard
               key={index}
               name={network.name}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
 
 interface TimelineProps {
@@ -63,16 +63,17 @@ const EducationDate = styled.span`
 const EducationDescription = styled.p``;
 
 export default function TimelineSection({ section }: TimelineProps) {
-  const sectionData = (pt as any)[section];
+  const { t } = useTranslation("common");
 
-  const sortedItems = [...sectionData.items].reverse();
+  const items = t(`${section}.items`, { returnObjects: true }) as any[];
+  const sortedItems = [...items].reverse();
 
   return (
     <EducationSection id={section}>
       <div className="container">
         <SectionHeader
-          title={sectionData.title}
-          subtitle={sectionData.subtitle}
+          title={t(`${section}.title`)}
+          subtitle={t(`${section}.subtitle`)}
         />
         <EducationList>
           {sortedItems.map((item: any) => (

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 import Button from "../Button/Button";
 
 const ButtonWrapper = styled.div`
@@ -7,13 +7,15 @@ const ButtonWrapper = styled.div`
 `;
 
 export default function ProjectsButton() {
+  const { t } = useTranslation("projects");
+
   return (
     <ButtonWrapper>
       <Button
-        href={pt.projects.viewAllButton.link}
-        aria-label={pt.projects.viewAllButton.ariaLabel}
+        href={t("viewAllButton.link")}
+        aria-label={t("viewAllButton.ariaLabel")}
       >
-        {pt.projects.viewAllButton.label}
+        {t("viewAllButton.label")}
       </Button>
     </ButtonWrapper>
   );

@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 import NaveMenu from "../NaveMenu/NaveMenu";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import LangSwitcher from "../LangSwitcher/LangSwitcher";
 
 const HeaderWrapper = styled.header`
   margin: 0;
@@ -72,22 +73,25 @@ const NavigationMenu = styled.ul`
 `;
 
 export default function Header() {
+  const { t } = useTranslation("common");
+
   return (
     <HeaderWrapper>
       <div className="container">
         <Navbar>
           <BrandLogo
             to="/"
-            aria-label={pt.header.logoAlt}
-            title={pt.header.title}
+            aria-label={t("header.logoAlt")}
+            title={t("header.title")}
           >
-            {pt.header.name}
+            {t("header.name")}
           </BrandLogo>
 
           <NavRight>
             <NavigationMenu>
               <NaveMenu />
             </NavigationMenu>
+            <LangSwitcher />
             <ThemeToggle />
           </NavRight>
         </Navbar>

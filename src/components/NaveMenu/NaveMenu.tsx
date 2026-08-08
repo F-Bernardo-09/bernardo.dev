@@ -5,7 +5,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { useEffect } from "react";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 import { useScrollSpy } from "../../hooks/useScrollSpy";
 
 const linkStyles = `
@@ -65,6 +65,7 @@ function waitForImagesThenScroll(id: string) {
 }
 
 export default function NaveMenu() {
+  const { t } = useTranslation("common");
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
@@ -98,29 +99,29 @@ export default function NaveMenu() {
       <li>
         <AnchorLink
           href="/#home"
-          aria-label={pt.header.nav.home.ariaLabel}
+          aria-label={t("header.nav.home.ariaLabel")}
           $active={homeIsActive}
           onClick={(e) => handleAnchorClick(e, "home")}
         >
-          {pt.header.nav.home.label}
+          {t("header.nav.home.label")}
         </AnchorLink>
       </li>
       <li>
         <NavLink
-          to={pt.header.nav.about.link}
-          aria-label={pt.header.nav.about.ariaLabel}
+          to={t("header.nav.about.link")}
+          aria-label={t("header.nav.about.ariaLabel")}
         >
-          {pt.header.nav.about.label}
+          {t("header.nav.about.label")}
         </NavLink>
       </li>
       <li>
         <AnchorLink
           href="/#contact"
-          aria-label={pt.header.nav.contact.ariaLabel}
+          aria-label={t("header.nav.contact.ariaLabel")}
           $active={contactIsActive}
           onClick={(e) => handleAnchorClick(e, "contact")}
         >
-          {pt.header.nav.contact.label}
+          {t("header.nav.contact.label")}
         </AnchorLink>
       </li>
     </>

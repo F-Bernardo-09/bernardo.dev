@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pt from "../../locales/pt-br.json";
+import { useTranslation } from "react-i18next";
 import profile from "../../assets/profile-photo.jpg";
 
 const ProfileImage = styled.img`
@@ -13,5 +13,7 @@ const ProfileImage = styled.img`
 `;
 
 export default function HeroImage() {
-  return <ProfileImage src={profile} alt={pt.hero.image.alt} />;
+  const { t } = useTranslation("common");
+
+  return <ProfileImage src={profile} alt={t("hero.image.alt")} />;
 }

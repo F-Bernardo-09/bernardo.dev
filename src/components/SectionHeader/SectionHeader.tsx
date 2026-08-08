@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface SectionHeaderProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
 }
 
 const Wrapper = styled.div`
@@ -32,7 +32,7 @@ export const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
   return (
     <Wrapper>
       <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
+      {subtitle && <Subtitle>{subtitle}</Subtitle>}
     </Wrapper>
   );
 };
