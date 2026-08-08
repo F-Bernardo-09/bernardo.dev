@@ -27,6 +27,7 @@ const StyledButton = styled.a`
 
 interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   as?: ElementType;
+  to?: string;
 }
 
 export default function Button({ as, ...props }: ButtonProps) {
