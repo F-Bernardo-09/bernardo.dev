@@ -112,10 +112,12 @@ h4 {
   font-weight: var(--font-weight-bold);
   color: var(--text-primary);
   line-height: var(--line-height-heading);
+  text-align: justify;
 }
 
 p {
   color: var(--text-secondary);
+  text-align: justify;
 }
 
 section {

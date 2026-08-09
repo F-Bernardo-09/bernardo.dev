@@ -5,7 +5,16 @@ import Button from "../Button/Button";
 
 const AboutSection = styled.section``;
 
-const AboutContent = styled.div``;
+const AboutContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+
+  a {
+    margin-top: var(--spacing-md);
+  }
+`;
 
 export default function About() {
   const { t } = useTranslation(["common", "projects"]);
