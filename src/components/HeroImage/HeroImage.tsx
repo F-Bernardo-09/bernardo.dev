@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 import profile from "../../assets/profile-photo.jpg";
 
 const ProfileImage = styled.img`
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border: var(--border-accent);
   border-radius: var(--radius-circle);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
   object-fit: cover;
   background-color: var(--accent-green);
 `;
