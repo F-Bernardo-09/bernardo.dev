@@ -1,5 +1,5 @@
 /* --- Importação da Fonte --- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap");
 
 /* --- Variáveis de Cor e Espaçamento --- */
 :root {
@@ -12,7 +12,8 @@
   --border-color: #21262d;
 
   /* Tipografia */
-  --font-family-base: "Inter", sans-serif;
+  --font-family-base: "Fira Code", monospace;
+  --font-family-secondary: "Space Grotesk", sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
@@ -59,6 +60,13 @@ html[data-theme="light"] {
   box-sizing: border-box;
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -100,6 +108,7 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-bold);
   color: var(--text-primary);
   line-height: var(--line-height-heading);
@@ -111,6 +120,7 @@ p {
 
 section {
   padding: var(--spacing-xl) 0;
+  scroll-margin-top: 100px;
 }
 
 /* ========================================

@@ -11,11 +11,13 @@ function App() {
     <ThemeProvider>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+          </Routes>
+        </main>
         <Footer />
       </BrowserRouter>
     </ThemeProvider>
