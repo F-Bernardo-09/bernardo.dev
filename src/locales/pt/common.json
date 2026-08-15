@@ -45,13 +45,12 @@
   },
 
   "about": {
-    "title": "Sobre mim",
+    "title": "Me chamo Bernardo Alencar",
     "subtitle": null,
     "paragraphs": [
-      "Me chamo Bernardo Alencar. Atuo na Solitu - Agência criativa, ajudando marcas a construírem presença visual consistente e experiências digitais que fazem sentido para quem as usa.",
+      "Atuo na Solitu - Agência criativa, ajudando marcas a construírem presença visual consistente e experiências digitais que fazem sentido para quem as usa.",
       "Minha trajetória começou pelo design gráfico, mas a vontade de entender como as coisas funcionam por dentro me levou ao curso de Análise e Desenvolvimento de Sistemas — onde estudo lógica, desenvolvimento web e construção de software.",
-      "Tenho experiência com identidades visuais, UI/UX, gestão de redes sociais e comunicação institucional. Do lado técnico, venho aprofundando conhecimentos em HTML, CSS, JavaScript, TypeScript, Node.js, React, SQL e Java.",
-      "Mais do que entregar projetos, gosto de entender o problema antes de propor uma solução. A maioria do que faço nasce de colaboração — e isso é algo que valorizo bastante."
+      "Tenho experiência com identidades visuais, UI/UX, gestão de redes sociais e comunicação institucional. Do lado técnico, venho aprofundando conhecimentos em HTML, CSS, JavaScript, TypeScript, Node.js, React, SQL e Java."
     ],
     "cvButton": {
       "label": "Baixar Currículo",

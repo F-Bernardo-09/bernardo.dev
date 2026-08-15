@@ -1,5 +1,5 @@
 import TimelineSection from "../components/TimelineSection/TimelineSection";
-import About from "../components/About/About";
+import About from "../components/About/About.wip";
 import SkillsCarousell from "../components/SkillsCarousell/SkillsCarousell";
 
 function AboutPage() {
