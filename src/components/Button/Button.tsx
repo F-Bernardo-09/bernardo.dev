@@ -7,6 +7,7 @@ const StyledButton = styled.a`
   color: var(--text-dark);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-sm);
+  margin-top: var(--spacing-xl);
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-pill);
   text-decoration: none;
