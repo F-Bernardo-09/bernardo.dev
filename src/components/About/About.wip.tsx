@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
-import Button from "../Button/Button";
+import Button from "../Button/Button.wip";
 import HeroImage from "../HeroImage/HeroImage.wip";
 
 const AboutSection = styled.section``;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import SocialLinks from "../SocialLinks/SocialLinks";
+import Button from "../Button/Button.wip";
 
 const Wrapper = styled.div`
   padding: var(--spacing-xl) 0;
@@ -33,6 +35,10 @@ const Description = styled.div`
   }
 `;
 
+const CTAWrapper = styled.div`
+  margin-top: var(--spacing-lg);
+`;
+
 export default function HeroContent() {
   const { t } = useTranslation("common");
 
@@ -43,6 +49,15 @@ export default function HeroContent() {
         <p>{t("hero.description")}</p>
       </Description>
       <SocialLinks />
+      <CTAWrapper>
+        <Button
+          as={Link}
+          aria-label={t("hero.aboutButton.ariaLabel")}
+          to={t("hero.aboutButton.link")}
+        >
+          {t("hero.aboutButton.label")}
+        </Button>
+      </CTAWrapper>
     </Wrapper>
   );
 }
