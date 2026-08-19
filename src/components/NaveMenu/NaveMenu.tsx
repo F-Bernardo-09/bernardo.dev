@@ -108,6 +108,14 @@ export default function NaveMenu() {
       </li>
       <li>
         <NavLink
+          to={t("header.nav.projects.link")}
+          aria-label={t("header.nav.projects.ariaLabel")}
+        >
+          {t("header.nav.projects.label")}
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to={t("header.nav.about.link")}
           aria-label={t("header.nav.about.ariaLabel")}
         >

@@ -16,6 +16,11 @@
         "link": "/",
         "ariaLabel": "Ir para a seção inicial"
       },
+      "projects": {
+        "label": "Projetos",
+        "link": "/projects",
+        "ariaLabel": "Ir para a seção de projetos"
+      },
       "about": {
         "label": "Sobre",
         "link": "/about",

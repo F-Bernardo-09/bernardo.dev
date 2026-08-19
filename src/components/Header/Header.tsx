@@ -1,3 +1,5 @@
+// Header.tsx
+import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -74,9 +76,25 @@ const NavigationMenu = styled.ul`
 
 export default function Header() {
   const { t } = useTranslation("common");
+  const headerRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    function updateHeaderHeight() {
+      if (headerRef.current) {
+        document.documentElement.style.setProperty(
+          "--header-height",
+          `${headerRef.current.offsetHeight}px`,
+        );
+      }
+    }
+
+    updateHeaderHeight();
+    window.addEventListener("resize", updateHeaderHeight);
+    return () => window.removeEventListener("resize", updateHeaderHeight);
+  }, []);
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper ref={headerRef}>
       <div className="container">
         <Navbar>
           <BrandLogo
@@ -86,7 +104,6 @@ export default function Header() {
           >
             {t("header.name")}
           </BrandLogo>
-
           <NavRight>
             <NavigationMenu>
               <NaveMenu />
