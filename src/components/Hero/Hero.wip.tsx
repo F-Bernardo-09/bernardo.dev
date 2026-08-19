@@ -3,6 +3,9 @@ import HeroImage from "../HeroImage/HeroImage";
 import HeroContent from "../HeroContent/HeroContent.wip";
 
 const HeroSection = styled.section`
+  min-height: calc(100vh - var(--header-height, 80px));
+  display: flex;
+  align-items: center;
   padding: var(--spacing-xl) 0;
   text-align: left;
 
