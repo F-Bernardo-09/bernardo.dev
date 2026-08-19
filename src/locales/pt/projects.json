@@ -6,6 +6,11 @@
     "link": "/pages/projects",
     "ariaLabel": "Ver a lista completa de projetos"
   },
+  "loadMoreButton": {
+    "label": "Ver mais projetos",
+    "ariaLabel": "Carregar mais projetos no grid"
+  },
+  "filterAllLabel": "Todos",
   "items": [
     {
       "id": "proj-verde-arido",
@@ -20,6 +25,7 @@
       "relevance": 1,
       "featured": true,
       "status": "Em andamento",
+      "categories": ["Tecnologia", "Design"],
       "description": "O Verde Árido é uma plataforma Agtech voltada para o fortalecimento da pecuária no semiárido brasileiro, selecionada para a 14ª edição do Campus Mobile. A solução trabalha com o manejo tecnológico da palma forrageira e com a precisão nutricional do rebanho, buscando reduzir a vulnerabilidade dos produtores aos períodos de seca. A proposta atende tanto produtores rurais diretamente quanto empresas de consultoria agrícola, com um modelo de negócio estruturado para ser escalável. Através do georreferenciamento e da democratização de dados como o Zoneamento Agrícola de Risco Climático, o projeto oferece suporte técnico acessível para a tomada de decisão no campo. O foco central é a fixação do homem no campo e o combate ao êxodo rural.",
       "tags": [
         "Agtech",
@@ -29,29 +35,29 @@
         "Mobile"
       ],
       "image": {
-        "src": "/assets/projects/verde-arido.jpg",
+        "src": "src/assets/project-name.jpg",
         "alt": "Interface do aplicativo Verde Árido mostrando o painel de monitoramento de palma forrageira no semiárido"
       },
       "primaryLink": 2,
       "links": [
         {
           "label": "Vídeo de apresentação",
-          "url": "https://youtu.be/I9n7P0TobuA?si=RlNl5Vi4MLg8qoRl",
+          "url": "[https://youtu.be/I9n7P0TobuA?si=RlNl5Vi4MLg8qoRl](https://youtu.be/I9n7P0TobuA?si=RlNl5Vi4MLg8qoRl)",
           "type": "video"
         },
         {
           "label": "Drive do projeto",
-          "url": "https://drive.google.com/drive/folders/1cUSWHM00haRCz9W2JjrlQv6j9zrjWJj2?usp=drive_link",
+          "url": "[https://drive.google.com/drive/folders/1cUSWHM00haRCz9W2JjrlQv6j9zrjWJj2?usp=drive_link](https://drive.google.com/drive/folders/1cUSWHM00haRCz9W2JjrlQv6j9zrjWJj2?usp=drive_link)",
           "type": "drive"
         },
         {
           "label": "Identidade Visual (Behance)",
-          "url": "https://www.behance.net/gallery/239086931/Verde-Arido-Identidade-Visual",
+          "url": "[https://www.behance.net/gallery/239086931/Verde-Arido-Identidade-Visual](https://www.behance.net/gallery/239086931/Verde-Arido-Identidade-Visual)",
           "type": "behance"
         },
         {
           "label": "Instagram do projeto",
-          "url": "https://www.instagram.com/verde_arido/",
+          "url": "[https://www.instagram.com/verde_arido/](https://www.instagram.com/verde_arido/)",
           "type": "instagram"
         }
       ]
@@ -69,6 +75,7 @@
       "relevance": 1,
       "featured": true,
       "status": "Em andamento",
+      "categories": ["Tecnologia", "Design"],
       "description": "O Guardiões da Bandeira é um jogo mobile de estratégia e aventura selecionado para o Game Dev Quest. O projeto adapta a brincadeira popular 'Pega Bandeira' para um ambiente digital competitivo, fundamentado no folclore brasileiro. O design de interface foi pensado para suportar mecânicas de visão limitada e movimentação tática, mantendo a navegação intuitiva em partidas cooperativas. A identidade visual utiliza arte 2D estilizada com referências à cultura nacional, integrando personagens folclóricos e poderes especiais. O projeto conta com sistema de progressão, rankings individuais e uma trilha sonora baseada em ritmos tradicionais brasileiros.",
       "tags": [
         "Game Dev",
@@ -78,19 +85,19 @@
         "Folclore Brasileiro"
       ],
       "image": {
-        "src": "/assets/projects/guardiaoes-da-bandeira.jpg",
+        "src": "src/assets/project-name.jpg",
         "alt": "Tela de jogo do Guardiões da Bandeira exibindo mapa tático com personagens do folclore brasileiro"
       },
       "primaryLink": 0,
       "links": [
         {
           "label": "Trailer do jogo",
-          "url": "https://youtu.be/VoEYXYlqTD0?si=G-nZ3TCGuX7iIBCh",
+          "url": "[https://youtu.be/VoEYXYlqTD0?si=G-nZ3TCGuX7iIBCh](https://youtu.be/VoEYXYlqTD0?si=G-nZ3TCGuX7iIBCh)",
           "type": "video"
         },
         {
           "label": "Instagram do estúdio",
-          "url": "https://www.instagram.com/mandacaru.studio_/",
+          "url": "[https://www.instagram.com/mandacaru.studio_/](https://www.instagram.com/mandacaru.studio_/)",
           "type": "instagram"
         }
       ]
@@ -108,10 +115,11 @@
       "relevance": 1,
       "featured": true,
       "status": "Concluído",
+      "categories": ["Pesquisa", "Tecnologia"],
       "description": "Projeto premiado com o 1º lugar na competição intercurso da Semana da Tecnologia do IFPB. A proposta consiste na transformação de resíduos plásticos gerados pela própria instituição em filamentos para impressão 3D, para uso nos laboratórios de prototipagem. A análise de viabilidade foi reconhecida pela banca avaliadora como um dos pontos mais sólidos do trabalho, assim como o potencial de impacto ambiental. O projeto demonstra como o reaproveitamento de materiais pode suprir demandas técnicas reais de forma eficiente e de baixo custo.",
       "tags": ["Sustentabilidade", "Prototipagem", "Apresentação Técnica"],
       "image": {
-        "src": "/assets/projects/replast3d.jpg",
+        "src": "src/assets/project-name.jpg",
         "alt": "Apresentação do projeto RePlast3D mostrando o processo de transformação de plástico reciclado em filamento para impressão 3D"
       },
       "primaryLink": null,
@@ -130,6 +138,7 @@
       "relevance": 1,
       "featured": true,
       "status": "Concluído",
+      "categories": ["Design", "Comunicação"],
       "description": "O Plot Twist Club é uma iniciativa de extensão do IFPB voltada à democratização do acesso ao cinema e ao estímulo ao pensamento crítico entre estudantes da rede pública e a comunidade local. Com sessões semanais gratuitas e foco em produções nacionais, o projeto promove debates que conectam as obras cinematográficas a questões sociais, históricas e de cidadania. Trabalhei no desenvolvimento da identidade visual do projeto, incluindo uma proposta inicial e uma versão revisada.",
       "tags": ["Identidade Visual", "Branding", "Extensão Universitária"],
       "image": {
@@ -140,12 +149,12 @@
       "links": [
         {
           "label": "Proposta de ID Visual (Behance)",
-          "url": "https://www.behance.net/gallery/228437153/Plot-Twist-Club-Proposta-de-Id-Visual",
+          "url": "[https://www.behance.net/gallery/228437153/Plot-Twist-Club-Proposta-de-Id-Visual](https://www.behance.net/gallery/228437153/Plot-Twist-Club-Proposta-de-Id-Visual)",
           "type": "behance"
         },
         {
           "label": "Nova ID Visual (Behance)",
-          "url": "https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual",
+          "url": "[https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual](https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual)",
           "type": "behance"
         }
       ]
@@ -163,6 +172,7 @@
       "relevance": 2,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Design", "Tecnologia"],
       "description": "O OnDemand é um projeto de aplicativo focado em conectar profissionais de serviços a clientes de forma prática. O trabalho envolveu a criação da identidade visual — logotipo e paleta de cores com foco em transmitir confiança e agilidade — e o desenvolvimento das interfaces no Figma. O fluxo de agendamento foi desenhado para ser simples e funcional para qualquer perfil de usuário.",
       "tags": ["UI/UX", "Figma", "Identidade Visual", "Mobile"],
       "image": {
@@ -173,12 +183,12 @@
       "links": [
         {
           "label": "UI/UX Design (Behance)",
-          "url": "https://www.behance.net/gallery/215284999/OnDemand-UIUX-Design",
+          "url": "[https://www.behance.net/gallery/215284999/OnDemand-UIUX-Design](https://www.behance.net/gallery/215284999/OnDemand-UIUX-Design)",
           "type": "behance"
         },
         {
           "label": "Apresentação Comercial (Behance)",
-          "url": "https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial",
+          "url": "[https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial](https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial)",
           "type": "behance"
         }
       ]
@@ -196,6 +206,7 @@
       "relevance": 2,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Tecnologia"],
       "description": "Plataforma de inteligência e segurança digital desenvolvida em equipe para o processo seletivo da Loopis Empresa Júnior. Reúne um feed de notícias dinâmico sobre cibersegurança (via NewsAPI), um verificador de links suspeitos integrado ao Google Safe Browsing e um glossário interativo de termos técnicos. O backend foi desenvolvido em Node.js com Express, protegendo as chaves de API, enquanto o frontend utiliza HTML5, CSS3 e JavaScript puro.",
       "tags": ["Node.js", "JavaScript", "Segurança Digital", "API", "Backend"],
       "image": {
@@ -206,7 +217,7 @@
       "links": [
         {
           "label": "Repositório GitHub",
-          "url": "https://github.com/Francieverton/SecureFeed",
+          "url": "[https://github.com/Francieverton/SecureFeed](https://github.com/Francieverton/SecureFeed)",
           "type": "github"
         }
       ]
@@ -224,6 +235,7 @@
       "relevance": 2,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Tecnologia"],
       "description": "Sistema desenvolvido em Java para a disciplina de Programação Orientada a Objetos. A aplicação gerencia o transporte institucional, permitindo o cadastro de veículos e motoristas, a criação de rotas e a organização das operações de deslocamento.",
       "tags": ["Java", "POO", "Backend"],
       "image": {
@@ -234,7 +246,7 @@
       "links": [
         {
           "label": "Repositório GitHub",
-          "url": "https://github.com/POO-ADS-IFPB-CZ/projeto-final-unirota",
+          "url": "[https://github.com/POO-ADS-IFPB-CZ/projeto-final-unirota](https://github.com/POO-ADS-IFPB-CZ/projeto-final-unirota)",
           "type": "github"
         }
       ]
@@ -252,6 +264,7 @@
       "relevance": 3,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Tecnologia"],
       "description": "Aplicação web para consulta de informações meteorológicas em tempo real. Desenvolvida com fins educacionais, demonstra o consumo de APIs externas com JavaScript puro — sem frameworks — incluindo tratamento de erros e apresentação dos dados de forma limpa e responsiva.",
       "tags": ["JavaScript", "API", "HTML", "CSS", "Web"],
       "image": {
@@ -262,7 +275,7 @@
       "links": [
         {
           "label": "Repositório GitHub",
-          "url": "https://github.com/F-Bernardo-09/consulta-climatica-api",
+          "url": "[https://github.com/F-Bernardo-09/consulta-climatica-api](https://github.com/F-Bernardo-09/consulta-climatica-api)",
           "type": "github"
         }
       ]
@@ -280,6 +293,7 @@
       "relevance": 2,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Comunicação", "Design"],
       "description": "Projeto de conclusão do curso técnico em Administração, criado em equipe com o objetivo de conectar empresários locais à comunidade de Lavras da Mangabeira (CE). O Pod Adm transformou conversas sobre gestão em conteúdo acessível, trazendo histórias reais de quem empreende na região. Trabalhei na criação da identidade do projeto e na gestão das redes sociais (Instagram e YouTube) para ampliar o alcance das publicações.",
       "tags": ["Identidade Visual", "Redes Sociais", "Comunicação", "Gestão"],
       "image": {
@@ -290,7 +304,7 @@
       "links": [
         {
           "label": "Canal no YouTube",
-          "url": "https://www.youtube.com/@PODADM",
+          "url": "[https://www.youtube.com/@PODADM](https://www.youtube.com/@PODADM)",
           "type": "youtube"
         }
       ]
@@ -308,6 +322,7 @@
       "relevance": 2,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Tecnologia", "Pesquisa"],
       "description": "Projeto de iniciação científica desenvolvido durante o ensino médio, que chegou à etapa estadual do Ceará Científico. A proposta era um protótipo de hardware e software capaz de medir o consumo real de energia de aparelhos eletrônicos em tempo real e, cruzando os dados com as tarifas da distribuidora, converter as informações técnicas em valores financeiros. O objetivo era tornar o consumo invisível de energia algo compreensível para qualquer pessoa, promovendo um uso mais consciente dos recursos.",
       "tags": [
         "IoT",
@@ -324,7 +339,7 @@
       "links": [
         {
           "label": "Documentação (Drive)",
-          "url": "https://drive.google.com/file/d/12Z_0pXdTYdONDs7RVVqX5tvyzi7Ld8pP/view?usp=sharing",
+          "url": "[https://drive.google.com/file/d/12Z_0pXdTYdONDs7RVVqX5tvyzi7Ld8pP/view?usp=sharing](https://drive.google.com/file/d/12Z_0pXdTYdONDs7RVVqX5tvyzi7Ld8pP/view?usp=sharing)",
           "type": "drive"
         }
       ]
@@ -342,6 +357,7 @@
       "relevance": 3,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Comunicação", "Design"],
       "description": "Competição cultural entre seis turmas, cada uma apresentando uma obra literária de forma artística. A turma conquistou o terceiro lugar. Participei como narrador da peça e contribuí na produção e no design gráfico das peças de comunicação do projeto.",
       "tags": ["Design Gráfico", "Produção Cultural", "Comunicação"],
       "image": {
@@ -352,7 +368,7 @@
       "links": [
         {
           "label": "Registro do projeto (Drive)",
-          "url": "https://drive.google.com/drive/folders/1fN-FGvwnq8aUWyln5FZRey3RfVnuZb7Z?usp=drive_link",
+          "url": "[https://drive.google.com/drive/folders/1fN-FGvwnq8aUWyln5FZRey3RfVnuZb7Z?usp=drive_link](https://drive.google.com/drive/folders/1fN-FGvwnq8aUWyln5FZRey3RfVnuZb7Z?usp=drive_link)",
           "type": "drive"
         }
       ]
@@ -370,6 +386,7 @@
       "relevance": 3,
       "featured": false,
       "status": "Concluído",
+      "categories": ["Comunicação", "Design"],
       "description": "A Feira de Línguas foi uma competição cultural entre turmas do segundo ano, promovida pela área de linguagens da instituição. Cada turma apresentou aspectos culturais de forma criativa — cobrindo história, culinária, literatura, dança e festas típicas. A turma conquistou o primeiro lugar. Fui responsável pela gestão das mídias digitais do projeto, criando conteúdo para as campanhas de divulgação e coordenando as plataformas utilizadas para promover o evento.",
       "tags": [
         "Comunicação",
@@ -385,7 +402,7 @@
       "links": [
         {
           "label": "Registro do projeto (Drive)",
-          "url": "https://drive.google.com/drive/folders/16JIAd-0KZYwGgDb7FYEEHPWO1eBXMHv2?usp=sharing",
+          "url": "[https://drive.google.com/drive/folders/16JIAd-0KZYwGgDb7FYEEHPWO1eBXMHv2?usp=sharing](https://drive.google.com/drive/folders/16JIAd-0KZYwGgDb7FYEEHPWO1eBXMHv2?usp=sharing)",
           "type": "drive"
         }
       ]
