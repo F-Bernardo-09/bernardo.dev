@@ -1,12 +1,12 @@
 import Hero from "../components/Hero/Hero.wip";
-import Projects from "../components/Projects/Projects";
 import Contato from "../components/Contact/Contact";
+import ProjectsPreview from "../components/ProjectsPreview/ProjectsPreview";
 
 function HomePage() {
   return (
     <>
       <Hero />
-      <Projects />
+      <ProjectsPreview />
       <Contato />
     </>
   );
