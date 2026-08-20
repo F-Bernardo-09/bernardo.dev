@@ -178,5 +178,12 @@
     "copyright": "2025 – 2026 / Bernardo Alencar",
     "viewProjectLabel": "Ver Projeto",
     "ariaLabel": "Rodapé do portfólio de Bernardo Alencar"
+  },
+
+  "notFound": {
+    "code": "404",
+    "message": "A página que você procura não existe ou foi movida.",
+    "buttonLabel": "Voltar para o início",
+    "buttonAriaLabel": "Voltar para a página inicial"
   }
 }
