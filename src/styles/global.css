@@ -39,7 +39,7 @@
 
   /* Bordas e Raios */
   --border-default: 1px solid var(--border-color);
-  --border-accent: 3px solid var(--accent-green);
+  --border-accent: 1px solid var(--accent-green);
 
   --radius-card: 15px;
   --radius-pill: 50px;
