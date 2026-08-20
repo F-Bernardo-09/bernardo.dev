@@ -14,89 +14,97 @@ const StyledButton = styled.a`
   position: relative;
   display: inline-flex;
   align-items: center;
-  height: 3rem;
-  min-width: 12rem;
+  gap: 0.75rem;
+  border: var(--border-accent);
   cursor: pointer;
-  outline: none;
-  border: 0;
-  vertical-align: middle;
-  text-decoration: none;
-  background: transparent;
-  padding: 0;
-  font-size: inherit;
-  border-radius: 1.625rem;
+  background-color: transparent;
+  color: var(--accent-green);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-medium);
+  line-height: 1;
+  padding: calc(0.8rem - 2px) 1.5rem calc(0.8rem - 2px) 1.5rem;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 
-  .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3rem;
-    height: 3rem;
-    background: var(--accent-green);
-    border-radius: 1.625rem;
-    box-shadow: var(--shadow-button);
-    z-index: 1;
-  }
-
-  .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: var(--bg-dark);
-  }
-
-  .icon.arrow {
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: -0.29rem;
-      right: 0.0625rem;
-      width: 0.625rem;
-      height: 0.625rem;
-      border-top: 0.125rem solid var(--bg-dark);
-      border-right: 0.125rem solid var(--bg-dark);
-      transform: rotate(45deg);
-    }
-  }
-
-  .button-text {
-    transition: color 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    z-index: 2;
-    padding: 0 1.5rem 0 3.75rem;
-    white-space: nowrap;
-    color: var(--text-primary);
-    font-family: var(--font-family-secondary);
+  &:hover,
+  &:focus-visible {
+    background-color: var(--accent-green);
+    color: var(--text-dark);
     font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-body);
-    text-transform: uppercase;
   }
 
-  &:hover .circle,
-  &:focus-visible .circle {
-    width: 100%;
+  &:focus-visible {
+    outline: 2px solid var(--accent-green);
+    outline-offset: 3px;
   }
 
-  &:hover .icon.arrow,
-  &:focus-visible .icon.arrow {
-    background: var(--bg-dark);
-    transform: translate(1rem, 0);
+  .button__icon-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    color: var(--accent-green);
+    background-color: transparent;
+
+    border-radius: var(--radius-circle);
+    overflow: hidden;
+
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease,
+      color 0.3s ease;
   }
 
-  &:hover .button-text,
-  &:focus-visible .button-text {
-    color: var(--bg-dark);
+  &:hover .button__icon-wrapper,
+  &:focus-visible .button__icon-wrapper {
+    color: var(--accent-green);
+    background-color: var(--text-dark);
+    border-color: var(--text-dark);
+  }
+
+  .button__icon-svg {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+
+  &:hover .button__icon-svg:first-child,
+  &:focus-visible .button__icon-svg:first-child {
+    transform: translate(150%, -150%);
+  }
+
+  &:hover .button__icon-svg--copy,
+  &:focus-visible .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
   }
 `;
+
+const ArrowIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 14 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+    width="10"
+  >
+    <path
+      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+      fill="currentColor"
+    />
+  </svg>
+);
 
 export default function Button<C extends ElementType = "a">({
   as,
@@ -107,10 +115,11 @@ export default function Button<C extends ElementType = "a">({
 
   return (
     <StyledButton as={Component} {...rest}>
-      <span className="circle" aria-hidden="true">
-        <span className="icon arrow" />
+      {children}
+      <span className="button__icon-wrapper">
+        <ArrowIcon className="button__icon-svg" />
+        <ArrowIcon className="button__icon-svg button__icon-svg--copy" />
       </span>
-      <span className="button-text">{children}</span>
     </StyledButton>
   );
 }
