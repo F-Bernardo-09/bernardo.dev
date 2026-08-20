@@ -42,22 +42,22 @@
       "links": [
         {
           "label": "Vídeo de apresentação",
-          "url": "[https://youtu.be/I9n7P0TobuA?si=RlNl5Vi4MLg8qoRl](https://youtu.be/I9n7P0TobuA?si=RlNl5Vi4MLg8qoRl)",
+          "url": "https://youtu.be/I9n7P0TobuA?si=RlNl5Vi4MLg8qoRl",
           "type": "video"
         },
         {
           "label": "Drive do projeto",
-          "url": "[https://drive.google.com/drive/folders/1cUSWHM00haRCz9W2JjrlQv6j9zrjWJj2?usp=drive_link](https://drive.google.com/drive/folders/1cUSWHM00haRCz9W2JjrlQv6j9zrjWJj2?usp=drive_link)",
+          "url": "https://drive.google.com/drive/folders/1cUSWHM00haRCz9W2JjrlQv6j9zrjWJj2?usp=drive_link",
           "type": "drive"
         },
         {
           "label": "Identidade Visual (Behance)",
-          "url": "[https://www.behance.net/gallery/239086931/Verde-Arido-Identidade-Visual](https://www.behance.net/gallery/239086931/Verde-Arido-Identidade-Visual)",
+          "url": "https://www.behance.net/gallery/239086931/Verde-Arido-Identidade-Visual",
           "type": "behance"
         },
         {
           "label": "Instagram do projeto",
-          "url": "[https://www.instagram.com/verde_arido/](https://www.instagram.com/verde_arido/)",
+          "url": "https://www.instagram.com/verde_arido/",
           "type": "instagram"
         }
       ]
@@ -92,12 +92,12 @@
       "links": [
         {
           "label": "Trailer do jogo",
-          "url": "[https://youtu.be/VoEYXYlqTD0?si=G-nZ3TCGuX7iIBCh](https://youtu.be/VoEYXYlqTD0?si=G-nZ3TCGuX7iIBCh)",
+          "url": "https://youtu.be/VoEYXYlqTD0?si=G-nZ3TCGuX7iIBCh",
           "type": "video"
         },
         {
           "label": "Instagram do estúdio",
-          "url": "[https://www.instagram.com/mandacaru.studio_/](https://www.instagram.com/mandacaru.studio_/)",
+          "url": "https://www.instagram.com/mandacaru.studio_/",
           "type": "instagram"
         }
       ]
@@ -149,12 +149,12 @@
       "links": [
         {
           "label": "Proposta de ID Visual (Behance)",
-          "url": "[https://www.behance.net/gallery/228437153/Plot-Twist-Club-Proposta-de-Id-Visual](https://www.behance.net/gallery/228437153/Plot-Twist-Club-Proposta-de-Id-Visual)",
+          "url": "https://www.behance.net/gallery/228437153/Plot-Twist-Club-Proposta-de-Id-Visual",
           "type": "behance"
         },
         {
           "label": "Nova ID Visual (Behance)",
-          "url": "[https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual](https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual)",
+          "url": "https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual",
           "type": "behance"
         }
       ]
@@ -183,12 +183,12 @@
       "links": [
         {
           "label": "UI/UX Design (Behance)",
-          "url": "[https://www.behance.net/gallery/215284999/OnDemand-UIUX-Design](https://www.behance.net/gallery/215284999/OnDemand-UIUX-Design)",
+          "url": "https://www.behance.net/gallery/215284999/OnDemand-UIUX-Design",
           "type": "behance"
         },
         {
           "label": "Apresentação Comercial (Behance)",
-          "url": "[https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial](https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial)",
+          "url": "https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial",
           "type": "behance"
         }
       ]
@@ -217,7 +217,7 @@
       "links": [
         {
           "label": "Repositório GitHub",
-          "url": "[https://github.com/Francieverton/SecureFeed](https://github.com/Francieverton/SecureFeed)",
+          "url": "https://github.com/Francieverton/SecureFeed",
           "type": "github"
         }
       ]
@@ -246,7 +246,7 @@
       "links": [
         {
           "label": "Repositório GitHub",
-          "url": "[https://github.com/POO-ADS-IFPB-CZ/projeto-final-unirota](https://github.com/POO-ADS-IFPB-CZ/projeto-final-unirota)",
+          "url": "https://github.com/POO-ADS-IFPB-CZ/projeto-final-unirota",
           "type": "github"
         }
       ]
@@ -275,7 +275,7 @@
       "links": [
         {
           "label": "Repositório GitHub",
-          "url": "[https://github.com/F-Bernardo-09/consulta-climatica-api](https://github.com/F-Bernardo-09/consulta-climatica-api)",
+          "url": "https://github.com/F-Bernardo-09/consulta-climatica-api",
           "type": "github"
         }
       ]
@@ -304,7 +304,7 @@
       "links": [
         {
           "label": "Canal no YouTube",
-          "url": "[https://www.youtube.com/@PODADM](https://www.youtube.com/@PODADM)",
+          "url": "https://www.youtube.com/@PODADM",
           "type": "youtube"
         }
       ]
@@ -339,7 +339,7 @@
       "links": [
         {
           "label": "Documentação (Drive)",
-          "url": "[https://drive.google.com/file/d/12Z_0pXdTYdONDs7RVVqX5tvyzi7Ld8pP/view?usp=sharing](https://drive.google.com/file/d/12Z_0pXdTYdONDs7RVVqX5tvyzi7Ld8pP/view?usp=sharing)",
+          "url": "https://drive.google.com/file/d/12Z_0pXdTYdONDs7RVVqX5tvyzi7Ld8pP/view?usp=sharing",
           "type": "drive"
         }
       ]
@@ -368,7 +368,7 @@
       "links": [
         {
           "label": "Registro do projeto (Drive)",
-          "url": "[https://drive.google.com/drive/folders/1fN-FGvwnq8aUWyln5FZRey3RfVnuZb7Z?usp=drive_link](https://drive.google.com/drive/folders/1fN-FGvwnq8aUWyln5FZRey3RfVnuZb7Z?usp=drive_link)",
+          "url": "https://drive.google.com/drive/folders/1fN-FGvwnq8aUWyln5FZRey3RfVnuZb7Z?usp=drive_link",
           "type": "drive"
         }
       ]
@@ -402,7 +402,7 @@
       "links": [
         {
           "label": "Registro do projeto (Drive)",
-          "url": "[https://drive.google.com/drive/folders/16JIAd-0KZYwGgDb7FYEEHPWO1eBXMHv2?usp=sharing](https://drive.google.com/drive/folders/16JIAd-0KZYwGgDb7FYEEHPWO1eBXMHv2?usp=sharing)",
+          "url": "https://drive.google.com/drive/folders/16JIAd-0KZYwGgDb7FYEEHPWO1eBXMHv2?usp=sharing",
           "type": "drive"
         }
       ]

@@ -61,16 +61,15 @@ const ProjectCardWrapper = styled.article`
   background-color: transparent;
 
   transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+    transform 0.4s ease-out,
+    box-shadow 0.4s ease-out,
+    border-color 0.4s ease-out;
 
   &:hover {
-    border: var(--border-accent);
     border-color: var(--accent-green);
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px
-      color-mix(in srgb, var(--accent-green) 10%, transparent);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px
+      color-mix(in srgb, var(--accent-green) 4%, transparent);
   }
 `;
 
@@ -82,17 +81,16 @@ const ImageWrapper = styled.div`
 
   &::after {
     content: "";
-
     position: absolute;
     inset: 0;
-
-    background: color-mix(in srgb, var(--accent-green) 10%, transparent);
-
+    background: linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--accent-green) 16%, transparent),
+      transparent 65%
+    );
     opacity: 0;
     pointer-events: none;
-
-    transition: opacity 0.35s ease;
-
+    transition: opacity 0.45s ease-out;
     z-index: 1;
   }
 
@@ -106,34 +104,28 @@ const ProjectImage = styled.img`
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-
   transition:
-    transform 0.4s ease,
-    filter 0.35s ease;
+    transform 0.5s ease-out,
+    filter 0.45s ease-out;
 
   ${ImageWrapper}:hover & {
-    transform: scale(1.04);
-    filter: brightness(0.78);
+    transform: scale(1.02);
+    filter: brightness(0.92);
   }
 `;
 
 const LinksOverlay = styled.div<{ $visible: boolean }>`
   position: absolute;
   inset: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-sm);
-
+  gap: var(--spacing-xs);
   background: color-mix(in srgb, var(--accent-green) 10%, transparent);
-  backdrop-filter: blur(2px);
-
+  backdrop-filter: blur(1px);
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   pointer-events: ${({ $visible }) => ($visible ? "auto" : "none")};
-
-  transition: opacity 0.25s ease;
-
+  transition: opacity 0.3s ease-out;
   z-index: 2;
 
   ${ImageWrapper}:hover & {
@@ -146,22 +138,17 @@ const IconLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 50px;
-  height: 50px;
-
+  width: 42px;
+  height: 42px;
   border-radius: var(--radius-circle);
-
-  background-color: var(--bg-dark);
+  background-color: color-mix(in srgb, var(--bg-dark) 60%, transparent);
   color: var(--text-primary);
-
   transition:
-    transform 0.2s ease,
-    color 0.2s ease,
-    background-color 0.2s ease;
+    transform 0.25s ease-out,
+    color 0.25s ease-out,
+    background-color 0.25s ease-out;
 
   &:hover {
-    transform: translateY(-2px) scale(1.08);
     background-color: var(--accent-green);
     color: var(--text-dark);
   }
@@ -172,14 +159,14 @@ const IconLink = styled.a`
   }
 
   svg {
-    width: 22px;
-    height: 22px;
+    width: 19px;
+    height: 19px;
+    opacity: 1;
   }
 `;
 
 const ProjectInfo = styled.div`
   padding: var(--spacing-md);
-
   background-color: var(--border-color);
   border-radius: 0 0 var(--radius-card) var(--radius-card);
 
@@ -190,8 +177,13 @@ const ProjectInfo = styled.div`
 
 const ProjectTitle = styled.h2`
   margin-bottom: var(--spacing-sm);
-
   font-size: var(--font-size-md);
+  color: var(--text-primary);
+  transition: color 0.3s ease-out;
+
+  ${ProjectCardWrapper}:hover & {
+    color: var(--accent-green);
+  }
 
   @media (max-width: 480px) {
     font-size: var(--font-size-base);
@@ -202,10 +194,8 @@ const TagList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-xs);
-
   padding: 0;
   margin: 0;
-
   list-style: none;
 `;
 
@@ -213,12 +203,19 @@ const Tag = styled.li`
   padding: 4px 12px;
   border: 1px solid var(--text-secondary);
   border-radius: var(--radius-pill);
-
   color: var(--text-secondary);
   font-family: var(--font-family-base);
   font-size: var(--font-size-sm);
-
   white-space: nowrap;
+
+  transition:
+    border-color 0.3s ease-out,
+    color 0.3s ease-out;
+
+  ${ProjectCardWrapper}:hover & {
+    border-color: var(--accent-green);
+    color: var(--text-primary);
+  }
 
   @media (max-width: 480px) {
     padding: 3px 10px;
