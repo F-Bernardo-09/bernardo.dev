@@ -167,7 +167,7 @@ const IconLink = styled.a`
 
 const ProjectInfo = styled.div`
   padding: var(--spacing-md);
-  background-color: var(--border-color);
+  background-color: var(--bg-dark-accent);
   border-radius: 0 0 var(--radius-card) var(--radius-card);
 
   @media (max-width: 480px) {
