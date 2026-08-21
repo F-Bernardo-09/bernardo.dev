@@ -1,14 +1,15 @@
-import TimelineSection from "../components/TimelineSection/TimelineSection";
 import About from "../components/About/About.wip";
 import SkillsCarousell from "../components/SkillsCarousell/SkillsCarousell";
+import Education from "../components/Education/Education";
+import ExperienceSection from "../components/ExperienceSection/ExperienceSection";
 
 function AboutPage() {
   return (
     <>
       <About />
       <SkillsCarousell />
-      <TimelineSection section="experience" />
-      <TimelineSection section="education" />
+      <Education />
+      <ExperienceSection />
     </>
   );
 }
