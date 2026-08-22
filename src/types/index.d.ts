@@ -38,3 +38,12 @@ export interface Company {
   summary: string;
   roles: Role[];
 }
+
+/* --- Variáveis de ambiente --- */
+interface ImportMetaEnv {
+  readonly VITE_WEB3FORMS_ACCESS_KEY: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
