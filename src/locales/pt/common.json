@@ -167,6 +167,16 @@
   "contact": {
     "title": "Contato",
     "subtitle": "Vamos conversar",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Seu nome",
+      "email": "E-mail",
+      "placeholder": "Seu e-mail",
+      "submit": "Quero conversar",
+      "sending": "Enviando...",
+      "success": "Recebi seu e-mail, em breve entro em contato!",
+      "error": "Não foi possível enviar agora. Tente novamente em instantes."
+    },
     "social": [
       {
         "name": "Behance",
