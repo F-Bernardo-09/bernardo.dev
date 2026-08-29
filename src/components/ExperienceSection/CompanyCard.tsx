@@ -3,7 +3,7 @@ import { getOverallRange } from "../../utils/dateRange";
 import { RangeText } from "./RangeText";
 import { CompanyLogo } from "./CompanyLogo";
 import RoleTrajectory from "./RoleTrajectory";
-import type { Company } from "../../types";
+import type { Company } from "../../types/models";
 
 const Card = styled.article<{ $expanded: boolean }>`
   position: relative;

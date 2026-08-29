@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { formatRange } from "../../utils/dateRange";
 import { RangeText } from "./RangeText";
-import type { Role } from "../../types";
+import type { Role } from "../../types/models";
 
 const TrajectoryWrapper = styled.div<{ $expanded: boolean }>`
   display: grid;

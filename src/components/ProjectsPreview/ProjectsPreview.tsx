@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
-import ProjectCard, { type ProjectData } from "../ProjectCard/ProjectCard";
-import Button from "../Button/Button.wip";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import type { ProjectData } from "../../types/models";
+import Button from "../Button/Button";
 
 const ProjectsSection = styled.section``;
 

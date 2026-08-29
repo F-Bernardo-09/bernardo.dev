@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
 import CompanyCard from "./CompanyCard";
-import type { Company } from "../../types";
+import type { Company } from "../../types/models";
 
 const Section = styled.section`
   padding: var(--spacing-xl) 0;

@@ -8,34 +8,7 @@ import {
 } from "react-icons/fa";
 import { SiBehance } from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
-
-export interface ProjectData {
-  id: string;
-  title: string;
-  subtitle: string;
-  period: {
-    start: string;
-    end: string | null;
-    label: string;
-  };
-  context: string;
-  relevance: number;
-  featured: boolean;
-  status: string;
-  categories: string[];
-  description: string;
-  tags: string[];
-  image: {
-    src: string;
-    alt: string;
-  };
-  primaryLink: number | null;
-  links: Array<{
-    label: string;
-    url: string;
-    type: string;
-  }>;
-}
+import type { ProjectData } from "../../types/models";
 
 interface ProjectCardProps {
   project: ProjectData;

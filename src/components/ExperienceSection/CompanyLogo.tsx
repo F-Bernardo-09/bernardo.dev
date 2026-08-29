@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import type { Company } from "../../types";
+import type { Company } from "../../types/models";
 
 const Logo = styled.div`
   flex-shrink: 0;
