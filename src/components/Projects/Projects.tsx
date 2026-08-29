@@ -2,9 +2,9 @@ import { useMemo, useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
-import ProjectCard from "../ProjectCard/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import type { ProjectData } from "../../types/models";
-import ProjectFilter from "../ProjectFilter/ProjectFilter";
+import ProjectFilter from "./ProjectFilter";
 
 const ProjectsSection = styled.section``;
 

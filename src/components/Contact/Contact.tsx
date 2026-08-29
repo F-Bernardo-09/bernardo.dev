@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
-import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "./ContactForm";
 
 const ContactSection = styled.section`
   padding: var(--spacing-xl) 0;

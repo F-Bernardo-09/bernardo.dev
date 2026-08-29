@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
-import ProjectCard from "../ProjectCard/ProjectCard";
+import ProjectCard from "./ProjectCard";
 import type { ProjectData } from "../../types/models";
 import Button from "../Button/Button";
 

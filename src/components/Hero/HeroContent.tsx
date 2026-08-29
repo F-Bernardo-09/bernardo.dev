@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import SocialLinks from "../SocialLinks/SocialLinks";
+import SocialLinks from "./SocialLinks";
 import Button from "../Button/Button";
 
 const Wrapper = styled.div`

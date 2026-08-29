@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HeroContent from "../HeroContent/HeroContent";
+import HeroContent from "./HeroContent";
 
 const HeroSection = styled.section`
   min-height: calc(100vh - var(--header-height, 80px));

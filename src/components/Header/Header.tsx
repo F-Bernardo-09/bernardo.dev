@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import NaveMenu from "../NaveMenu/NaveMenu";
-import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import LangSwitcher from "../LangSwitcher/LangSwitcher";
+import NaveMenu from "./NaveMenu";
+import ThemeToggle from "./ThemeToggle";
+import LangSwitcher from "./LangSwitcher";
 
 const HeaderWrapper = styled.header`
   margin: 0;
