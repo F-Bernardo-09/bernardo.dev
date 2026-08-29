@@ -1,22 +1,7 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
-
-interface EducationPeriod {
-  start: string;
-  end: string | null;
-  label: string;
-}
-
-interface EducationItem {
-  id: string;
-  role: string;
-  organization: string;
-  location: string;
-  period: EducationPeriod;
-  description: string;
-  ariaLabel: string;
-}
+import type { EducationItem } from "../../types/models";
 
 const EducationSection = styled.section`
   padding: var(--spacing-xl) 0;
