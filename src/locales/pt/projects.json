@@ -35,7 +35,7 @@
         "Mobile"
       ],
       "image": {
-        "src": "src/assets/project-name.jpg",
+        "src": "/projects/project-name.jpg",
         "alt": "Interface do aplicativo Verde Árido mostrando o painel de monitoramento de palma forrageira no semiárido"
       },
       "primaryLink": 2,
@@ -85,7 +85,7 @@
         "Folclore Brasileiro"
       ],
       "image": {
-        "src": "src/assets/project-name.jpg",
+        "src": "/projects/project-name.jpg",
         "alt": "Tela de jogo do Guardiões da Bandeira exibindo mapa tático com personagens do folclore brasileiro"
       },
       "primaryLink": 0,
@@ -119,7 +119,7 @@
       "description": "Projeto premiado com o 1º lugar na competição intercurso da Semana da Tecnologia do IFPB. A proposta consiste na transformação de resíduos plásticos gerados pela própria instituição em filamentos para impressão 3D, para uso nos laboratórios de prototipagem. A análise de viabilidade foi reconhecida pela banca avaliadora como um dos pontos mais sólidos do trabalho, assim como o potencial de impacto ambiental. O projeto demonstra como o reaproveitamento de materiais pode suprir demandas técnicas reais de forma eficiente e de baixo custo.",
       "tags": ["Sustentabilidade", "Prototipagem", "Apresentação Técnica"],
       "image": {
-        "src": "src/assets/project-name.jpg",
+        "src": "/projects/project-name.jpg",
         "alt": "Apresentação do projeto RePlast3D mostrando o processo de transformação de plástico reciclado em filamento para impressão 3D"
       },
       "primaryLink": null,
@@ -142,7 +142,7 @@
       "description": "O Plot Twist Club é uma iniciativa de extensão do IFPB voltada à democratização do acesso ao cinema e ao estímulo ao pensamento crítico entre estudantes da rede pública e a comunidade local. Com sessões semanais gratuitas e foco em produções nacionais, o projeto promove debates que conectam as obras cinematográficas a questões sociais, históricas e de cidadania. Trabalhei no desenvolvimento da identidade visual do projeto, incluindo uma proposta inicial e uma versão revisada.",
       "tags": ["Identidade Visual", "Branding", "Extensão Universitária"],
       "image": {
-        "src": "/assets/projects/plot-twist-club.jpg",
+        "src": "/projects/plot-twist-club.jpg",
         "alt": "Identidade visual do Plot Twist Club com elementos gráficos relacionados a cinema e cultura"
       },
       "primaryLink": 0,
@@ -176,7 +176,7 @@
       "description": "O OnDemand é um projeto de aplicativo focado em conectar profissionais de serviços a clientes de forma prática. O trabalho envolveu a criação da identidade visual — logotipo e paleta de cores com foco em transmitir confiança e agilidade — e o desenvolvimento das interfaces no Figma. O fluxo de agendamento foi desenhado para ser simples e funcional para qualquer perfil de usuário.",
       "tags": ["UI/UX", "Figma", "Identidade Visual", "Mobile"],
       "image": {
-        "src": "/assets/projects/ondemand.jpg",
+        "src": "/projects/ondemand.jpg",
         "alt": "Telas do aplicativo OnDemand mostrando o fluxo de agendamento de serviços"
       },
       "primaryLink": 0,
@@ -210,7 +210,7 @@
       "description": "Plataforma de inteligência e segurança digital desenvolvida em equipe para o processo seletivo da Loopis Empresa Júnior. Reúne um feed de notícias dinâmico sobre cibersegurança (via NewsAPI), um verificador de links suspeitos integrado ao Google Safe Browsing e um glossário interativo de termos técnicos. O backend foi desenvolvido em Node.js com Express, protegendo as chaves de API, enquanto o frontend utiliza HTML5, CSS3 e JavaScript puro.",
       "tags": ["Node.js", "JavaScript", "Segurança Digital", "API", "Backend"],
       "image": {
-        "src": "/assets/projects/securefeed.jpg",
+        "src": "/projects/securefeed.jpg",
         "alt": "Interface da plataforma SecureFeed exibindo feed de notícias de cibersegurança e verificador de links"
       },
       "primaryLink": 0,
@@ -239,7 +239,7 @@
       "description": "Sistema desenvolvido em Java para a disciplina de Programação Orientada a Objetos. A aplicação gerencia o transporte institucional, permitindo o cadastro de veículos e motoristas, a criação de rotas e a organização das operações de deslocamento.",
       "tags": ["Java", "POO", "Backend"],
       "image": {
-        "src": "/assets/projects/unirota.jpg",
+        "src": "/projects/unirota.jpg",
         "alt": "Interface do sistema UniRota mostrando o painel de cadastro de rotas e veículos"
       },
       "primaryLink": 0,
@@ -268,7 +268,7 @@
       "description": "Aplicação web para consulta de informações meteorológicas em tempo real. Desenvolvida com fins educacionais, demonstra o consumo de APIs externas com JavaScript puro — sem frameworks — incluindo tratamento de erros e apresentação dos dados de forma limpa e responsiva.",
       "tags": ["JavaScript", "API", "HTML", "CSS", "Web"],
       "image": {
-        "src": "/assets/projects/consulta-climatica.jpg",
+        "src": "/projects/consulta-climatica.jpg",
         "alt": "Tela da aplicação Consulta Climática exibindo temperatura, umidade e condições do tempo para uma cidade pesquisada"
       },
       "primaryLink": 0,
@@ -297,7 +297,7 @@
       "description": "Projeto de conclusão do curso técnico em Administração, criado em equipe com o objetivo de conectar empresários locais à comunidade de Lavras da Mangabeira (CE). O Pod Adm transformou conversas sobre gestão em conteúdo acessível, trazendo histórias reais de quem empreende na região. Trabalhei na criação da identidade do projeto e na gestão das redes sociais (Instagram e YouTube) para ampliar o alcance das publicações.",
       "tags": ["Identidade Visual", "Redes Sociais", "Comunicação", "Gestão"],
       "image": {
-        "src": "/assets/projects/pod-adm.jpg",
+        "src": "/projects/pod-adm.jpg",
         "alt": "Arte de capa do Pod Adm com identidade visual do podcast de administração"
       },
       "primaryLink": 0,
@@ -332,7 +332,7 @@
         "Iniciação Científica"
       ],
       "image": {
-        "src": "/assets/projects/smart-energy.jpg",
+        "src": "/projects/smart-energy.jpg",
         "alt": "Protótipo do Smart Energy com placa de monitoramento conectada a tomada e display de consumo em tempo real"
       },
       "primaryLink": 0,
@@ -361,7 +361,7 @@
       "description": "Competição cultural entre seis turmas, cada uma apresentando uma obra literária de forma artística. A turma conquistou o terceiro lugar. Participei como narrador da peça e contribuí na produção e no design gráfico das peças de comunicação do projeto.",
       "tags": ["Design Gráfico", "Produção Cultural", "Comunicação"],
       "image": {
-        "src": "/assets/projects/semana-literaria.jpg",
+        "src": "/projects/semana-literaria.jpg",
         "alt": "Registro da apresentação teatral da Semana Literária com a turma em cena"
       },
       "primaryLink": 0,
@@ -395,7 +395,7 @@
         "Gestão de Projetos"
       ],
       "image": {
-        "src": "/assets/projects/feira-de-linguas.jpg",
+        "src": "/projects/feira-de-linguas.jpg",
         "alt": "Registro da Feira de Línguas com decoração temática e apresentação cultural da turma vencedora"
       },
       "primaryLink": 0,

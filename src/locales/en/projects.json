@@ -1,16 +1,21 @@
 {
   "title": "Projects",
-  "subtitle": "A selection of projects I've worked on",
+  "subtitle": "A selection of the projects I've been part of",
   "viewAllButton": {
     "label": "View All Projects",
     "link": "/pages/projects",
     "ariaLabel": "View the full list of projects"
   },
+  "loadMoreButton": {
+    "label": "Load more projects",
+    "ariaLabel": "Load more projects into the grid"
+  },
+  "filterAllLabel": "All",
   "items": [
     {
       "id": "proj-verde-arido",
       "title": "Verde Árido",
-      "subtitle": "Intelligence and Sustainability in the Semiarid Region",
+      "subtitle": "Intelligence and Sustainability in the Semi-Arid Region",
       "period": {
         "start": "2025-11",
         "end": null,
@@ -20,11 +25,12 @@
       "relevance": 1,
       "featured": true,
       "status": "In progress",
-      "description": "Verde Árido is an Agtech platform focused on strengthening livestock farming in the Brazilian semiarid region, selected for the 14th edition of Campus Mobile. The solution addresses the technological management of forage palm and precision nutrition for livestock, aiming to reduce producers' vulnerability to drought periods. The proposal serves both rural producers directly and agricultural consulting companies, with a business model structured to scale. Through georeferencing and the democratization of data such as the Agricultural Climate Risk Zoning, the project provides accessible technical support for decision-making in the field. The core focus is keeping people on the land and fighting rural exodus.",
+      "categories": ["Technology", "Design"],
+      "description": "Verde Árido is an Agtech platform aimed at strengthening livestock farming in the Brazilian semi-arid region, selected for the 14th edition of Campus Mobile. The solution addresses the technological management of forage cactus and precision nutrition for herds, seeking to reduce producers' vulnerability to drought periods. The proposal serves both rural producers directly and agricultural consulting firms, with a business model structured to scale. Through georeferencing and the democratization of data such as the Climate Risk Agricultural Zoning, the project offers accessible technical support for decision-making in the field. Its central focus is keeping people on the land and combating rural exodus.",
       "tags": ["Agtech", "UI/UX", "Visual Identity", "Social Impact", "Mobile"],
       "image": {
-        "src": "/assets/projects/verde-arido.jpg",
-        "alt": "Verde Árido app interface showing the forage palm monitoring dashboard in the semiarid region"
+        "src": "/projects/project-name.jpg",
+        "alt": "Verde Árido app interface showing the forage cactus monitoring dashboard in the semi-arid region"
       },
       "primaryLink": 2,
       "links": [
@@ -63,7 +69,8 @@
       "relevance": 1,
       "featured": true,
       "status": "In progress",
-      "description": "Guardiões da Bandeira is a mobile strategy and adventure game selected for Game Dev Quest. The project adapts the popular Brazilian game 'Pega Bandeira' (Capture the Flag) into a competitive digital environment rooted in Brazilian folklore. The interface design was built to support limited-vision mechanics and tactical movement, while keeping navigation intuitive during cooperative matches. The visual identity uses stylized 2D art referencing national culture, featuring folklore characters and special powers. The project includes a progression system, individual rankings and a soundtrack based on traditional Brazilian rhythms.",
+      "categories": ["Technology", "Design"],
+      "description": "Guardiões da Bandeira is a mobile strategy and adventure game selected for Game Dev Quest. The project adapts the popular Brazilian game 'Pega Bandeira' (Capture the Flag) into a competitive digital environment rooted in Brazilian folklore. The interface design was built to support limited-vision mechanics and tactical movement, while keeping navigation intuitive during cooperative matches. The visual identity uses stylized 2D art referencing national culture, blending folkloric characters with special powers. The project includes a progression system, individual rankings, and a soundtrack based on traditional Brazilian rhythms.",
       "tags": [
         "Game Dev",
         "UI/UX",
@@ -72,8 +79,8 @@
         "Brazilian Folklore"
       ],
       "image": {
-        "src": "/assets/projects/guardiaoes-da-bandeira.jpg",
-        "alt": "Guardiões da Bandeira game screen showing a tactical map with Brazilian folklore characters"
+        "src": "/projects/project-name.jpg",
+        "alt": "Guardiões da Bandeira gameplay screen showing a tactical map with characters from Brazilian folklore"
       },
       "primaryLink": 0,
       "links": [
@@ -98,15 +105,16 @@
         "end": "2025-12",
         "label": "December 2025"
       },
-      "context": "Technology Week — IFPB Cajazeiras Campus",
+      "context": "Technology Week — IFPB Campus Cajazeiras",
       "relevance": 1,
       "featured": true,
       "status": "Completed",
-      "description": "Project awarded 1st place in the inter-course competition at IFPB's Technology Week. The proposal consists of transforming plastic waste generated by the institution itself into filaments for 3D printing, for use in the prototyping labs. The feasibility analysis was recognized by the judging panel as one of the strongest points of the work, along with its potential environmental impact. The project shows how reusing materials can meet real technical demands efficiently and at low cost.",
+      "categories": ["Research", "Technology"],
+      "description": "A project awarded 1st place in the inter-course competition at IFPB's Technology Week. The proposal turns plastic waste generated by the institution itself into filament for 3D printing, for use in prototyping labs. The evaluating panel recognized the feasibility analysis as one of the strongest points of the work, along with its environmental impact potential. The project shows how reusing materials can meet real technical demands efficiently and at low cost.",
       "tags": ["Sustainability", "Prototyping", "Technical Presentation"],
       "image": {
-        "src": "/assets/projects/replast3d.jpg",
-        "alt": "RePlast3D project presentation showing the process of turning recycled plastic into 3D printing filament"
+        "src": "/projects/project-name.jpg",
+        "alt": "Presentation of the RePlast3D project showing the process of turning recycled plastic into 3D printing filament"
       },
       "primaryLink": null,
       "links": []
@@ -118,27 +126,28 @@
       "period": {
         "start": "2025-01",
         "end": "2025-08",
-        "label": "January — August 2025"
+        "label": "January – August 2025"
       },
-      "context": "Outreach Project — IFPB Cajazeiras Campus",
+      "context": "Outreach Project — IFPB Campus Cajazeiras",
       "relevance": 1,
       "featured": true,
       "status": "Completed",
-      "description": "Plot Twist Club is an IFPB outreach initiative focused on democratizing access to cinema and encouraging critical thinking among public school students and the local community. With free weekly screenings and a focus on national productions, the project promotes discussions connecting films to social, historical and civic issues. I worked on the project's visual identity, including an initial proposal and a revised version.",
+      "categories": ["Design", "Communication"],
+      "description": "Plot Twist Club is an IFPB outreach initiative focused on democratizing access to cinema and encouraging critical thinking among public school students and the local community. With free weekly screenings focused on Brazilian productions, the project drives discussions connecting films to social, historical, and civic issues. I worked on the project's visual identity, including an initial proposal and a revised version.",
       "tags": ["Visual Identity", "Branding", "University Outreach"],
       "image": {
-        "src": "/assets/projects/plot-twist-club.jpg",
+        "src": "/projects/plot-twist-club.jpg",
         "alt": "Plot Twist Club visual identity with graphic elements related to cinema and culture"
       },
       "primaryLink": 0,
       "links": [
         {
-          "label": "Visual ID proposal (Behance)",
+          "label": "Visual Identity Proposal (Behance)",
           "url": "https://www.behance.net/gallery/228437153/Plot-Twist-Club-Proposta-de-Id-Visual",
           "type": "behance"
         },
         {
-          "label": "New visual ID (Behance)",
+          "label": "New Visual Identity (Behance)",
           "url": "https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual",
           "type": "behance"
         }
@@ -157,10 +166,11 @@
       "relevance": 2,
       "featured": false,
       "status": "Completed",
-      "description": "OnDemand is an app project focused on connecting service professionals with clients in a practical way. The work involved creating the visual identity — logo and color palette focused on conveying trust and agility — and designing the interfaces in Figma. The booking flow was designed to be simple and functional for any type of user.",
+      "categories": ["Design", "Technology"],
+      "description": "OnDemand is an app concept focused on connecting service professionals with clients in a practical way. The work included creating the visual identity — a logo and color palette aimed at conveying trust and agility — and designing the interfaces in Figma. The booking flow was designed to be simple and functional for any type of user.",
       "tags": ["UI/UX", "Figma", "Visual Identity", "Mobile"],
       "image": {
-        "src": "/assets/projects/ondemand.jpg",
+        "src": "/projects/ondemand.jpg",
         "alt": "OnDemand app screens showing the service booking flow"
       },
       "primaryLink": 0,
@@ -171,7 +181,7 @@
           "type": "behance"
         },
         {
-          "label": "Business Presentation (Behance)",
+          "label": "Commercial Presentation (Behance)",
           "url": "https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial",
           "type": "behance"
         }
@@ -190,10 +200,11 @@
       "relevance": 2,
       "featured": false,
       "status": "Completed",
-      "description": "Digital intelligence and security platform developed as a team for Loopis Junior Enterprise's selection process. It brings together a dynamic cybersecurity news feed (via NewsAPI), a suspicious link checker integrated with Google Safe Browsing, and an interactive glossary of technical terms. The backend was built in Node.js with Express, keeping API keys secure, while the frontend uses plain HTML5, CSS3 and JavaScript.",
+      "categories": ["Technology"],
+      "description": "A cybersecurity intelligence platform developed as a team for Loopis Junior Enterprise's selection process. It combines a dynamic cybersecurity news feed (via NewsAPI), a suspicious-link checker integrated with Google Safe Browsing, and an interactive glossary of technical terms. The backend was built in Node.js with Express, keeping API keys secure, while the frontend uses plain HTML5, CSS3, and JavaScript.",
       "tags": ["Node.js", "JavaScript", "Digital Security", "API", "Backend"],
       "image": {
-        "src": "/assets/projects/securefeed.jpg",
+        "src": "/projects/securefeed.jpg",
         "alt": "SecureFeed platform interface showing the cybersecurity news feed and link checker"
       },
       "primaryLink": 0,
@@ -218,10 +229,11 @@
       "relevance": 2,
       "featured": false,
       "status": "Completed",
-      "description": "System developed in Java for the Object-Oriented Programming course. The application manages institutional transportation, allowing the registration of vehicles and drivers, route creation and organization of transit operations.",
+      "categories": ["Technology"],
+      "description": "A system built in Java for the Object-Oriented Programming course. The application manages institutional transportation, allowing vehicle and driver registration, route creation, and organization of transit operations.",
       "tags": ["Java", "OOP", "Backend"],
       "image": {
-        "src": "/assets/projects/unirota.jpg",
+        "src": "/projects/unirota.jpg",
         "alt": "UniRota system interface showing the route and vehicle registration panel"
       },
       "primaryLink": 0,
@@ -236,21 +248,22 @@
     {
       "id": "proj-consulta-climatica",
       "title": "Consulta Climática",
-      "subtitle": "Web app consuming a weather API",
+      "subtitle": "Web app with API integration",
       "period": {
         "start": "2025-01",
         "end": "2025-06",
         "label": "2025"
       },
-      "context": "Personal project / educational purposes",
+      "context": "Personal project / for educational purposes",
       "relevance": 3,
       "featured": false,
       "status": "Completed",
-      "description": "Web application for checking real-time weather information. Built for educational purposes, it demonstrates consuming external APIs with plain JavaScript — no frameworks — including error handling and a clean, responsive presentation of the data.",
+      "categories": ["Technology"],
+      "description": "A web application for real-time weather lookups. Built for educational purposes, it demonstrates consuming external APIs with plain JavaScript — no frameworks — including error handling and a clean, responsive presentation of the data.",
       "tags": ["JavaScript", "API", "HTML", "CSS", "Web"],
       "image": {
-        "src": "/assets/projects/consulta-climatica.jpg",
-        "alt": "Consulta Climática app screen showing temperature, humidity and weather conditions for a searched city"
+        "src": "/projects/consulta-climatica.jpg",
+        "alt": "Consulta Climática app screen showing temperature, humidity, and weather conditions for a searched city"
       },
       "primaryLink": 0,
       "links": [
@@ -268,13 +281,14 @@
       "period": {
         "start": "2023-07",
         "end": "2023-12",
-        "label": "July — December 2023"
+        "label": "July – December 2023"
       },
-      "context": "Final Project for the Technical Program in Administration — EEEP",
+      "context": "Final Project, Technical Course in Business Administration — EEEP",
       "relevance": 2,
       "featured": false,
       "status": "Completed",
-      "description": "Final project for the technical program in Administration, created as a team with the goal of connecting local business owners to the community of Lavras da Mangabeira (CE). Pod Adm turned conversations about management into accessible content, bringing real stories from entrepreneurs in the region. I worked on the project's identity and managed its social media (Instagram and YouTube) to expand the reach of its content.",
+      "categories": ["Communication", "Design"],
+      "description": "The final project for a technical course in Business Administration, built as a team to connect local business owners with the community of Lavras da Mangabeira (CE). Pod Adm turned conversations about management into accessible content, bringing real stories from local entrepreneurs. I worked on the project's identity and on managing its social media channels (Instagram and YouTube) to expand its reach.",
       "tags": [
         "Visual Identity",
         "Social Media",
@@ -282,8 +296,8 @@
         "Management"
       ],
       "image": {
-        "src": "/assets/projects/pod-adm.jpg",
-        "alt": "Pod Adm cover art with the podcast's visual identity"
+        "src": "/projects/pod-adm.jpg",
+        "alt": "Pod Adm cover art with the podcast's business administration visual identity"
       },
       "primaryLink": 0,
       "links": [
@@ -301,22 +315,23 @@
       "period": {
         "start": "2022-01",
         "end": "2022-12",
-        "label": "January — December 2022"
+        "label": "January – December 2022"
       },
       "context": "Ceará Científico — State Stage — EEEP",
       "relevance": 2,
       "featured": false,
       "status": "Completed",
-      "description": "Scientific initiation project developed during high school, which reached the state stage of Ceará Científico. The proposal was a hardware and software prototype capable of measuring the real-time energy consumption of electronic devices and, by cross-referencing the data with utility rates, converting technical readings into financial figures. The goal was to make invisible energy consumption understandable to anyone, promoting more conscious use of resources.",
+      "categories": ["Technology", "Research"],
+      "description": "A scientific research project developed in high school that reached the state stage of Ceará Científico. The proposal was a hardware and software prototype capable of measuring the real-time energy consumption of electronic devices and, by cross-referencing that data with utility rates, converting technical readings into monetary values. The goal was to make invisible energy consumption understandable to anyone, promoting more mindful use of resources.",
       "tags": [
         "IoT",
         "Hardware",
         "Data",
         "Sustainability",
-        "Scientific Initiation"
+        "Scientific Research"
       ],
       "image": {
-        "src": "/assets/projects/smart-energy.jpg",
+        "src": "/projects/smart-energy.jpg",
         "alt": "Smart Energy prototype with a monitoring board plugged into an outlet and a real-time consumption display"
       },
       "primaryLink": 0,
@@ -331,21 +346,22 @@
     {
       "id": "proj-semana-literaria",
       "title": "Semana Literária",
-      "subtitle": "Theater play and graphic design",
+      "subtitle": "Stage play and graphic design",
       "period": {
         "start": "2022-07",
         "end": "2022-11",
-        "label": "July — November 2022"
+        "label": "July – November 2022"
       },
       "context": "EEEP Prof. Gustavo Augusto Lima",
       "relevance": 3,
       "featured": false,
       "status": "Completed",
-      "description": "Cultural competition among six classes, each presenting a literary work in an artistic way. My class won third place. I took part as the play's narrator and contributed to the production and graphic design of the project's communication pieces.",
+      "categories": ["Communication", "Design"],
+      "description": "A cultural competition among six classes, each presenting a literary work in artistic form. My class placed third. I took part as the play's narrator and contributed to production and graphic design for the project's promotional materials.",
       "tags": ["Graphic Design", "Cultural Production", "Communication"],
       "image": {
-        "src": "/assets/projects/semana-literaria.jpg",
-        "alt": "Photo of the Semana Literária theater performance with the class on stage"
+        "src": "/projects/semana-literaria.jpg",
+        "alt": "Documentation of the Semana Literária stage performance with the class on stage"
       },
       "primaryLink": 0,
       "links": [
@@ -363,13 +379,14 @@
       "period": {
         "start": "2022-01",
         "end": "2022-04",
-        "label": "January — April 2022"
+        "label": "January – April 2022"
       },
       "context": "EEEP Prof. Gustavo Augusto Lima — 1st Place",
       "relevance": 3,
       "featured": false,
       "status": "Completed",
-      "description": "Feira de Línguas was a cultural competition among second-year classes, organized by the school's languages department. Each class presented cultural aspects creatively — covering history, cuisine, literature, dance and traditional festivities. My class won first place. I was responsible for managing the project's digital media, creating content for promotional campaigns and coordinating the platforms used to promote the event.",
+      "categories": ["Communication", "Design"],
+      "description": "Feira de Línguas was a cultural competition among sophomore classes, organized by the school's languages department. Each class presented cultural aspects creatively — covering history, cuisine, literature, dance, and traditional festivities. My class placed first. I was responsible for managing the project's digital media, creating content for promotional campaigns and coordinating the platforms used to promote the event.",
       "tags": [
         "Communication",
         "Social Media",
@@ -377,8 +394,8 @@
         "Project Management"
       ],
       "image": {
-        "src": "/assets/projects/feira-de-linguas.jpg",
-        "alt": "Photo of Feira de Línguas with themed decoration and the winning class's cultural presentation"
+        "src": "/projects/feira-de-linguas.jpg",
+        "alt": "Documentation of Feira de Línguas with themed decoration and the winning class's cultural presentation"
       },
       "primaryLink": 0,
       "links": [
