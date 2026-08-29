@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import Button from "../Button/Button.wip";
+import Button from "../Button/Button";
 
 type Status = "idle" | "sending" | "success" | "error";
 
