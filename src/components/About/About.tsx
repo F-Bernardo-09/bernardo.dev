@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
 import Button from "../Button/Button";
+import HeroImage from "../HeroImage/HeroImage";
 
 const AboutSection = styled.section``;
 
@@ -26,6 +27,8 @@ export default function About() {
   return (
     <AboutSection id="about">
       <div className="container">
+        <HeroImage />
+
         <SectionHeader
           title={t("about.title", { ns: "common" })}
           subtitle={t("about.subtitle", { ns: "common", defaultValue: "" })}

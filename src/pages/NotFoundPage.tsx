@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import FaceIcon from "../components/FaceIcon/FaceIcon";
-import Button from "../components/Button/Button.wip";
+import Button from "../components/Button/Button";
 
 const fadeIn = keyframes`
   from {

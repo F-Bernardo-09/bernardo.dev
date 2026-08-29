@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import profile from "../../assets/profile-photo.jpg";
 
 const ProfileImage = styled.img`
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: var(--border-accent);
   border-radius: var(--radius-circle);
   margin-bottom: var(--spacing-lg);

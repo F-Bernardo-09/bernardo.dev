@@ -1,4 +1,4 @@
-import Hero from "../components/Hero/Hero.wip";
+import Hero from "../components/Hero/Hero";
 import Contato from "../components/Contact/Contact";
 import ProjectsPreview from "../components/ProjectsPreview/ProjectsPreview";
 

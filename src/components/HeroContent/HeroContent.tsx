@@ -1,15 +1,17 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import SocialLinks from "../SocialLinks/SocialLinks";
 import Button from "../Button/Button";
 
 const Wrapper = styled.div`
+  padding: var(--spacing-xl) 0;
   max-width: 620px;
   margin: 0 auto;
 `;
 
 const Greeting = styled.h1`
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-sm);
 
   @media (max-width: 768px) {
@@ -18,22 +20,6 @@ const Greeting = styled.h1`
 
   @media (max-width: 320px) {
     font-size: var(--font-size-md);
-  }
-`;
-
-const Specialties = styled.div`
-  font-size: var(--font-size-md);
-  color: var(--accent-green);
-  font-weight: var(--font-weight-medium);
-  margin-bottom: var(--spacing-md);
-  line-height: var(--line-height-body);
-
-  span {
-    color: var(--accent-green);
-  }
-
-  @media (max-width: 768px) {
-    font-size: var(--font-size-base);
   }
 `;
 
@@ -49,23 +35,29 @@ const Description = styled.div`
   }
 `;
 
+const CTAWrapper = styled.div`
+  margin-top: var(--spacing-lg);
+`;
+
 export default function HeroContent() {
   const { t } = useTranslation("common");
 
   return (
     <Wrapper>
-      <Greeting>{t("hero.greeting")}</Greeting>
-      <Specialties>{t("hero.specialties")}</Specialties>
+      <Greeting>{t("hero.specialties")}</Greeting>
       <Description>
         <p>{t("hero.description")}</p>
       </Description>
-      <Button
-        as={Link}
-        aria-label={t("hero.aboutButton.ariaLabel")}
-        to={t("hero.aboutButton.link")}
-      >
-        {t("hero.aboutButton.label")}
-      </Button>
+      <SocialLinks />
+      <CTAWrapper>
+        <Button
+          as={Link}
+          aria-label={t("hero.aboutButton.ariaLabel")}
+          to={t("hero.aboutButton.link")}
+        >
+          {t("hero.aboutButton.label")}
+        </Button>
+      </CTAWrapper>
     </Wrapper>
   );
 }

@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import HeroImage from "../HeroImage/HeroImage";
 import HeroContent from "../HeroContent/HeroContent";
 
 const HeroSection = styled.section`
+  min-height: calc(100vh - var(--header-height, 80px));
+  display: flex;
+  align-items: center;
   padding: var(--spacing-xl) 0;
   text-align: left;
 
@@ -22,7 +24,6 @@ export default function Hero() {
     <HeroSection id="home">
       <div className="container">
         <HeroContainer>
-          <HeroImage />
           <HeroContent />
         </HeroContainer>
       </div>
