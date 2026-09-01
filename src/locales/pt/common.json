@@ -36,12 +36,11 @@
 
   "hero": {
     "ariaLabel": "Seção de apresentação de Bernardo Alencar",
-    "greeting": "Olá, sou Bernardo Alencar",
     "specialties": "Desenvolvedor Web, Designer Gráfico, UI & UX Design",
     "description": "Trabalho na fronteira entre design e tecnologia, dando forma a interfaces e identidades visuais.",
     "aboutButton": {
       "label": "Sobre Mim",
-      "link": "../About",
+      "link": "../about",
       "ariaLabel": "Saiba mais sobre Bernardo Alencar"
     },
     "image": {
