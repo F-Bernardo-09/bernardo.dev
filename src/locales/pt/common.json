@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "version": "2.0.0",
-    "lastUpdated": "2026-04",
+    "version": "2.1.0",
+    "lastUpdated": "2026-08",
     "author": "Bernardo Alencar",
     "note": "Arquivo de conteúdo do portfólio. Para atualizar links de projetos, edite o array 'links' de cada projeto. O campo 'primaryLink' define qual link é exibido por padrão na interface."
   },
@@ -35,9 +35,10 @@
   },
 
   "hero": {
+    "ariaLabel": "Seção de apresentação de Bernardo Alencar",
     "greeting": "Olá, sou Bernardo Alencar",
-    "specialties": "Designer Gráfico Freelancer · Estudante de Análise e Desenvolvimento de Sistemas · UI & UX Design",
-    "description": "Trabalho na interseção entre design e tecnologia — criando interfaces e identidades visuais com foco em clareza, funcionalidade e propósito.",
+    "specialties": "Desenvolvedor Web, Designer Gráfico, UI & UX Design",
+    "description": "Trabalho na fronteira entre design e tecnologia, dando forma a interfaces e identidades visuais.",
     "aboutButton": {
       "label": "Sobre Mim",
       "link": "../About",
@@ -50,12 +51,12 @@
   },
 
   "about": {
-    "title": "Me chamo Bernardo Alencar",
+    "ariaLabel": "Seção sobre Bernardo Alencar",
+    "title": "Olá, sou Bernardo Alencar — design e tecnologia, lado a lado.",
     "subtitle": null,
     "paragraphs": [
-      "Atuo na Solitu - Agência criativa, ajudando marcas a construírem presença visual consistente e experiências digitais que fazem sentido para quem as usa.",
-      "Minha trajetória começou pelo design gráfico, mas a vontade de entender como as coisas funcionam por dentro me levou ao curso de Análise e Desenvolvimento de Sistemas — onde estudo lógica, desenvolvimento web e construção de software.",
-      "Tenho experiência com identidades visuais, UI/UX, gestão de redes sociais e comunicação institucional. Do lado técnico, venho aprofundando conhecimentos em HTML, CSS, JavaScript, TypeScript, Node.js, React, SQL e Java."
+      "Trabalho com design e desenvolvimento, unindo interfaces e identidade visual em um só processo. Atualmente sou Designer Gráfico freelancer na Solitu e Consultor Comercial na Loopis Jr, e participo em equipe de projetos como o Verde Árido e o Guardiões da Bandeira. Comecei no design gráfico e, com o tempo, o interesse por tecnologia me levou a cursar Análise e Desenvolvimento de Sistemas.",
+      "Sou curioso por natureza e gosto de entender como tudo funciona. O que mais me move nesse trabalho é colocar ideias em prática: transformar uma identidade visual no papel em algo funcionando na tela."
     ],
     "cvButton": {
       "label": "Baixar Currículo",
@@ -65,8 +66,9 @@
   },
 
   "experience": {
+    "ariaLabel": "Seção de experiência profissional de Bernardo Alencar",
     "title": "Experiência Profissional",
-    "subtitle": "Minha jornada no mercado",
+    "subtitle": "Trajetória profissional e as áreas em que venho atuando.",
     "companies": [
       {
         "id": "company-loopis",
@@ -77,7 +79,7 @@
           "alt": "Logotipo da Loopis Jr"
         },
         "link": null,
-        "summary": "Trainee promovido a consultor comercial efetivo, atuando em prospecção e negociação.",
+        "summary": "Atuação na área comercial da empresa júnior, com foco na estruturação de contratos e propostas.",
         "roles": [
           {
             "id": "role-loopis-consultor",
@@ -102,7 +104,7 @@
           "alt": "Logotipo da Solitu — Agência Criativa"
         },
         "link": null,
-        "summary": "Projetos internacionais de identidade visual e UI design.",
+        "summary": "Projetos de identidade visual e UI design para clientes internacionais.",
         "roles": [
           {
             "id": "role-solitu-designer",
@@ -111,29 +113,14 @@
             "ariaLabel": "Designer Freelancer na Solitu Agência Criativa, desde agosto de 2024"
           }
         ]
-      },
-      {
-        "id": "company-autonomo",
-        "name": "Autônomo",
-        "logoInitial": "A",
-        "logo": null,
-        "link": null,
-        "summary": "Projetos visuais sob demanda para clientes de diferentes segmentos.",
-        "roles": [
-          {
-            "id": "role-freelancer",
-            "title": "Designer Gráfico Freelancer",
-            "period": { "start": "2020-09", "end": null },
-            "ariaLabel": "Designer Gráfico Freelancer autônomo, desde setembro de 2020"
-          }
-        ]
       }
     ]
   },
 
   "education": {
+    "ariaLabel": "Seção de formação acadêmica de Bernardo Alencar",
     "title": "Formação Acadêmica",
-    "subtitle": "Onde aprendi as bases",
+    "subtitle": "Minha formação técnica e acadêmica",
     "items": [
       {
         "id": "edu-eeep",
@@ -143,10 +130,10 @@
         "period": {
           "start": "2021-01",
           "end": "2023-12",
-          "label": "Jan 2021 — Dez 2023"
+          "label": "2021 — 2023"
         },
         "description": "Formação técnica integrada ao ensino médio, com atuação em projetos científicos e culturais e vice-liderança de turma, reconhecida com certificados de melhor desempenho. Foi o primeiro contato com design gráfico e identidade visual — área que se tornaria o ponto de partida da atuação profissional.",
-        "ariaLabel": "Técnico em Administração na EEEP Prof. Gustavo Augusto Lima, janeiro de 2021 a dezembro de 2023"
+        "ariaLabel": "Técnico em Administração na EEEP Prof. Gustavo Augusto Lima, 2021 a 2023"
       },
       {
         "id": "edu-ifpb",
@@ -156,26 +143,27 @@
         "period": {
           "start": "2024-10",
           "end": null,
-          "label": "Out 2024 — em andamento"
+          "label": "2024 — em andamento"
         },
         "description": "Curso superior com foco em programação, banco de dados e engenharia de software. Participação em projetos práticos, competições e ações de extensão, aproximando a formação técnica da atuação em design e desenvolvimento web.",
-        "ariaLabel": "Tecnólogo em Análise e Desenvolvimento de Sistemas no IFPB Campus Cajazeiras, outubro de 2024 até o momento"
+        "ariaLabel": "Tecnólogo em Análise e Desenvolvimento de Sistemas no IFPB Campus Cajazeiras, desde 2024"
       }
     ]
   },
 
   "contact": {
+    "ariaLabel": "Seção de contato de Bernardo Alencar",
     "title": "Contato",
-    "subtitle": "Vamos conversar",
+    "subtitle": "Tem um projeto, uma ideia ou uma proposta? Deixe seu nome e e-mail que eu retorno em breve.",
     "form": {
       "name": "Nome",
       "namePlaceholder": "Seu nome",
       "email": "E-mail",
       "placeholder": "Seu e-mail",
-      "submit": "Quero conversar",
+      "submit": "Enviar mensagem",
       "sending": "Enviando...",
-      "success": "Recebi seu e-mail, em breve entro em contato!",
-      "error": "Não foi possível enviar agora. Tente novamente em instantes."
+      "success": "Mensagem recebida — retorno em breve!",
+      "error": "Algo deu errado. Tenta de novo em instantes."
     },
     "social": [
       {
@@ -206,15 +194,10 @@
   },
 
   "footer": {
-    "copyright": "2025 – 2026 / Bernardo Alencar",
-    "viewProjectLabel": "Ver Projeto",
-    "ariaLabel": "Rodapé do portfólio de Bernardo Alencar"
-  },
-
-  "notFound": {
-    "code": "404",
-    "message": "A página que você procura não existe ou foi movida.",
-    "buttonLabel": "Voltar para o início",
-    "buttonAriaLabel": "Voltar para a página inicial"
+    "ariaLabel": "Rodapé do portfólio de Bernardo Alencar",
+    "tagline": "Design e desenvolvimento, com consistência.",
+    "copyrightTemplate": "{{startYear}} – {{currentYear}} · Bernardo Alencar",
+    "copyrightStartYear": "2025",
+    "viewProjectLabel": "Ver Projeto"
   }
 }
