@@ -55,7 +55,7 @@ const IconWrapper = styled.div`
 `;
 
 export default function NotFoundPage() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("system");
 
   return (
     <div className="container">
