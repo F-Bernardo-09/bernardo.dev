@@ -1,0 +1,8 @@
+{
+  "notFound": {
+    "code": "404",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "buttonLabel": "Back to home",
+    "buttonAriaLabel": "Go back to the home page"
+  }
+}
