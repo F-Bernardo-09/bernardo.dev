@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import i18n from "./i18n";
 import { ThemeProvider } from "./context/ThemeContext";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage";
@@ -28,6 +29,7 @@ function App() {
     <ThemeProvider>
       <BrowserRouter>
         <Header />
+        <ScrollToTop />
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />

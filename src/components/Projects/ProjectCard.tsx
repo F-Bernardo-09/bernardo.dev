@@ -101,7 +101,8 @@ const LinksOverlay = styled.div<{ $visible: boolean }>`
   transition: opacity 0.3s ease-out;
   z-index: 2;
 
-  ${ImageWrapper}:hover & {
+  ${ImageWrapper}:hover &,
+  ${ImageWrapper}:focus-within & {
     opacity: 1;
     pointer-events: auto;
   }

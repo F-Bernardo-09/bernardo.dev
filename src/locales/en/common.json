@@ -40,7 +40,7 @@
     "description": "I work at the intersection of design and technology, shaping interfaces and visual identities.",
     "aboutButton": {
       "label": "About Me",
-      "link": "../about",
+      "link": "/about",
       "ariaLabel": "Learn more about Bernardo Alencar"
     },
     "image": {
