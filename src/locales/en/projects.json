@@ -3,7 +3,7 @@
   "subtitle": "Projects in design and technology — completed or in progress.",
   "viewAllButton": {
     "label": "View All",
-    "link": "/pages/projects",
+    "link": "/projects",
     "ariaLabel": "View the full list of projects"
   },
   "loadMoreButton": {

@@ -52,7 +52,7 @@ export default function ProjectsPreview() {
         <ButtonWrapper>
           <Button
             as={Link}
-            to="/projects"
+            to={t("viewAllButton.link")}
             aria-label={t("viewAllButton.ariaLabel")}
           >
             {t("viewAllButton.label")}

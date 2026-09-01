@@ -3,7 +3,7 @@
   "subtitle": "Projetos em design e tecnologia — concluídos ou em desenvolvimento.",
   "viewAllButton": {
     "label": "Ver Todos",
-    "link": "/pages/projects",
+    "link": "/projects",
     "ariaLabel": "Ver a lista completa de projetos"
   },
   "loadMoreButton": {
