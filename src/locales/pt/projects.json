@@ -36,7 +36,7 @@
         "Mobile"
       ],
       "image": {
-        "src": "/projects/project-name.jpg",
+        "src": "/projects/proj-verde-arido.webp",
         "alt": "Interface do aplicativo Verde Árido mostrando o painel de monitoramento de palma forrageira no semiárido"
       },
       "primaryLink": 2,
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "id": "proj-guardiaoes",
+      "id": "proj-guardioes",
       "title": "Guardiões da Bandeira",
       "subtitle": "A nossa infância em jogo",
       "summary": "Jogo mobile de estratégia baseado no folclore brasileiro, adaptando o 'Pega Bandeira' para o digital.",
@@ -82,7 +82,7 @@
         "Folclore Brasileiro"
       ],
       "image": {
-        "src": "/projects/project-name.jpg",
+        "src": "/projects/proj-guardioes.webp",
         "alt": "Tela de jogo do Guardiões da Bandeira exibindo mapa tático com personagens do folclore brasileiro"
       },
       "primaryLink": 0,
@@ -117,7 +117,7 @@
       "description": "Projeto premiado com o 1º lugar na competição intercursos da Semana da Tecnologia do IFPB. A proposta transforma resíduos plásticos gerados pela própria instituição em filamento para impressão 3D, para uso nos laboratórios de prototipagem. A banca avaliadora destacou a análise de viabilidade e o potencial de impacto ambiental como os pontos mais fortes do trabalho — um exemplo de como reaproveitar material pode suprir demandas técnicas reais com baixo custo.",
       "tags": ["Sustentabilidade", "Prototipagem", "Apresentação Técnica"],
       "image": {
-        "src": "/projects/project-name.jpg",
+        "src": "/projects/proj-replast3d.webp",
         "alt": "Apresentação do projeto RePlast3D mostrando o processo de transformação de plástico reciclado em filamento para impressão 3D"
       },
       "primaryLink": null,
@@ -141,7 +141,7 @@
       "description": "O Plot Twist Club é um projeto de extensão do IFPB voltado à democratização do acesso ao cinema e ao estímulo ao pensamento crítico entre estudantes da rede pública e a comunidade local. Com sessões semanais gratuitas e foco em produções nacionais, promove debates que conectam as obras a questões sociais, históricas e de cidadania. Desenvolvi a identidade visual do projeto, do conceito inicial à versão final.",
       "tags": ["Identidade Visual", "Branding", "Extensão Universitária"],
       "image": {
-        "src": "/projects/plot-twist-club.jpg",
+        "src": "/projects/plot-twist-club.webp",
         "alt": "Identidade visual do Plot Twist Club com elementos gráficos relacionados a cinema e cultura"
       },
       "primaryLink": 0,
@@ -153,101 +153,7 @@
         }
       ]
     },
-    {
-      "id": "proj-ondemand",
-      "title": "OnDemand",
-      "subtitle": "UI/UX Design",
-      "summary": "App de identidade visual e interfaces para conectar profissionais de serviços a clientes.",
-      "period": {
-        "start": "2024-12",
-        "end": "2024-12",
-        "label": "Dez 2024"
-      },
-      "context": "Projeto pessoal",
-      "relevance": 2,
-      "featured": false,
-      "status": "Concluído",
-      "categories": ["Design", "Tecnologia"],
-      "description": "O OnDemand é um projeto de app para conectar profissionais de serviços a clientes de forma prática. Desenvolvi a identidade visual — logotipo e paleta de cores voltados a transmitir confiança e agilidade — e as interfaces, com um fluxo simples e funcional para qualquer perfil de usuário.",
-      "tags": ["UI/UX", "Figma", "Identidade Visual", "Mobile"],
-      "image": {
-        "src": "/projects/ondemand.jpg",
-        "alt": "Telas do aplicativo OnDemand mostrando o fluxo de busca/agendamentos de serviços"
-      },
-      "primaryLink": 0,
-      "links": [
-        {
-          "label": "UI/UX",
-          "url": "https://www.behance.net/gallery/215284999/OnDemand-UIUX-Design",
-          "type": "behance"
-        },
-        {
-          "label": "Comercial",
-          "url": "https://www.behance.net/gallery/215446219/OnDemand-Apresentacao-Comercial",
-          "type": "behance"
-        }
-      ]
-    },
-    {
-      "id": "proj-securefeed",
-      "title": "SecureFeed",
-      "subtitle": "Plataforma de Segurança Digital",
-      "summary": "Feed de cibersegurança, verificador de links e glossário técnico, desenvolvido em equipe.",
-      "period": {
-        "start": "2026-01",
-        "end": "2026-01",
-        "label": "Jan 2026"
-      },
-      "context": "Processo Seletivo — Loopis Empresa Júnior / Equipe Gamma",
-      "relevance": 2,
-      "featured": false,
-      "status": "Concluído",
-      "categories": ["Tecnologia"],
-      "description": "Plataforma de inteligência e segurança digital desenvolvida em equipe para o processo seletivo da Loopis Empresa Júnior. Reúne um feed de notícias sobre cibersegurança (via NewsAPI), um verificador de links suspeitos integrado ao Google Safe Browsing e um glossário interativo de termos técnicos. O backend foi feito em Node.js com Express, protegendo as chaves de API, e o frontend em HTML5, CSS3 e JavaScript puro.",
-      "tags": ["Node.js", "JavaScript", "Segurança Digital", "API", "Backend"],
-      "image": {
-        "src": "/projects/securefeed.jpg",
-        "alt": "Interface da plataforma SecureFeed exibindo feed de notícias de cibersegurança e verificador de links"
-      },
-      "primaryLink": 0,
-      "links": [
-        {
-          "label": "GitHub",
-          "url": "https://github.com/Francieverton/SecureFeed",
-          "type": "github"
-        }
-      ]
-    },
-    {
-      "id": "proj-consulta-climatica",
-      "title": "Consulta Climática",
-      "subtitle": "Web App com consumo de API",
-      "summary": "Web app educacional que consome uma API de clima em tempo real com JavaScript puro.",
-      "period": {
-        "start": "2025-01",
-        "end": "2025-06",
-        "label": "2025"
-      },
-      "context": "Projeto pessoal / fins educacionais",
-      "relevance": 3,
-      "featured": false,
-      "status": "Concluído",
-      "categories": ["Tecnologia"],
-      "description": "Aplicação web para consultar informações meteorológicas em tempo real. Desenvolvi com fins educacionais, para praticar o consumo de APIs externas com JavaScript puro — sem frameworks — incluindo tratamento de erros e uma apresentação de dados limpa e responsiva.",
-      "tags": ["JavaScript", "API", "HTML", "CSS", "Web"],
-      "image": {
-        "src": "/projects/consulta-climatica.jpg",
-        "alt": "Tela da aplicação Consulta Climática exibindo temperatura, umidade e condições do tempo para uma cidade pesquisada"
-      },
-      "primaryLink": 0,
-      "links": [
-        {
-          "label": "GitHub",
-          "url": "https://github.com/F-Bernardo-09/consulta-climatica-api",
-          "type": "github"
-        }
-      ]
-    },
+
     {
       "id": "proj-pod-adm",
       "title": "Pod Adm",
@@ -266,7 +172,7 @@
       "description": "Projeto de conclusão do curso técnico em Administração, feito em equipe, para conectar empresários locais à comunidade de Lavras da Mangabeira (CE). O Pod Adm transformou conversas sobre gestão em conteúdo acessível, com histórias reais de quem empreende na região. Cuidei da identidade visual do projeto e da gestão das redes sociais (Instagram e YouTube) para ampliar o alcance das publicações.",
       "tags": ["Identidade Visual", "Redes Sociais", "Comunicação", "Gestão"],
       "image": {
-        "src": "/projects/pod-adm.jpg",
+        "src": "/projects/pod-adm.webp",
         "alt": "Arte de capa do Pod Adm com identidade visual do podcast de administração"
       },
       "primaryLink": 0,

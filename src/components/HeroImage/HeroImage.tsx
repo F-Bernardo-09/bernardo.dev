@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import profile from "../../assets/profile-photo.jpg";
+import profile from "../../assets/profile-photo.webp";
 
 const ProfileImage = styled.img`
   width: 150px;
