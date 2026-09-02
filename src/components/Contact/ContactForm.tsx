@@ -119,7 +119,7 @@ export default function ContactForm() {
           id="contact-email"
           name="email"
           type="email"
-          placeholder={t("contact.form.placeholder")}
+          placeholder={t("contact.form.emailPlaceholder")}
           required
         />
 

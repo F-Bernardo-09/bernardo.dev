@@ -18,6 +18,11 @@ declare module "*.svg" {
   export default src;
 }
 
+declare module "*.webp" {
+  const src: string;
+  export default src;
+}
+
 interface ImportMetaEnv {
   readonly VITE_WEB3FORMS_ACCESS_KEY: string;
 }

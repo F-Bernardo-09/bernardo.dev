@@ -38,6 +38,7 @@
     "ariaLabel": "Seção de apresentação de Bernardo Alencar",
     "specialties": "Desenvolvedor Web, Designer Gráfico, UI & UX Design",
     "description": "Trabalho na fronteira entre design e tecnologia, dando forma a interfaces e identidades visuais.",
+    "socialLinksAriaLabel": "Redes sociais",
     "aboutButton": {
       "label": "Sobre Mim",
       "link": "/about",
@@ -158,7 +159,7 @@
       "name": "Nome",
       "namePlaceholder": "Seu nome",
       "email": "E-mail",
-      "placeholder": "Seu e-mail",
+      "emailPlaceholder": "Seu e-mail",
       "submit": "Enviar mensagem",
       "sending": "Enviando...",
       "success": "Mensagem recebida — retorno em breve!",

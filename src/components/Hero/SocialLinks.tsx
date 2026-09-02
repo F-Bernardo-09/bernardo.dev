@@ -41,7 +41,7 @@ export default function SocialLinks() {
   const social = t("contact.social", { returnObjects: true }) as SocialItem[];
 
   return (
-    <List aria-label="Redes sociais">
+    <List aria-label={t("hero.socialLinksAriaLabel")}>
       {social.map((item) => {
         const Icon = icons[item.name];
         if (!Icon) return null;

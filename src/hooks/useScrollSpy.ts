@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export function useScrollSpy(ids: string[]): string | null {
   const [activeId, setActiveId] = useState<string | null>(ids[0] ?? null);
+  const idsKey = useMemo(() => ids.join(","), [ids]);
 
   useEffect(() => {
     if (ids.length === 0) return;
@@ -11,6 +12,8 @@ export function useScrollSpy(ids: string[]): string | null {
       .filter((el): el is HTMLElement => el !== null);
 
     if (elements.length === 0) return;
+
+    let ticking = false;
 
     function handleScroll() {
       const viewportHeight = window.innerHeight;
@@ -35,20 +38,30 @@ export function useScrollSpy(ids: string[]): string | null {
       if (bestId) {
         setActiveId(bestId);
       }
+
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        requestAnimationFrame(handleScroll);
+        ticking = true;
+      }
     }
 
     handleScroll();
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
 
     window.addEventListener("resize", handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", onScroll);
 
       window.removeEventListener("resize", handleScroll);
     };
-  }, [ids.join(",")]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idsKey]);
 
   return activeId;
 }

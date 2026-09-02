@@ -1,6 +1,6 @@
 # Portfólio de Bernardo Alencar
 
-Um portfólio moderno e responsivo desenvolvido com **React**, **TypeScript** e **Vite**. Apresenta projetos de design gráfico, UI/UX e desenvolvimento web, com suporte a múltiplos idiomas.
+Um portfólio moderno e responsivo desenvolvido com **React 19**, **TypeScript** e **Vite**. Apresenta projetos de design gráfico, UI/UX e desenvolvimento web, com suporte a múltiplos idiomas.
 
 ## 🎨 Features
 
@@ -14,57 +14,72 @@ Um portfólio moderno e responsivo desenvolvido com **React**, **TypeScript** e 
 
 ## 🚀 Tech Stack
 
-- **React 18** - UI library
+- **React 19** - UI library
 - **TypeScript** - Type safety
 - **Vite** - Fast build tool
-- **CSS3** - Styling
-- **i18n** - Multi-language support
-
-## 🌓 Modo claro/escuro (Theme Toggle)
-
-- ♿ Acessibilidade (aria-labels, alt text)
-- ⚡ Performance otimizada com Vite
-- 📱 Mobile-first approach
-
-## 🚀 Tech Stack
-
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Fast build tool
-- **CSS3** - Styling
-- **i18n** - Multi-language support
+- **Styled Components** - CSS-in-JS styling
+- **React i18next** - Multi-language support
+- **React Router** - Client-side routing
+- **React Icons** - Icon library
 
 ## 📂 Estrutura do Projeto
 
 ```
 src/
-├── components/          # Componentes reutilizáveis
+├── components/              # Componentes reutilizáveis
+│   ├── About/
+│   ├── Button/
+│   ├── Contact/
+│   ├── Education/
+│   ├── ExperienceSection/
+│   ├── FaceIcon/
+│   ├── Footer/
 │   ├── Header/
 │   ├── Hero/
-│   ├── About/
-│   ├── Education/
+│   ├── HeroImage/
 │   ├── Projects/
-│   ├── Contact/
-│   ├── Footer/
-│   └── ...
-├── locales/             # Arquivos de internacionalização
-│   ├── pt-br.json
-│   ├── en-us.json
-│   └── i18n.ts
-├── context/             # Contextos React
-│   └── LanguageContext.tsx
-├── styles/              # Estilos globais
+│   ├── ScrollToTop/
+│   ├── SectionHeader/
+│   └── SkillsCarousell/
+├── context/                 # Contextos React
+│   └── ThemeContext.tsx
+├── hooks/                   # Custom React hooks
+│   ├── useScrollSpy.ts
+│   └── useTheme.ts
+├── pages/                   # Páginas da aplicação
+│   ├── HomePage.tsx
+│   ├── AboutPage.tsx
+│   ├── ProjectsPage.tsx
+│   └── NotFoundPage.tsx
+├── locales/                 # Arquivos de internacionalização
+│   ├── pt/
+│   │   ├── common.json
+│   │   ├── projects.json
+│   │   └── system.json
+│   └── en/
+│       ├── common.json
+│       ├── projects.json
+│       └── system.json
+├── i18n/                    # Configuração i18n
+│   └── index.ts
+├── constants/               # Constantes da aplicação
+│   └── icons.ts
+├── types/                   # Definições de tipos
+│   ├── assets.d.ts
+│   └── models.ts
+├── utils/                   # Funções utilitárias
+│   └── dateRange.ts
+├── styles/                  # Estilos globais
 │   └── global.css
-├── types/               # Definições de tipos
-│   └── index.d.ts
-└── App.tsx              # Componente principal
+├── App.tsx                  # Componente principal
+└── main.tsx                 # Entry point
 ```
 
 ## 🛠️ Instalação e Uso
 
 ### Pré-requisitos
 
-- Node.js 16+
+- Node.js 20+
 - npm ou yarn
 
 ### Setup
@@ -72,7 +87,7 @@ src/
 ```bash
 # Clonar repositório
 git clone https://github.com/F-Bernardo-09/bernardo.dev.git
-cd bernardo.dev/react-app
+cd bernardo.dev
 
 # Instalar dependências
 npm install
@@ -95,19 +110,29 @@ O portfólio apresenta:
 
 ## 🌐 Internacionalização
 
-O conteúdo está centralizado em arquivos JSON. Para adicionar/editar:
+O conteúdo está centralizado em arquivos JSON organizados por idioma. Para adicionar/editar:
 
-- Edit `src/locales/pt-br.json` para português
-- Edit `src/locales/en-us.json` para inglês
+- Edit `src/locales/pt/common.json` para português (seção comum)
+- Edit `src/locales/en/common.json` para inglês (seção comum)
+- Edit `src/locales/pt/projects.json` para português (seção projetos)
+- Edit `src/locales/en/projects.json` para inglês (seção projetos)
+- Edit `src/locales/pt/system.json` para português (mensagens do sistema)
+- Edit `src/locales/en/system.json` para inglês (mensagens do sistema)
+
+O i18n está configurado em `src/i18n/index.ts` e pode ser utilizado nos componentes via hook `useTranslation("common")`.
 
 ## 📦 Comandos Disponíveis
 
 ```bash
 npm run dev       # Iniciar servidor de desenvolvimento
-npm run build     # Compilar para produção
+npm run build     # Compilar para produção (TypeScript + Vite)
 npm run preview   # Visualizar build de produção
 npm run lint      # Executar ESLint
 ```
+
+## 🎨 Tema (Light/Dark)
+
+O tema da aplicação é gerenciado através do `ThemeContext` localizado em `src/context/ThemeContext.tsx`. O hook `useTheme` está separado em `src/hooks/useTheme.ts` para melhor integração com Fast Refresh do Vite.
 
 ## ♿ Acessibilidade
 
@@ -140,30 +165,4 @@ Este projeto está sob a licença MIT.
 
 ---
 
-**Última atualização**: Abril 2026
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-globalIgnores(['dist']),
-{
-files: ['**/*.{ts,tsx}'],
-extends: [
-// Other configs...
-// Enable lint rules for React
-reactX.configs['recommended-typescript'],
-// Enable lint rules for React DOM
-reactDom.configs.recommended,
-],
-languageOptions: {
-parserOptions: {
-project: ['./tsconfig.node.json', './tsconfig.app.json'],
-tsconfigRootDir: import.meta.dirname,
-},
-// other options...
-},
-},
-])
-
-```
-
-```
+**Última atualização**: Setembro 2026

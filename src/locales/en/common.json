@@ -38,6 +38,7 @@
     "ariaLabel": "Introduction section for Bernardo Alencar",
     "specialties": "Web Developer, Graphic Designer, UI & UX Design",
     "description": "I work at the intersection of design and technology, shaping interfaces and visual identities.",
+    "socialLinksAriaLabel": "Social media",
     "aboutButton": {
       "label": "About Me",
       "link": "/about",
@@ -158,7 +159,7 @@
       "name": "Name",
       "namePlaceholder": "Your name",
       "email": "Email",
-      "placeholder": "Your email",
+      "emailPlaceholder": "Your email",
       "submit": "Send message",
       "sending": "Sending...",
       "success": "Message received — I'll get back to you soon!",
