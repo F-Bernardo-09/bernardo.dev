@@ -9,6 +9,7 @@ import {
 import { SiBehance } from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import type { ProjectData } from "../../types/models";
+import LazyImage from "../LazyImage/LazyImage";
 
 interface ProjectCardProps {
   project: ProjectData;
@@ -46,9 +47,10 @@ const ProjectCardWrapper = styled.article`
   }
 `;
 
-const ImageWrapper = styled.div`
+const ImageWrapper = styled(LazyImage)`
   position: relative;
-  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border-radius: var(--radius-card) var(--radius-card) 0 0;
   cursor: pointer;
 
@@ -69,21 +71,6 @@ const ImageWrapper = styled.div`
 
   &:hover::after {
     opacity: 1;
-  }
-`;
-
-const ProjectImage = styled.img`
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  transition:
-    transform 0.5s ease-out,
-    filter 0.45s ease-out;
-
-  ${ImageWrapper}:hover & {
-    transform: scale(1.02);
-    filter: brightness(0.92);
   }
 `;
 
@@ -204,11 +191,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <ProjectCardWrapper>
       <ImageWrapper
+        src={project.image.src}
+        alt={project.image.alt}
+        width={1600}
+        height={900}
+        loading="lazy"
+        decoding="async"
         onClick={() => hasLinks && setShowLinks((visible) => !visible)}
         onMouseLeave={() => setShowLinks(false)}
       >
-        <ProjectImage src={project.image.src} alt={project.image.alt} />
-
         {hasLinks && (
           <LinksOverlay $visible={showLinks}>
             {project.links.map((link) => {
