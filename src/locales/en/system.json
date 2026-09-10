@@ -4,5 +4,11 @@
     "message": "The page you're looking for doesn't exist or has been moved.",
     "buttonLabel": "Back to home",
     "buttonAriaLabel": "Go back to the home page"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "message": "An unexpected error occurred on this page. Try reloading to continue.",
+    "buttonLabel": "Reload page",
+    "buttonAriaLabel": "Reload the page"
   }
 }

@@ -4,5 +4,11 @@
     "message": "A página que você procura não existe ou foi movida.",
     "buttonLabel": "Voltar para o início",
     "buttonAriaLabel": "Voltar para a página inicial"
+  },
+  "errorBoundary": {
+    "title": "Algo deu errado",
+    "message": "Ocorreu um erro inesperado nesta página. Tente recarregar para continuar.",
+    "buttonLabel": "Recarregar página",
+    "buttonAriaLabel": "Recarregar a página"
   }
 }
