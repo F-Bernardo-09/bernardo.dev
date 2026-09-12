@@ -1,9 +1,22 @@
 {
   "_meta": {
-    "version": "2.1.0",
-    "lastUpdated": "2026-08",
     "author": "Bernardo Alencar",
     "note": "Portfolio content file. To update project links, edit each project's 'links' array. The 'primaryLink' field sets which link is shown by default in the interface."
+  },
+
+  "seo": {
+    "home": {
+      "title": "Bernardo Alencar — Graphic Designer, Web Designer & UI/UX",
+      "description": "Portfolio of Bernardo Alencar, a graphic designer and web developer focused on visual identity, UI/UX and front-end development."
+    },
+    "about": {
+      "title": "About Bernardo Alencar — Design and Web Development",
+      "description": "Learn about Bernardo Alencar's background, education and experience in graphic design, UI/UX and web development."
+    },
+    "projects": {
+      "title": "Bernardo Alencar's Projects — Design, UI/UX and Web",
+      "description": "Explore visual identity, interface design and web development projects by Bernardo Alencar."
+    }
   },
 
   "header": {
@@ -74,7 +87,7 @@
         "name": "Loopis Jr — Junior Enterprise",
         "logoInitial": "L",
         "logo": {
-          "src": "/assets/logos/loopis.jpg",
+          "src": "/assets/logos/loopis.webp",
           "alt": "Loopis Jr logo"
         },
         "link": null,
@@ -99,7 +112,7 @@
         "name": "Solitu — Creative Agency",
         "logoInitial": "S",
         "logo": {
-          "src": "/assets/logos/solitu.jpg",
+          "src": "/assets/logos/solitu.webp",
           "alt": "Solitu — Creative Agency logo"
         },
         "link": null,
@@ -194,9 +207,9 @@
 
   "footer": {
     "ariaLabel": "Footer of Bernardo Alencar's portfolio",
-    "tagline": "Design and development, consistently.",
-    "copyrightTemplate": "{{startYear}} – {{currentYear}} · Bernardo Alencar",
+    "tagline": "Design and development, with consistency.",
+    "copyrightTemplate": "© {{startYear}} Bernardo Alencar",
     "copyrightStartYear": "2025",
-    "viewProjectLabel": "View Project"
+    "homeLinkAriaLabel": "Go back to the home page"
   }
 }

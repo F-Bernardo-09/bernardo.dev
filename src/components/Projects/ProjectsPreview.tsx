@@ -6,6 +6,7 @@ import { SectionHeader } from "../SectionHeader/SectionHeader";
 import ProjectCard from "./ProjectCard";
 import type { ProjectData } from "../../types/models";
 import Button from "../Button/Button";
+import { localizedPath } from "../../utils/localizedPath";
 
 const ProjectsSection = styled.section``;
 
@@ -29,7 +30,7 @@ const ButtonWrapper = styled.div`
 const PREVIEW_COUNT = 4;
 
 export default function ProjectsPreview() {
-  const { t } = useTranslation("projects");
+  const { t, i18n } = useTranslation("projects");
   const items = t("items", { returnObjects: true }) as ProjectData[];
 
   const previewProjects = useMemo(() => {
@@ -52,7 +53,7 @@ export default function ProjectsPreview() {
         <ButtonWrapper>
           <Button
             as={Link}
-            to={t("viewAllButton.link")}
+            to={localizedPath("/projects", i18n.language)}
             aria-label={t("viewAllButton.ariaLabel")}
           >
             {t("viewAllButton.label")}
