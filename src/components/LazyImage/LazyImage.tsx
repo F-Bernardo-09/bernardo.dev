@@ -45,6 +45,8 @@ export default function LazyImage({
       <StyledImage
         src={src}
         alt={alt}
+        loading="lazy"
+        decoding="async"
         $loaded={loaded}
         {...rest}
         onLoad={(event) => {
