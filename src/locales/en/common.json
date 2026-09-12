@@ -173,6 +173,8 @@
       "email": "Email",
       "emailPlaceholder": "Your email",
       "submit": "Send message",
+      "emailSubject": "Someone wants to talk to you",
+      "emailBody": "{{name}} ({{email}}) left a message on the site to talk to you.",
       "sending": "Sending...",
       "success": "Message received — I'll get back to you soon!",
       "error": "Something went wrong. Please try again shortly."

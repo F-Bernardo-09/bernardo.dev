@@ -69,14 +69,20 @@ export default function ContactForm() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
+    if (formData.get("botcheck")) {
+      return;
+    }
     formData.append(
       "access_key",
       import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ?? "",
     );
-    formData.append("subject", "Alguém quer conversar com você");
+    formData.append("subject", t("contact.form.emailSubject"));
     formData.append(
       "message",
-      `${formData.get("name")} (${formData.get("email")}) deixou uma mensagem no site pra conversar com você.`,
+      t("contact.form.emailBody", {
+        name: formData.get("name"),
+        email: formData.get("email"),
+      }),
     );
 
     try {
@@ -101,6 +107,13 @@ export default function ContactForm() {
   return (
     <div>
       <Form onSubmit={handleSubmit}>
+        <input
+          type="checkbox"
+          name="botcheck"
+          tabIndex={-1}
+          autoComplete="off"
+          style={{ display: "none" }}
+        />
         <VisuallyHiddenLabel htmlFor="contact-name">
           {t("contact.form.name")}
         </VisuallyHiddenLabel>
@@ -128,6 +141,7 @@ export default function ContactForm() {
         <SubmitButton
           forwardedAs="button"
           type="submit"
+          showIcon={false}
           disabled={status === "sending"}
         >
           {status === "sending"

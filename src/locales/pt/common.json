@@ -173,6 +173,8 @@
       "email": "E-mail",
       "emailPlaceholder": "Seu e-mail",
       "submit": "Enviar mensagem",
+      "emailSubject": "Alguém quer conversar com você",
+      "emailBody": "{{name}} ({{email}}) deixou uma mensagem no site pra conversar com você.",
       "sending": "Enviando...",
       "success": "Mensagem recebida — retorno em breve!",
       "error": "Algo deu errado. Tenta de novo em instantes."

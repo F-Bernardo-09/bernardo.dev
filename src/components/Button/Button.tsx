@@ -8,6 +8,7 @@ type AsProp<C extends ElementType> = {
 type ButtonProps<C extends ElementType = "a"> = AsProp<C> &
   Omit<ComponentPropsWithoutRef<C>, keyof AsProp<C>> & {
     children: ReactNode;
+    showIcon?: boolean;
   };
 
 const StyledButton = styled.a`
@@ -109,6 +110,7 @@ const ArrowIcon = ({ className }: { className?: string }) => (
 export default function Button<C extends ElementType = "a">({
   as,
   children,
+  showIcon = true,
   ...rest
 }: ButtonProps<C>) {
   const Component = as ?? "a";
@@ -116,10 +118,12 @@ export default function Button<C extends ElementType = "a">({
   return (
     <StyledButton as={Component} {...rest}>
       {children}
-      <span className="button__icon-wrapper">
-        <ArrowIcon className="button__icon-svg" />
-        <ArrowIcon className="button__icon-svg button__icon-svg--copy" />
-      </span>
+      {showIcon && (
+        <span className="button__icon-wrapper">
+          <ArrowIcon className="button__icon-svg" />
+          <ArrowIcon className="button__icon-svg button__icon-svg--copy" />
+        </span>
+      )}
     </StyledButton>
   );
 }
