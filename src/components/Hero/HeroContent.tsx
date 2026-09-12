@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import SocialLinks from "./SocialLinks";
+import SocialLinks from "../SocialLinks/SocialLinks";
 import Button from "../Button/Button";
+import { localizedPath } from "../../utils/localizedPath";
 
 const Wrapper = styled.div`
   padding: var(--spacing-xl) 0;
@@ -40,7 +41,7 @@ const CTAWrapper = styled.div`
 `;
 
 export default function HeroContent() {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
 
   return (
     <Wrapper>
@@ -53,7 +54,7 @@ export default function HeroContent() {
         <Button
           as={Link}
           aria-label={t("hero.aboutButton.ariaLabel")}
-          to={t("hero.aboutButton.link")}
+          to={localizedPath("/about", i18n.language)}
         >
           {t("hero.aboutButton.label")}
         </Button>

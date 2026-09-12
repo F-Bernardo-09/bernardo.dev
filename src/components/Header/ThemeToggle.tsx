@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useTheme } from "../../hooks/useTheme";
+import { useTranslation } from "react-i18next";
 
 const ToggleButton = styled.button`
   display: flex;
@@ -23,12 +24,17 @@ const ToggleButton = styled.button`
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useTranslation("system");
 
   return (
     <ToggleButton
       type="button"
       onClick={toggleTheme}
-      aria-label={theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro"}
+      aria-label={
+        theme === "dark"
+          ? t("ui.themeToggle.activeLight")
+          : t("ui.themeToggle.activeDark")
+      }
     >
       {theme === "dark" ? (
         <svg viewBox="0 0 24 24">

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
+import { localizedPath } from "../../utils/localizedPath";
 
 const SwitchButton = styled.button`
   background: none;
@@ -22,15 +24,25 @@ const SwitchButton = styled.button`
 
 export default function LangSwitcher() {
   const { i18n } = useTranslation();
+  const { t } = useTranslation("system");
+  const location = useLocation();
+  const navigate = useNavigate();
 
   function toggleLanguage() {
     const next = i18n.language === "pt" ? "en" : "pt";
-    i18n.changeLanguage(next);
+    const segments = location.pathname.split("/").filter(Boolean);
+    if (segments[0] === "pt" || segments[0] === "en") segments.shift();
+    const path = segments.length === 0 ? "/" : `/${segments.join("/")}`;
+    void i18n.changeLanguage(next);
     localStorage.setItem("lang", next);
+    navigate(`${localizedPath(path, next)}${location.hash}`);
   }
 
   return (
-    <SwitchButton onClick={toggleLanguage} aria-label="Alternar idioma">
+    <SwitchButton
+      onClick={toggleLanguage}
+      aria-label={t("ui.languageToggle.aria-label")}
+    >
       {i18n.language === "pt" ? "EN" : "PT"}
     </SwitchButton>
   );
