@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import profile from "../../assets/profile-photo.jpg";
+import profile from "../../assets/profile-photo.webp";
 import LazyImage from "../LazyImage/LazyImage";
 
 const ProfileImage = styled(LazyImage)`
@@ -19,5 +19,7 @@ const ProfileImage = styled(LazyImage)`
 export default function HeroImage() {
   const { t } = useTranslation("common");
 
-  return <ProfileImage src={profile} alt={t("hero.image.alt")} />;
+  return (
+    <ProfileImage src={profile} alt={t("hero.image.alt")} loading="eager" />
+  );
 }
