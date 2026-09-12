@@ -7,6 +7,7 @@ import {
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useScrollSpy } from "../../hooks/useScrollSpy";
+import { localizedPath } from "../../utils/localizedPath";
 
 const linkStyles = `
   color: var(--text-secondary);
@@ -65,10 +66,10 @@ function waitForImagesThenScroll(id: string) {
 }
 
 export default function NaveMenu() {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
   const location = useLocation();
   const navigate = useNavigate();
-  const isHome = location.pathname === "/";
+  const isHome = /^\/(pt|en)?\/?$/.test(location.pathname);
   const activeSection = useScrollSpy(isHome ? ["home", "contact"] : []);
 
   const homeIsActive = isHome && activeSection === "home";
@@ -88,9 +89,9 @@ export default function NaveMenu() {
     e.preventDefault();
     if (isHome) {
       waitForImagesThenScroll(id);
-      navigate(`/#${id}`, { replace: true });
+      navigate(`${localizedPath("/", i18n.language)}#${id}`, { replace: true });
     } else {
-      navigate(`/#${id}`);
+      navigate(`${localizedPath("/", i18n.language)}#${id}`);
     }
   }
 
@@ -98,7 +99,7 @@ export default function NaveMenu() {
     <>
       <li>
         <AnchorLink
-          href="/#home"
+          href={`${localizedPath("/", i18n.language)}#home`}
           aria-label={t("header.nav.home.ariaLabel")}
           $active={homeIsActive}
           onClick={(e) => handleAnchorClick(e, "home")}
@@ -108,7 +109,7 @@ export default function NaveMenu() {
       </li>
       <li>
         <NavLink
-          to={t("header.nav.projects.link")}
+          to={localizedPath("/projects", i18n.language)}
           aria-label={t("header.nav.projects.ariaLabel")}
         >
           {t("header.nav.projects.label")}
@@ -116,7 +117,7 @@ export default function NaveMenu() {
       </li>
       <li>
         <NavLink
-          to={t("header.nav.about.link")}
+          to={localizedPath("/about", i18n.language)}
           aria-label={t("header.nav.about.ariaLabel")}
         >
           {t("header.nav.about.label")}
@@ -124,7 +125,7 @@ export default function NaveMenu() {
       </li>
       <li>
         <AnchorLink
-          href="/#contact"
+          href={`${localizedPath("/", i18n.language)}#contact`}
           aria-label={t("header.nav.contact.ariaLabel")}
           $active={contactIsActive}
           onClick={(e) => handleAnchorClick(e, "contact")}

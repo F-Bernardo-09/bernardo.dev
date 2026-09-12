@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+import { localizedPath } from "../utils/localizedPath";
 import { useTranslation } from "react-i18next";
 import FaceIcon from "../components/FaceIcon/FaceIcon";
 import Button from "../components/Button/Button";
@@ -56,6 +57,7 @@ const IconWrapper = styled.div`
 
 export default function NotFoundPage() {
   const { t } = useTranslation("system");
+  const { i18n } = useTranslation("common");
 
   return (
     <div className="container">
@@ -65,7 +67,11 @@ export default function NotFoundPage() {
         </IconWrapper>
         <Message>{t("notFound.message")}</Message>
         <ButtonWrapper>
-          <Button as={Link} aria-label={t("notFound.buttonAriaLabel")} to="/">
+          <Button
+            as={Link}
+            aria-label={t("notFound.buttonAriaLabel")}
+            to={localizedPath("/", i18n.language)}
+          >
             {t("notFound.buttonLabel")}
           </Button>
         </ButtonWrapper>

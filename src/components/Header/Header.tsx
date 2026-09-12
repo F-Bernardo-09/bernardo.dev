@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import NaveMenu from "./NaveMenu";
 import ThemeToggle from "./ThemeToggle";
 import LangSwitcher from "./LangSwitcher";
+import { localizedPath } from "../../utils/localizedPath";
 
 const HeaderWrapper = styled.header`
   margin: 0;
@@ -75,7 +76,7 @@ const NavigationMenu = styled.ul`
 `;
 
 export default function Header() {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
   const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -98,7 +99,7 @@ export default function Header() {
       <div className="container">
         <Navbar>
           <BrandLogo
-            to="/"
+            to={localizedPath("/", i18n.language)}
             aria-label={t("header.logoAlt")}
             title={t("header.title")}
           >

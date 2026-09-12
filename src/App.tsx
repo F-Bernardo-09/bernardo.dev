@@ -9,10 +9,17 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import SEO from "./components/SEO/SEO";
+import { getSupportedLanguage } from "./utils/localizedPath";
 
 function App() {
+  const location = window.location;
+  const urlLanguage = getSupportedLanguage(location.pathname.split("/")[1]);
+
   useEffect(() => {
-    document.documentElement.lang = i18n.language;
+    if (i18n.language !== urlLanguage) {
+      void i18n.changeLanguage(urlLanguage);
+    }
 
     function handleLanguageChange(lng: string) {
       document.documentElement.lang = lng;
@@ -23,11 +30,12 @@ function App() {
     return () => {
       i18n.off("languageChanged", handleLanguageChange);
     };
-  }, []);
+  }, [urlLanguage]);
 
   return (
     <ThemeProvider>
       <BrowserRouter>
+        <SEO />
         <Header />
         <ScrollToTop />
         <main>
@@ -35,6 +43,12 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/pt" element={<HomePage />} />
+            <Route path="/pt/about" element={<AboutPage />} />
+            <Route path="/pt/projects" element={<ProjectsPage />} />
+            <Route path="/en" element={<HomePage />} />
+            <Route path="/en/about" element={<AboutPage />} />
+            <Route path="/en/projects" element={<ProjectsPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
