@@ -40,7 +40,7 @@ src/
 │   ├── Projects/
 │   ├── ScrollToTop/
 │   ├── SectionHeader/
-│   └── SkillsCarousell/
+│   └── ToolsShowcase/
 ├── context/                 # Contextos React
 │   └── ThemeContext.tsx
 ├── hooks/                   # Custom React hooks
