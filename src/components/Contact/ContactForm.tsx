@@ -136,6 +136,11 @@ export default function ContactForm() {
           required
         />
 
+        <div
+          className="h-captcha"
+          data-sitekey="PREENCHER_HCAPTCHA_SITEKEY"
+        />
+
         {/* forwardedAs em vez de as: repassa a tag pro Button interno
             sem que o styled-components intercepte e pule a lógica dele */}
         <SubmitButton
