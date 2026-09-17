@@ -1,0 +1,27 @@
+{
+  "name": "Bernardo Alencar",
+  "title": "Web Developer & Designer",
+  "logoAlt": "Logo with the letter B representing Bernardo",
+  "nav": {
+    "home": {
+      "label": "Home",
+      "link": "/",
+      "ariaLabel": "Go to the home section"
+    },
+    "projects": {
+      "label": "Projects",
+      "link": "/projects",
+      "ariaLabel": "Go to the projects section"
+    },
+    "about": {
+      "label": "About",
+      "link": "/about",
+      "ariaLabel": "Go to the about section"
+    },
+    "contact": {
+      "label": "Contact",
+      "link": "/#contact",
+      "ariaLabel": "Go to the contact section"
+    }
+  }
+}

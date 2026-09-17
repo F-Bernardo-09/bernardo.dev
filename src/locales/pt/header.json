@@ -1,0 +1,27 @@
+{
+  "name": "Bernardo Alencar",
+  "title": "Designer e Desenvolvedor Web",
+  "logoAlt": "Logotipo com a inicial B representando Bernardo",
+  "nav": {
+    "home": {
+      "label": "Início",
+      "link": "/",
+      "ariaLabel": "Ir para a seção inicial"
+    },
+    "projects": {
+      "label": "Projetos",
+      "link": "/projects",
+      "ariaLabel": "Ir para a seção de projetos"
+    },
+    "about": {
+      "label": "Sobre",
+      "link": "/about",
+      "ariaLabel": "Ir para a seção sobre mim"
+    },
+    "contact": {
+      "label": "Contato",
+      "link": "/#contact",
+      "ariaLabel": "Ir para a seção de contato"
+    }
+  }
+}

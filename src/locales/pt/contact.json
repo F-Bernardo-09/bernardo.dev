@@ -1,0 +1,43 @@
+{
+  "ariaLabel": "Seção de contato de Bernardo Alencar",
+  "title": "Contato",
+  "subtitle": "Tem um projeto, uma ideia ou uma proposta? Deixe seu nome e e-mail que eu retorno em breve.",
+  "form": {
+    "name": "Nome",
+    "namePlaceholder": "Seu nome",
+    "email": "E-mail",
+    "emailPlaceholder": "Seu e-mail",
+    "submit": "Enviar mensagem",
+    "emailSubject": "Alguém quer conversar com você",
+    "emailBody": "{{name}} ({{email}}) deixou uma mensagem no site pra conversar com você.",
+    "sending": "Enviando...",
+    "success": "Mensagem recebida — retorno em breve!",
+    "error": "Algo deu errado. Tenta de novo em instantes."
+  },
+  "social": [
+    {
+      "name": "Behance",
+      "label": "https://www.behance.net/bernardoalencar1",
+      "link": "https://www.behance.net/bernardoalencar1",
+      "ariaLabel": "Ver portfólio de design de Bernardo Alencar no Behance"
+    },
+    {
+      "name": "GitHub",
+      "label": "https://github.com/F-Bernardo-09",
+      "link": "https://github.com/F-Bernardo-09",
+      "ariaLabel": "Ver repositórios de Bernardo Alencar no GitHub"
+    },
+    {
+      "name": "LinkedIn",
+      "label": "https://www.linkedin.com/in/bernardo-alencar/",
+      "link": "https://www.linkedin.com/in/bernardo-alencar/",
+      "ariaLabel": "Ver perfil profissional de Bernardo Alencar no LinkedIn"
+    },
+    {
+      "name": "Instagram",
+      "label": "https://www.instagram.com/f.bernardo.09/",
+      "link": "https://www.instagram.com/f.bernardo.09/",
+      "ariaLabel": "Ver Instagram de Bernardo Alencar"
+    }
+  ]
+}

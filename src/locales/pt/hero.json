@@ -1,0 +1,12 @@
+{
+  "ariaLabel": "Seção de apresentação de Bernardo Alencar",
+  "specialties": "Desenvolvedor Web, Designer Gráfico, UI & UX Design",
+  "description": "Trabalho na fronteira entre design e tecnologia, dando forma a interfaces e identidades visuais.",
+  "socialLinksAriaLabel": "Redes sociais",
+  "aboutButton": {
+    "label": "Sobre Mim",
+    "link": "/about",
+    "ariaLabel": "Saiba mais sobre Bernardo Alencar"
+  },
+  "image": { "alt": "Foto de Bernardo Alencar, designer e desenvolvedor web" }
+}

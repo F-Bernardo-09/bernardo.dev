@@ -1,0 +1,51 @@
+{
+  "ariaLabel": "Seção de experiência profissional de Bernardo Alencar",
+  "title": "Experiência Profissional",
+  "subtitle": "Trajetória profissional e as áreas em que venho atuando.",
+  "companies": [
+    {
+      "id": "company-loopis",
+      "name": "Loopis Jr — Empresa Júnior",
+      "logoInitial": "L",
+      "logo": {
+        "src": "/assets/logos/loopis.webp",
+        "alt": "Logotipo da Loopis Jr"
+      },
+      "link": null,
+      "summary": "Atuação na área comercial da empresa júnior, com foco na estruturação de contratos e propostas.",
+      "roles": [
+        {
+          "id": "role-loopis-consultor",
+          "title": "Consultor Comercial",
+          "period": { "start": "2026-06", "end": null },
+          "ariaLabel": "Consultor Comercial na Loopis Jr, desde junho de 2026"
+        },
+        {
+          "id": "role-loopis-trainee",
+          "title": "Consultor Comercial — Trainee",
+          "period": { "start": "2026-01", "end": "2026-06" },
+          "ariaLabel": "Consultor Comercial Trainee na Loopis Jr, de janeiro a junho de 2026"
+        }
+      ]
+    },
+    {
+      "id": "company-solitu",
+      "name": "Solitu — Agência Criativa",
+      "logoInitial": "S",
+      "logo": {
+        "src": "/assets/logos/solitu.webp",
+        "alt": "Logotipo da Solitu — Agência Criativa"
+      },
+      "link": null,
+      "summary": "Projetos de identidade visual e UI design para clientes internacionais.",
+      "roles": [
+        {
+          "id": "role-solitu-designer",
+          "title": "Designer Freelancer",
+          "period": { "start": "2024-08", "end": null },
+          "ariaLabel": "Designer Freelancer na Solitu Agência Criativa, desde agosto de 2024"
+        }
+      ]
+    }
+  ]
+}
