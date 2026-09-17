@@ -10,17 +10,5 @@
     "message": "Ocorreu um erro inesperado nesta página. Tente recarregar para continuar.",
     "buttonLabel": "Recarregar página",
     "buttonAriaLabel": "Recarregar a página"
-  },
-  "ui": {
-    "themeToggle": {
-      "ariaLabel": "Alternar tema do site",
-      "activeLight": "Ativar tema claro",
-      "activeDark": "Ativar tema escuro"
-    },
-    "languageToggle": {
-      "aria-label": "Alternar idioma do site",
-      "activateEnglish": "Ativar inglês",
-      "activatePortuguese": "Ativar português"
-    }
   }
 }
