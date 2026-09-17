@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import Button from "../Button/Button";
 
 type Status = "idle" | "sending" | "success" | "error";
+
+declare global {
+  interface Window {
+    hcaptchaCallback?: (token: string) => void;
+  }
+}
 
 const Form = styled.form`
   display: flex;
@@ -62,6 +68,15 @@ const StatusMessage = styled.p`
 export default function ContactForm() {
   const { t } = useTranslation("contact");
   const [status, setStatus] = useState<Status>("idle");
+  const [captchaToken, setCaptchaToken] = useState("");
+
+  useEffect(() => {
+    window.hcaptchaCallback = setCaptchaToken;
+
+    return () => {
+      delete window.hcaptchaCallback;
+    };
+  }, []);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -139,6 +154,7 @@ export default function ContactForm() {
         <div
           className="h-captcha"
           data-sitekey="PREENCHER_HCAPTCHA_SITEKEY"
+          data-callback="hcaptchaCallback"
         />
 
         {/* forwardedAs em vez de as: repassa a tag pro Button interno
@@ -147,7 +163,7 @@ export default function ContactForm() {
           forwardedAs="button"
           type="submit"
           showIcon={false}
-          disabled={status === "sending"}
+          disabled={status === "sending" || !captchaToken}
         >
           {status === "sending" ? t("form.sending") : t("form.submit")}
         </SubmitButton>
