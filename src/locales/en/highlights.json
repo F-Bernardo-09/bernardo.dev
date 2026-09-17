@@ -1,0 +1,26 @@
+{
+  "ariaLabel": "Melhores momentos",
+  "title": "Melhores Momentos",
+  "photos": [
+    {
+      "src": "/assets/highlights/evento-1.jpg",
+      "alt": "Descreva o que está acontecendo nessa foto"
+    },
+    {
+      "src": "/assets/highlights/evento-2.jpg",
+      "alt": "Descreva o que está acontecendo nessa foto"
+    },
+    {
+      "src": "/assets/highlights/evento-3.jpg",
+      "alt": "Descreva o que está acontecendo nessa foto"
+    },
+    {
+      "src": "/assets/highlights/evento-4.jpg",
+      "alt": "Descreva o que está acontecendo nessa foto"
+    },
+    {
+      "src": "/assets/highlights/evento-5.jpg",
+      "alt": "Descreva o que está acontecendo nessa foto"
+    }
+  ]
+}
