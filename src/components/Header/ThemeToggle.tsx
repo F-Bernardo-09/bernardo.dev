@@ -24,7 +24,7 @@ const ToggleButton = styled.button`
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
-  const { t } = useTranslation("system");
+  const { t } = useTranslation("systemUi");
 
   return (
     <ToggleButton
@@ -32,8 +32,8 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       aria-label={
         theme === "dark"
-          ? t("ui.themeToggle.activeLight")
-          : t("ui.themeToggle.activeDark")
+          ? t("themeToggle.activeLight")
+          : t("themeToggle.activeDark")
       }
     >
       {theme === "dark" ? (

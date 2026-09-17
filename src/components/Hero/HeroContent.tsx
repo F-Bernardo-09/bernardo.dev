@@ -41,22 +41,22 @@ const CTAWrapper = styled.div`
 `;
 
 export default function HeroContent() {
-  const { t, i18n } = useTranslation("common");
+  const { t, i18n } = useTranslation("hero");
 
   return (
     <Wrapper>
-      <Greeting>{t("hero.specialties")}</Greeting>
+      <Greeting>{t("specialties")}</Greeting>
       <Description>
-        <p>{t("hero.description")}</p>
+        <p>{t("description")}</p>
       </Description>
       <SocialLinks />
       <CTAWrapper>
         <Button
           as={Link}
-          aria-label={t("hero.aboutButton.ariaLabel")}
+          aria-label={t("aboutButton.ariaLabel")}
           to={localizedPath("/about", i18n.language)}
         >
-          {t("hero.aboutButton.label")}
+          {t("aboutButton.label")}
         </Button>
       </CTAWrapper>
     </Wrapper>

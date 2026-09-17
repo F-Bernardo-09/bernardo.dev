@@ -60,7 +60,7 @@ const StatusMessage = styled.p`
 `;
 
 export default function ContactForm() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("contact");
   const [status, setStatus] = useState<Status>("idle");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -76,10 +76,10 @@ export default function ContactForm() {
       "access_key",
       import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ?? "",
     );
-    formData.append("subject", t("contact.form.emailSubject"));
+    formData.append("subject", t("form.emailSubject"));
     formData.append(
       "message",
-      t("contact.form.emailBody", {
+      t("form.emailBody", {
         name: formData.get("name"),
         email: formData.get("email"),
       }),
@@ -115,24 +115,24 @@ export default function ContactForm() {
           style={{ display: "none" }}
         />
         <VisuallyHiddenLabel htmlFor="contact-name">
-          {t("contact.form.name")}
+          {t("form.name")}
         </VisuallyHiddenLabel>
         <Input
           id="contact-name"
           name="name"
           type="text"
-          placeholder={t("contact.form.namePlaceholder")}
+          placeholder={t("form.namePlaceholder")}
           required
         />
 
         <VisuallyHiddenLabel htmlFor="contact-email">
-          {t("contact.form.email")}
+          {t("form.email")}
         </VisuallyHiddenLabel>
         <Input
           id="contact-email"
           name="email"
           type="email"
-          placeholder={t("contact.form.emailPlaceholder")}
+          placeholder={t("form.emailPlaceholder")}
           required
         />
 
@@ -144,17 +144,15 @@ export default function ContactForm() {
           showIcon={false}
           disabled={status === "sending"}
         >
-          {status === "sending"
-            ? t("contact.form.sending")
-            : t("contact.form.submit")}
+          {status === "sending" ? t("form.sending") : t("form.submit")}
         </SubmitButton>
       </Form>
 
       {status === "success" && (
-        <StatusMessage role="status">{t("contact.form.success")}</StatusMessage>
+        <StatusMessage role="status">{t("form.success")}</StatusMessage>
       )}
       {status === "error" && (
-        <StatusMessage role="alert">{t("contact.form.error")}</StatusMessage>
+        <StatusMessage role="alert">{t("form.error")}</StatusMessage>
       )}
     </div>
   );

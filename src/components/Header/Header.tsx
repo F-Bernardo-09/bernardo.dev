@@ -76,7 +76,7 @@ const NavigationMenu = styled.ul`
 `;
 
 export default function Header() {
-  const { t, i18n } = useTranslation("common");
+  const { t, i18n } = useTranslation("header");
   const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -100,10 +100,10 @@ export default function Header() {
         <Navbar>
           <BrandLogo
             to={localizedPath("/", i18n.language)}
-            aria-label={t("header.logoAlt")}
-            title={t("header.title")}
+            aria-label={t("logoAlt")}
+            title={t("title")}
           >
-            {t("header.name")}
+            {t("name")}
           </BrandLogo>
           <NavRight>
             <NavigationMenu>

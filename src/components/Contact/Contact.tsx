@@ -25,17 +25,14 @@ const Wrapper = styled.div`
 `;
 
 export default function Contact() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("contact");
 
   return (
     <ContactSection id="contact">
       <div className="container">
         <ContactContainer>
           <Wrapper>
-            <SectionHeader
-              title={t("contact.title")}
-              subtitle={t("contact.subtitle")}
-            />
+            <SectionHeader title={t("title")} subtitle={t("subtitle")} />
             <ContactForm />
           </Wrapper>
         </ContactContainer>

@@ -37,11 +37,12 @@ const SocialLink = styled.a`
 `;
 
 export default function SocialLinks() {
-  const { t } = useTranslation("common");
-  const social = t("contact.social", { returnObjects: true }) as SocialItem[];
+  const { t } = useTranslation("contact");
+  const { t: tHero } = useTranslation("hero");
+  const social = t("social", { returnObjects: true }) as SocialItem[];
 
   return (
-    <List aria-label={t("hero.socialLinksAriaLabel")}>
+    <List aria-label={tHero("socialLinksAriaLabel")}>
       {social.map((item) => {
         const Icon = icons[item.name];
         if (!Icon) return null;

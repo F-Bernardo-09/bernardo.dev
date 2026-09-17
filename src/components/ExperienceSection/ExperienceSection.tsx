@@ -16,8 +16,8 @@ const CompanyList = styled.div`
 `;
 
 export default function ExperienceSection() {
-  const { t } = useTranslation("common");
-  const companies = t("experience.companies", {
+  const { t } = useTranslation("experience");
+  const companies = t("companies", {
     returnObjects: true,
   }) as Company[];
 
@@ -30,10 +30,7 @@ export default function ExperienceSection() {
   return (
     <Section id="experience">
       <div className="container">
-        <SectionHeader
-          title={t("experience.title")}
-          subtitle={t("experience.subtitle")}
-        />
+        <SectionHeader title={t("title")} subtitle={t("subtitle")} />
         <CompanyList>
           {companies.map((company) => (
             <CompanyCard

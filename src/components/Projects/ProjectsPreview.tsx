@@ -31,6 +31,7 @@ const PREVIEW_COUNT = 4;
 
 export default function ProjectsPreview() {
   const { t, i18n } = useTranslation("projects");
+  const { t: tUi } = useTranslation("projectsUi");
   const items = t("items", { returnObjects: true }) as ProjectData[];
 
   const previewProjects = useMemo(() => {
@@ -42,7 +43,7 @@ export default function ProjectsPreview() {
   return (
     <ProjectsSection>
       <div className="container">
-        <SectionHeader title={t("title")} subtitle={t("subtitle")} />
+        <SectionHeader title={tUi("title")} subtitle={tUi("subtitle")} />
 
         <ProjectsGrid>
           {previewProjects.map((project) => (
@@ -54,9 +55,9 @@ export default function ProjectsPreview() {
           <Button
             as={Link}
             to={localizedPath("/projects", i18n.language)}
-            aria-label={t("viewAllButton.ariaLabel")}
+            aria-label={tUi("viewAllButton.ariaLabel")}
           >
-            {t("viewAllButton.label")}
+            {tUi("viewAllButton.label")}
           </Button>
         </ButtonWrapper>
       </div>

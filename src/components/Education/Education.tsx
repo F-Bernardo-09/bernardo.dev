@@ -54,9 +54,9 @@ const EducationOrganization = styled.span`
 `;
 
 export default function Education() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("education");
 
-  const items = t("education.items", {
+  const items = t("items", {
     returnObjects: true,
   }) as EducationItem[];
   const sortedItems = [...items].reverse();
@@ -64,10 +64,7 @@ export default function Education() {
   return (
     <EducationSection id="education">
       <div className="container">
-        <SectionHeader
-          title={t("education.title")}
-          subtitle={t("education.subtitle")}
-        />
+        <SectionHeader title={t("title")} subtitle={t("subtitle")} />
         <EducationList>
           {sortedItems.map((item) => (
             <EducationRow key={item.id} aria-label={item.ariaLabel}>

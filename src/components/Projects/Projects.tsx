@@ -20,6 +20,7 @@ const ProjectsGrid = styled.div`
 
 export default function Projects() {
   const { t } = useTranslation("projects");
+  const { t: tUi } = useTranslation("projectsUi");
   const items = t("items", { returnObjects: true }) as ProjectData[];
 
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -60,14 +61,14 @@ export default function Projects() {
   return (
     <ProjectsSection>
       <div className="container">
-        <SectionHeader title={t("title")} subtitle={t("subtitle")} />
+        <SectionHeader title={tUi("title")} subtitle={tUi("subtitle")} />
 
         <ProjectFilter
           categories={categories}
           selected={selectedCategories}
           onToggle={handleToggleCategory}
           onClear={handleClearCategories}
-          allLabel={t("filterAllLabel")}
+          allLabel={tUi("filterAllLabel")}
         />
 
         <ProjectsGrid>

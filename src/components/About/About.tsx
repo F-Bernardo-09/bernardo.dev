@@ -18,9 +18,8 @@ const AboutContent = styled.div`
 `;
 
 export default function About() {
-  const { t } = useTranslation(["common", "projects"]);
-  const paragraphs = t("about.paragraphs", {
-    ns: "common",
+  const { t } = useTranslation("about");
+  const paragraphs = t("paragraphs", {
     returnObjects: true,
   }) as string[];
 
@@ -30,8 +29,8 @@ export default function About() {
         <HeroImage />
 
         <SectionHeader
-          title={t("about.title", { ns: "common" })}
-          subtitle={t("about.subtitle", { ns: "common", defaultValue: "" })}
+          title={t("title")}
+          subtitle={t("subtitle", { defaultValue: "" })}
         />
         <AboutContent>
           {paragraphs.map((text, index) => (
@@ -39,11 +38,11 @@ export default function About() {
           ))}
 
           <Button
-            href={t("about.cvButton.link", { ns: "common" })}
+            href={t("cvButton.link")}
             download
-            aria-label={t("about.cvButton.ariaLabel", { ns: "common" })}
+            aria-label={t("cvButton.ariaLabel")}
           >
-            {t("about.cvButton.label", { ns: "common" })}
+            {t("cvButton.label")}
           </Button>
         </AboutContent>
       </div>

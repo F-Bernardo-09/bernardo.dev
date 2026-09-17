@@ -17,9 +17,7 @@ const ProfileImage = styled(LazyImage)`
 `;
 
 export default function HeroImage() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("hero");
 
-  return (
-    <ProfileImage src={profile} alt={t("hero.image.alt")} loading="eager" />
-  );
+  return <ProfileImage src={profile} alt={t("image.alt")} loading="eager" />;
 }

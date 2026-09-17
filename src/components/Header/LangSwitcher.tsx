@@ -24,7 +24,7 @@ const SwitchButton = styled.button`
 
 export default function LangSwitcher() {
   const { i18n } = useTranslation();
-  const { t } = useTranslation("system");
+  const { t } = useTranslation("systemUi");
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -41,7 +41,7 @@ export default function LangSwitcher() {
   return (
     <SwitchButton
       onClick={toggleLanguage}
-      aria-label={t("ui.languageToggle.aria-label")}
+      aria-label={t("languageToggle.aria-label")}
     >
       {i18n.language === "pt" ? "EN" : "PT"}
     </SwitchButton>

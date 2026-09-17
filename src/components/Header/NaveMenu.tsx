@@ -66,7 +66,7 @@ function waitForImagesThenScroll(id: string) {
 }
 
 export default function NaveMenu() {
-  const { t, i18n } = useTranslation("common");
+  const { t, i18n } = useTranslation("header");
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = /^\/(pt|en)?\/?$/.test(location.pathname);
@@ -100,37 +100,37 @@ export default function NaveMenu() {
       <li>
         <AnchorLink
           href={`${localizedPath("/", i18n.language)}#home`}
-          aria-label={t("header.nav.home.ariaLabel")}
+          aria-label={t("nav.home.ariaLabel")}
           $active={homeIsActive}
           onClick={(e) => handleAnchorClick(e, "home")}
         >
-          {t("header.nav.home.label")}
+          {t("nav.home.label")}
         </AnchorLink>
       </li>
       <li>
         <NavLink
           to={localizedPath("/projects", i18n.language)}
-          aria-label={t("header.nav.projects.ariaLabel")}
+          aria-label={t("nav.projects.ariaLabel")}
         >
-          {t("header.nav.projects.label")}
+          {t("nav.projects.label")}
         </NavLink>
       </li>
       <li>
         <NavLink
           to={localizedPath("/about", i18n.language)}
-          aria-label={t("header.nav.about.ariaLabel")}
+          aria-label={t("nav.about.ariaLabel")}
         >
-          {t("header.nav.about.label")}
+          {t("nav.about.label")}
         </NavLink>
       </li>
       <li>
         <AnchorLink
           href={`${localizedPath("/", i18n.language)}#contact`}
-          aria-label={t("header.nav.contact.ariaLabel")}
+          aria-label={t("nav.contact.ariaLabel")}
           $active={contactIsActive}
           onClick={(e) => handleAnchorClick(e, "contact")}
         >
-          {t("header.nav.contact.label")}
+          {t("nav.contact.label")}
         </AnchorLink>
       </li>
     </>

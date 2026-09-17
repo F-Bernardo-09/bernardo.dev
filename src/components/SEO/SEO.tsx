@@ -27,7 +27,7 @@ function setMeta(
 }
 
 export default function SEO() {
-  const { t, i18n } = useTranslation("common");
+  const { t, i18n } = useTranslation("seo");
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -39,8 +39,8 @@ export default function SEO() {
     const routePath = pageKey === "home" ? "/" : `/${pageKey}`;
     const canonicalPath = localizedPath(routePath, language);
     const canonicalUrl = `${SITE_URL}${canonicalPath}`;
-    const title = t(`seo.${pageKey}.title`);
-    const description = t(`seo.${pageKey}.description`);
+    const title = t(`${pageKey}.title`);
+    const description = t(`${pageKey}.description`);
 
     document.title = title;
     document.documentElement.lang = language === "en" ? "en" : "pt-BR";

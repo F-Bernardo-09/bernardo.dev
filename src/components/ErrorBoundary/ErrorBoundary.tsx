@@ -104,16 +104,20 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
           <IconWrapper>
             <FaceIcon />
           </IconWrapper>
-          <Title>{t("errorBoundary.title", { ns: "system" })}</Title>
-          <Message>{t("errorBoundary.message", { ns: "system" })}</Message>
+          <Title>{t("errorBoundary.title", { ns: "systemErrors" })}</Title>
+          <Message>
+            {t("errorBoundary.message", { ns: "systemErrors" })}
+          </Message>
           <ButtonWrapper>
             <Button
               as="button"
               type="button"
-              aria-label={t("errorBoundary.buttonAriaLabel", { ns: "system" })}
+              aria-label={t("errorBoundary.buttonAriaLabel", {
+                ns: "systemErrors",
+              })}
               onClick={this.handleReload}
             >
-              {t("errorBoundary.buttonLabel", { ns: "system" })}
+              {t("errorBoundary.buttonLabel", { ns: "systemErrors" })}
             </Button>
           </ButtonWrapper>
         </Wrapper>
@@ -122,4 +126,4 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 }
 
-export default withTranslation("system")(ErrorBoundary);
+export default withTranslation("systemErrors")(ErrorBoundary);

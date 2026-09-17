@@ -38,18 +38,18 @@ const Copyright = styled(Link)`
 `;
 
 export default function Footer() {
-  const { t, i18n } = useTranslation("common");
+  const { t, i18n } = useTranslation("footer");
 
   return (
-    <StyledFooter aria-label={t("footer.ariaLabel")}>
+    <StyledFooter aria-label={t("ariaLabel")}>
       <div className="container">
         <FooterContent>
           <Copyright
             to={`${localizedPath("/", i18n.language)}#home`}
-            aria-label={t("footer.homeLinkAriaLabel")}
+            aria-label={t("homeLinkAriaLabel")}
           >
-            {t("footer.copyrightTemplate", {
-              startYear: t("footer.copyrightStartYear"),
+            {t("copyrightTemplate", {
+              startYear: t("copyrightStartYear"),
             })}
           </Copyright>
           <SocialLinks />
