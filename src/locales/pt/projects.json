@@ -1,16 +1,4 @@
 {
-  "title": "Projetos",
-  "subtitle": "Projetos em design e tecnologia — concluídos ou em desenvolvimento.",
-  "viewAllButton": {
-    "label": "Ver Todos",
-    "link": "/projects",
-    "ariaLabel": "Ver a lista completa de projetos"
-  },
-  "loadMoreButton": {
-    "label": "Ver mais",
-    "ariaLabel": "Carregar mais projetos no grid"
-  },
-  "filterAllLabel": "Todos",
   "items": [
     {
       "id": "proj-verde-arido",
