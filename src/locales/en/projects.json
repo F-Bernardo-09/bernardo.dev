@@ -173,6 +173,82 @@
       ]
     },
     {
+      "id": "proj-bernardo-dev",
+      "title": "Website Portfolio",
+      "subtitle": "Design and code in a single project",
+      "summary": "Bilingual personal portfolio built with React and TypeScript, featuring light and dark themes, project detail pages and a contact form protected by hCaptcha.",
+      "period": { "start": "2025-01", "end": null, "label": "Since 2025" },
+      "context": "Personal project",
+      "relevance": 1,
+      "featured": true,
+      "status": "In progress",
+      "categories": ["Technology", "Design"],
+      "description": "Personal portfolio created to bring design and development work together in one place. It is a single-page application built with React 19 and TypeScript, with routes and content in Portuguese and English, dynamic SEO, light and dark themes and a contact form with anti-spam verification.",
+      "content": [
+        { "type": "heading", "text": "About the project" },
+        {
+          "type": "paragraph",
+          "text": "bernardo.dev is this very website: a bilingual portfolio that presents my projects, education, experience and the tools I use. It was designed to bring the visual and technical sides together, with a consistent design system and a codebase organized into reusable components."
+        },
+        { "type": "heading", "text": "Features" },
+        {
+          "type": "list",
+          "items": [
+            "Localized routes in Portuguese and English (/pt and /en), with a language switcher and copy organized into JSON files by section.",
+            "Detail pages for each project, built from typed content blocks (heading, paragraph, list, image and gallery).",
+            "Light and dark themes that follow the system preference and remember the visitor's choice in the browser.",
+            "Side menu for small screens and active section highlighting on the home page.",
+            "Lazy-loaded images with an animated placeholder.",
+            "Contact form with Web3Forms, hCaptcha and a honeypot field, with translated sending, success and error states."
+          ]
+        },
+        { "type": "heading", "text": "Technologies" },
+        {
+          "type": "list",
+          "items": [
+            "React 19, TypeScript and Vite.",
+            "React Router for routing and styled-components for styling.",
+            "i18next and react-i18next for internationalization.",
+            "React Icons for iconography.",
+            "Deployed on Vercel, with security headers and a Content-Security-Policy configured."
+          ]
+        },
+        { "type": "heading", "text": "Technical decisions" },
+        {
+          "type": "list",
+          "items": [
+            "Dynamic SEO: title, description, canonical URL, Open Graph and hreflang links change with the page and language, and a sitemap describes the version in each language.",
+            "Theme managed with the Context API and a custom hook, persisted in localStorage.",
+            "Scroll-synchronized navigation through a hook that uses requestAnimationFrame to avoid running calculations on every event.",
+            "Accessibility: ARIA labels, alt text, visible focus and animations turned off when the user prefers reduced motion."
+          ]
+        },
+        { "type": "heading", "text": "My role" },
+        {
+          "type": "paragraph",
+          "text": "I designed the interface and built the whole application, from the design system and components to SEO, security and deployment setup."
+        }
+      ],
+      "tags": ["React", "TypeScript", "Vite", "i18n", "UI/UX", "SEO"],
+      "image": {
+        "src": "/assets/projects/proj-bernardo-dev.webp",
+        "alt": "Portfolio cover with the name Bernardo Alencar and the description Web Developer, Graphic Designer, UI & UX Design"
+      },
+      "primaryLink": 0,
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://bernardo-alencar.dev",
+          "type": "website"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/F-Bernardo-09/bernardo.dev",
+          "type": "github"
+        }
+      ]
+    },
+    {
       "id": "proj-replast3d",
       "title": "RePlast3D",
       "subtitle": "1st Place — Inter-Course Competition",

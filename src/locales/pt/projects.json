@@ -173,6 +173,82 @@
       ]
     },
     {
+      "id": "proj-bernardo-dev",
+      "title": "Website Portfólio",
+      "subtitle": "Design e código em um só projeto",
+      "summary": "Portfólio pessoal bilíngue em React e TypeScript, com tema claro e escuro, páginas de detalhe dos projetos e formulário de contato protegido por hCaptcha.",
+      "period": { "start": "2025-01", "end": null, "label": "Desde 2025" },
+      "context": "Projeto pessoal",
+      "relevance": 1,
+      "featured": true,
+      "status": "Em andamento",
+      "categories": ["Tecnologia", "Design"],
+      "description": "Portfólio pessoal criado para reunir projetos de design e desenvolvimento em um único lugar. É uma aplicação de página única em React 19 e TypeScript, com rotas e conteúdo em português e inglês, SEO dinâmico, tema claro e escuro e formulário de contato com verificação anti-spam.",
+      "content": [
+        { "type": "heading", "text": "Sobre o projeto" },
+        {
+          "type": "paragraph",
+          "text": "O bernardo.dev é este site: um portfólio bilíngue que apresenta meus projetos, minha formação, minha experiência e as ferramentas que uso. Foi pensado para unir a parte visual e a parte técnica, com um sistema de design consistente e uma base de código organizada em componentes reutilizáveis."
+        },
+        { "type": "heading", "text": "Funcionalidades" },
+        {
+          "type": "list",
+          "items": [
+            "Rotas localizadas em português e inglês (/pt e /en), com troca de idioma e textos organizados em arquivos JSON por seção.",
+            "Páginas de detalhe para cada projeto, com conteúdo montado a partir de blocos tipados (título, parágrafo, lista, imagem e galeria).",
+            "Tema claro e escuro, que segue a preferência do sistema e guarda a escolha da pessoa no navegador.",
+            "Menu lateral para telas pequenas e destaque da seção ativa na página inicial.",
+            "Imagens com carregamento preguiçoso e placeholder animado.",
+            "Formulário de contato com Web3Forms, hCaptcha e campo honeypot, com estados de envio, sucesso e erro traduzidos."
+          ]
+        },
+        { "type": "heading", "text": "Tecnologias" },
+        {
+          "type": "list",
+          "items": [
+            "React 19, TypeScript e Vite.",
+            "React Router para o roteamento e styled-components para os estilos.",
+            "i18next e react-i18next para a internacionalização.",
+            "React Icons para os ícones.",
+            "Deploy na Vercel, com cabeçalhos de segurança e Content-Security-Policy configurados."
+          ]
+        },
+        { "type": "heading", "text": "Decisões técnicas" },
+        {
+          "type": "list",
+          "items": [
+            "SEO dinâmico: título, descrição, URL canônica, Open Graph e links hreflang mudam conforme a página e o idioma, e um sitemap descreve as versões em cada língua.",
+            "Tema gerenciado com Context API e um hook próprio, com persistência em localStorage.",
+            "Navegação sincronizada com o scroll por um hook que usa requestAnimationFrame para evitar cálculos a cada evento.",
+            "Acessibilidade: rótulos ARIA, textos alternativos, foco visível e animações desativadas quando o usuário prefere movimento reduzido."
+          ]
+        },
+        { "type": "heading", "text": "Meu papel" },
+        {
+          "type": "paragraph",
+          "text": "Projetei a interface e desenvolvi toda a aplicação, do sistema de design e dos componentes à configuração de SEO, segurança e publicação."
+        }
+      ],
+      "tags": ["React", "TypeScript", "Vite", "i18n", "UI/UX", "SEO"],
+      "image": {
+        "src": "/assets/projects/proj-bernardo-dev.webp",
+        "alt": "Capa do portfólio com o nome Bernardo Alencar e a descrição Desenvolvedor Web, Designer Gráfico, UI & UX Design"
+      },
+      "primaryLink": 0,
+      "links": [
+        {
+          "label": "Site",
+          "url": "https://bernardo-alencar.dev",
+          "type": "website"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/F-Bernardo-09/bernardo.dev",
+          "type": "github"
+        }
+      ]
+    },
+    {
       "id": "proj-replast3d",
       "title": "RePlast3D",
       "subtitle": "1º Lugar — Competição Intercursos",
