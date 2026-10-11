@@ -13,8 +13,8 @@ const SwitchButton = styled.button`
   padding: 4px 10px;
   cursor: pointer;
   transition:
-    color 0.3s ease,
-    border-color 0.3s ease;
+    color var(--transition-base),
+    border-color var(--transition-base);
 
   &:hover {
     color: var(--accent-green);
@@ -31,7 +31,9 @@ export default function LangSwitcher() {
   function toggleLanguage() {
     const next = i18n.language === "pt" ? "en" : "pt";
     const segments = location.pathname.split("/").filter(Boolean);
+
     if (segments[0] === "pt" || segments[0] === "en") segments.shift();
+
     const path = segments.length === 0 ? "/" : `/${segments.join("/")}`;
     void i18n.changeLanguage(next);
     localStorage.setItem("lang", next);

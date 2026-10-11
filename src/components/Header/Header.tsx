@@ -1,12 +1,13 @@
-// Header.tsx
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import NaveMenu from "./NaveMenu";
+import MobileMenu from "./MobileMenu";
 import ThemeToggle from "./ThemeToggle";
 import LangSwitcher from "./LangSwitcher";
 import { localizedPath } from "../../utils/localizedPath";
+import { useHeaderHeight } from "../../hooks/useHeaderHeight";
 
 const HeaderWrapper = styled.header`
   margin: 0;
@@ -16,7 +17,8 @@ const HeaderWrapper = styled.header`
   left: 0;
   padding: var(--spacing-md) 0;
   background-color: var(--bg-dark);
-  z-index: 1000;
+  border-bottom: var(--border-default);
+  z-index: var(--z-header);
 
   @media (max-width: 480px) {
     padding: var(--spacing-sm) 0;
@@ -27,11 +29,6 @@ const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    gap: var(--spacing-sm);
-  }
 `;
 
 const BrandLogo = styled(Link)`
@@ -48,11 +45,6 @@ const NavRight = styled.div`
   display: flex;
   align-items: center;
   gap: var(--spacing-lg);
-
-  @media (max-width: 768px) {
-    width: 100%;
-    justify-content: space-between;
-  }
 `;
 
 const NavigationMenu = styled.ul`
@@ -63,15 +55,17 @@ const NavigationMenu = styled.ul`
   }
 
   @media (max-width: 768px) {
-    order: 3;
-    width: 100%;
-    flex-direction: column;
-    margin-top: var(--spacing-sm);
+    display: none;
+  }
+`;
 
-    li {
-      margin-left: 0;
-      margin-bottom: var(--spacing-xs);
-    }
+const DesktopControls = styled.div`
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -79,20 +73,7 @@ export default function Header() {
   const { t, i18n } = useTranslation("header");
   const headerRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
-    function updateHeaderHeight() {
-      if (headerRef.current) {
-        document.documentElement.style.setProperty(
-          "--header-height",
-          `${headerRef.current.offsetHeight}px`,
-        );
-      }
-    }
-
-    updateHeaderHeight();
-    window.addEventListener("resize", updateHeaderHeight);
-    return () => window.removeEventListener("resize", updateHeaderHeight);
-  }, []);
+  useHeaderHeight(headerRef);
 
   return (
     <HeaderWrapper ref={headerRef}>
@@ -109,8 +90,11 @@ export default function Header() {
             <NavigationMenu>
               <NaveMenu />
             </NavigationMenu>
-            <LangSwitcher />
-            <ThemeToggle />
+            <DesktopControls>
+              <LangSwitcher />
+              <ThemeToggle />
+            </DesktopControls>
+            <MobileMenu />
           </NavRight>
         </Navbar>
       </div>

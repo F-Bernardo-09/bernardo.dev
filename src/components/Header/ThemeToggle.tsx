@@ -32,8 +32,8 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       aria-label={
         theme === "dark"
-          ? t("themeToggle.activeLight")
-          : t("themeToggle.activeDark")
+          ? t("themeToggle.switchToLight")
+          : t("themeToggle.switchToDark")
       }
     >
       {theme === "dark" ? (

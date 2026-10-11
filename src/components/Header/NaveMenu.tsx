@@ -8,16 +8,36 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useScrollSpy } from "../../hooks/useScrollSpy";
 import { localizedPath } from "../../utils/localizedPath";
+import { scrollToSection } from "../../utils/scrollToSection";
 
 const linkStyles = `
+  position: relative;
+  display: inline-block;
   color: var(--text-secondary);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-sm);
-  transition: color 0.3s ease;
+  transition: color var(--transition-base);
   cursor: pointer;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-green);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-base);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+
   @media (max-width: 768px) {
-    display: block;
+    width: fit-content;
     padding: var(--spacing-xs) 0;
   }
 `;
@@ -29,6 +49,14 @@ const NavLink = styled(RouterNavLink)`
   &.active {
     color: var(--accent-green);
   }
+
+  &.active::after {
+    transform: scaleX(0.3);
+  }
+
+  &.active:hover::after {
+    transform: scaleX(1);
+  }
 `;
 
 const AnchorLink = styled.a<{ $active?: boolean }>`
@@ -39,33 +67,25 @@ const AnchorLink = styled.a<{ $active?: boolean }>`
   &:hover {
     color: var(--accent-green);
   }
+
+  ${(p) =>
+    p.$active &&
+    `
+      &::after {
+        transform: scaleX(0.3);
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    `}
 `;
 
-function waitForImagesThenScroll(id: string) {
-  const images = Array.from(document.images);
-  const pending = images.filter((img) => !img.complete);
+type NaveMenuProps = {
+  onNavigate?: () => void;
+};
 
-  if (pending.length === 0) {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    return;
-  }
-
-  let remaining = pending.length;
-
-  function done() {
-    remaining--;
-    if (remaining <= 0) {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
-  pending.forEach((img) => {
-    img.addEventListener("load", done, { once: true });
-    img.addEventListener("error", done, { once: true });
-  });
-}
-
-export default function NaveMenu() {
+export default function NaveMenu({ onNavigate }: NaveMenuProps) {
   const { t, i18n } = useTranslation("header");
   const location = useLocation();
   const navigate = useNavigate();
@@ -78,7 +98,7 @@ export default function NaveMenu() {
   useEffect(() => {
     if (isHome && location.hash) {
       const id = location.hash.replace("#", "");
-      waitForImagesThenScroll(id);
+      scrollToSection(id);
     }
   }, [isHome, location.hash]);
 
@@ -88,11 +108,12 @@ export default function NaveMenu() {
   ) {
     e.preventDefault();
     if (isHome) {
-      waitForImagesThenScroll(id);
+      scrollToSection(id);
       navigate(`${localizedPath("/", i18n.language)}#${id}`, { replace: true });
     } else {
       navigate(`${localizedPath("/", i18n.language)}#${id}`);
     }
+    onNavigate?.();
   }
 
   return (
@@ -111,6 +132,7 @@ export default function NaveMenu() {
         <NavLink
           to={localizedPath("/projects", i18n.language)}
           aria-label={t("nav.projects.ariaLabel")}
+          onClick={onNavigate}
         >
           {t("nav.projects.label")}
         </NavLink>
@@ -119,6 +141,7 @@ export default function NaveMenu() {
         <NavLink
           to={localizedPath("/about", i18n.language)}
           aria-label={t("nav.about.ariaLabel")}
+          onClick={onNavigate}
         >
           {t("nav.about.label")}
         </NavLink>
