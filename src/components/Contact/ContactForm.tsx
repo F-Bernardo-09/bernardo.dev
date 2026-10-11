@@ -1,16 +1,18 @@
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import type { FormEvent } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { useTranslation } from "react-i18next";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 import Button from "../Button/Button";
 
 type Status = "idle" | "sending" | "success" | "error";
 
-declare global {
-  interface Window {
-    hcaptchaCallback?: (token: string) => void;
-  }
-}
+const fieldTypography = css`
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: 1;
+`;
 
 const Form = styled.form`
   display: flex;
@@ -30,15 +32,15 @@ const VisuallyHiddenLabel = styled.label`
 `;
 
 const Input = styled.input`
+  ${fieldTypography}
+
   width: 100%;
-  background: transparent;
+  background-color: var(--bg-dark-accent);
   border: var(--border-default);
   border-radius: var(--radius-pill);
   color: var(--text-primary);
-  font-family: inherit;
-  font-size: var(--font-size-sm);
-  padding: calc(0.8rem - 2px) 1.5rem;
-  transition: border-color 0.3s ease;
+  padding: calc(0.8rem - 2px) 1.5rem calc(0.8rem - 2px) 1.5rem;
+  transition: border-color var(--transition-base);
 
   &::placeholder {
     color: var(--text-secondary);
@@ -51,6 +53,8 @@ const Input = styled.input`
 `;
 
 const SubmitButton = styled(Button)`
+  ${fieldTypography}
+
   margin-top: var(--spacing-sm);
 
   &:disabled {
@@ -69,28 +73,24 @@ export default function ContactForm() {
   const { t } = useTranslation("contact");
   const [status, setStatus] = useState<Status>("idle");
   const [captchaToken, setCaptchaToken] = useState("");
-
-  useEffect(() => {
-    window.hcaptchaCallback = setCaptchaToken;
-
-    return () => {
-      delete window.hcaptchaCallback;
-    };
-  }, []);
+  const captchaRef = useRef<HCaptcha>(null);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setStatus("sending");
+    if (status === "sending" || !captchaToken) return;
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    if (formData.get("botcheck")) {
-      return;
-    }
+
+    if (formData.get("botcheck")) return;
+
+    setStatus("sending");
+
     formData.append(
       "access_key",
       import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ?? "",
     );
+    formData.set("h-captcha-response", captchaToken);
     formData.append("subject", t("form.emailSubject"));
     formData.append(
       "message",
@@ -112,10 +112,15 @@ export default function ContactForm() {
         setStatus("success");
         form.reset();
       } else {
+        console.error("Web3Forms:", response.status, result);
         setStatus("error");
       }
-    } catch {
+    } catch (err) {
+      console.error("Falha na requisição:", err);
       setStatus("error");
+    } finally {
+      setCaptchaToken("");
+      captchaRef.current?.resetCaptcha();
     }
   }
 
@@ -130,50 +135,55 @@ export default function ContactForm() {
           style={{ display: "none" }}
         />
         <VisuallyHiddenLabel htmlFor="contact-name">
-          {t("form.name")}
+          {t("form.nameLabel")}
         </VisuallyHiddenLabel>
         <Input
           id="contact-name"
           name="name"
           type="text"
+          autoComplete="name"
           placeholder={t("form.namePlaceholder")}
           required
         />
 
         <VisuallyHiddenLabel htmlFor="contact-email">
-          {t("form.email")}
+          {t("form.emailLabel")}
         </VisuallyHiddenLabel>
         <Input
           id="contact-email"
           name="email"
           type="email"
+          autoComplete="email"
           placeholder={t("form.emailPlaceholder")}
           required
         />
 
-        <div
-          className="h-captcha"
-          data-sitekey="PREENCHER_HCAPTCHA_SITEKEY"
-          data-callback="hcaptchaCallback"
+        <HCaptcha
+          ref={captchaRef}
+          sitekey={import.meta.env.VITE_HCAPTCHA_SITEKEY}
+          theme="dark"
+          onVerify={setCaptchaToken}
+          onExpire={() => setCaptchaToken("")}
+          onError={() => setCaptchaToken("")}
         />
 
-        {/* forwardedAs em vez de as: repassa a tag pro Button interno
-            sem que o styled-components intercepte e pule a lógica dele */}
         <SubmitButton
           forwardedAs="button"
           type="submit"
-          showIcon={false}
+          iconDirection="up"
           disabled={status === "sending" || !captchaToken}
         >
-          {status === "sending" ? t("form.sending") : t("form.submit")}
+          {status === "sending"
+            ? t("form.sendingState")
+            : t("form.submitButton")}
         </SubmitButton>
       </Form>
 
       {status === "success" && (
-        <StatusMessage role="status">{t("form.success")}</StatusMessage>
+        <StatusMessage role="status">{t("form.successMessage")}</StatusMessage>
       )}
       {status === "error" && (
-        <StatusMessage role="alert">{t("form.error")}</StatusMessage>
+        <StatusMessage role="alert">{t("form.errorMessage")}</StatusMessage>
       )}
     </div>
   );
