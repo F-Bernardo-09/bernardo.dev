@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import type { ImgHTMLAttributes, ReactNode } from "react";
-import ImageSkeleton from "../ImageSkeleton/ImageSkeleton";
+import ImageSkeleton from "./ImageSkeleton";
+
+type ImageStatus = "loading" | "loaded" | "error";
 
 interface LazyImageProps extends Omit<
   ImgHTMLAttributes<HTMLImageElement>,
   "children"
 > {
   children?: ReactNode;
-  className?: string;
 }
 
 const Wrapper = styled.div`
@@ -34,24 +35,40 @@ export default function LazyImage({
   className,
   children,
   onLoad,
+  onError,
   ...rest
 }: LazyImageProps) {
-  const [loaded, setLoaded] = useState(false);
+  const [status, setStatus] = useState<ImageStatus>("loading");
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const img = imgRef.current;
+    if (!img || !img.complete) {
+      setStatus("loading");
+      return;
+    }
+    setStatus(img.naturalWidth > 0 ? "loaded" : "error");
+  }, [src]);
 
   return (
     <Wrapper className={className}>
-      {!loaded && <ImageSkeleton />}
+      {status === "loading" && <ImageSkeleton />}
 
       <StyledImage
+        ref={imgRef}
         src={src}
         alt={alt}
         loading="lazy"
         decoding="async"
-        $loaded={loaded}
+        $loaded={status === "loaded"}
         {...rest}
         onLoad={(event) => {
-          setLoaded(true);
+          setStatus("loaded");
           onLoad?.(event);
+        }}
+        onError={(event) => {
+          setStatus("error");
+          onError?.(event);
         }}
       />
 

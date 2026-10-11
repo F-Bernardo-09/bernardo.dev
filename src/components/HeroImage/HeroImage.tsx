@@ -10,14 +10,10 @@ const ProfileImage = styled(LazyImage)`
   border-radius: var(--radius-circle);
   margin-bottom: var(--spacing-lg);
   background-color: var(--accent-green);
-
-  img {
-    border-radius: var(--radius-circle);
-  }
 `;
 
 export default function HeroImage() {
-  const { t } = useTranslation("hero");
+  const { t } = useTranslation("about");
 
   return <ProfileImage src={profile} alt={t("image.alt")} loading="eager" />;
 }

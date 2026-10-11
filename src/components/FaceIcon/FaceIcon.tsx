@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-
 const eyes = keyframes`
   from { transform: translateY(112.5px); }
   to { transform: translateY(15px); }
