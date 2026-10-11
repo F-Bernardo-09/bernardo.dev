@@ -7,61 +7,66 @@ export function useScrollSpy(ids: string[]): string | null {
   useEffect(() => {
     if (ids.length === 0) return;
 
-    const elements = ids
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => el !== null);
-
+    const elements = getElementsById(ids);
     if (elements.length === 0) return;
 
-    let ticking = false;
+    function updateActiveSection() {
+      const mostVisibleId = findMostVisibleElementId(elements);
+      if (mostVisibleId) {
+        setActiveId(mostVisibleId);
+      }
+    }
 
+    let isUpdateScheduled = false;
     function handleScroll() {
-      const viewportHeight = window.innerHeight;
-
-      let bestId: string | null = null;
-      let bestVisible = 0;
-
-      for (const el of elements) {
-        const rect = el.getBoundingClientRect();
-
-        const visibleTop = Math.max(rect.top, 0);
-        const visibleBottom = Math.min(rect.bottom, viewportHeight);
-
-        const visibleHeight = Math.max(0, visibleBottom - visibleTop);
-
-        if (visibleHeight > bestVisible) {
-          bestVisible = visibleHeight;
-          bestId = el.id;
-        }
-      }
-
-      if (bestId) {
-        setActiveId(bestId);
-      }
-
-      ticking = false;
+      if (isUpdateScheduled) return;
+      isUpdateScheduled = true;
+      requestAnimationFrame(() => {
+        updateActiveSection();
+        isUpdateScheduled = false;
+      });
     }
 
-    function onScroll() {
-      if (!ticking) {
-        requestAnimationFrame(handleScroll);
-        ticking = true;
-      }
-    }
+    updateActiveSection();
 
-    handleScroll();
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-
-    window.addEventListener("resize", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", updateActiveSection, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", onScroll);
-
-      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateActiveSection);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [idsKey]);
 
   return activeId;
+}
+
+function getElementsById(ids: string[]): HTMLElement[] {
+  return ids
+    .map((id) => document.getElementById(id))
+    .filter((el): el is HTMLElement => el !== null);
+}
+
+function findMostVisibleElementId(elements: HTMLElement[]): string | null {
+  const viewportHeight = window.innerHeight;
+
+  let bestId: string | null = null;
+  let bestVisibleHeight = 0;
+
+  for (const el of elements) {
+    const visibleHeight = getVisibleHeight(el, viewportHeight);
+    if (visibleHeight > bestVisibleHeight) {
+      bestVisibleHeight = visibleHeight;
+      bestId = el.id;
+    }
+  }
+
+  return bestId;
+}
+
+function getVisibleHeight(el: HTMLElement, viewportHeight: number): number {
+  const rect = el.getBoundingClientRect();
+  const visibleTop = Math.max(rect.top, 0);
+  const visibleBottom = Math.min(rect.bottom, viewportHeight);
+  return Math.max(0, visibleBottom - visibleTop);
 }
