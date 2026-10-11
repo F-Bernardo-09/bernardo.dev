@@ -1,39 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bernardo.dev/pt</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://bernardo-alencar.dev/pt</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt" />
   </url>
   <url>
-    <loc>https://bernardo.dev/pt/projects</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://bernardo-alencar.dev/pt/projects</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects" />
   </url>
   <url>
-    <loc>https://bernardo.dev/pt/about</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://bernardo-alencar.dev/pt/about</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/about" />
   </url>
   <url>
-    <loc>https://bernardo.dev/en</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://bernardo-alencar.dev/en</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt" />
   </url>
   <url>
-    <loc>https://bernardo.dev/en/projects</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://bernardo-alencar.dev/en/projects</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects" />
   </url>
   <url>
-    <loc>https://bernardo.dev/en/about</loc>
-    <lastmod>2026-09-12</lastmod>
+    <loc>https://bernardo-alencar.dev/en/about</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/about" />
   </url>
 </urlset>

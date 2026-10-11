@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bernardo.dev/sitemap.xml
+Sitemap: https://bernardo-alencar.dev/sitemap.xml
