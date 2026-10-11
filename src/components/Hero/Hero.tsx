@@ -1,22 +1,34 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import HeroContent from "./HeroContent";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const HeroSection = styled.section`
   min-height: calc(100vh - var(--header-height, 80px));
   display: flex;
   align-items: center;
-  padding: var(--spacing-xl) 0;
+  padding: 0;
   text-align: left;
-
-  @media (max-width: 480px) {
-    padding: var(--spacing-lg) 0;
-  }
 `;
 
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: ${fadeIn} 0.6s ease-out;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 `;
 
 export default function Hero() {
