@@ -1,170 +1,106 @@
 import styled from "styled-components";
 import { getOverallRange } from "../../utils/dateRange";
 import { RangeText } from "./RangeText";
-import { CompanyLogo } from "./CompanyLogo";
-import RoleTrajectory from "./RoleTrajectory";
 import type { Company } from "../../types/models";
 
-const Card = styled.article<{ $expanded: boolean }>`
-  position: relative;
-  display: flex;
-  gap: var(--spacing-md);
+type Role = Company["roles"][number];
 
-  padding: var(--spacing-md);
-  padding-right: 3.25rem;
-  border: var(--border-default);
-  border-radius: var(--radius-card);
-  background-color: ${({ $expanded }) =>
-    $expanded ? "var(--bg-dark-accent)" : "transparent"};
+const Row = styled.article`
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  align-items: baseline;
+  row-gap: var(--spacing-xs);
 
-  transition:
-    background-color var(--transition-slow),
-    border-color var(--transition-slow);
-
-  &:hover {
-    border-color: var(--accent-green);
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 `;
 
-const CompanyBody = styled.div`
-  flex: 1;
-  min-width: 0;
+const Period = styled.span`
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-heading);
+  color: var(--text-secondary);
+  white-space: nowrap;
+`;
 
+const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: var(--spacing-xs);
 `;
 
-const OverallPeriod = styled.span`
-  font-size: var(--font-size-sm);
+const RoleTitle = styled.h3`
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
+  color: var(--text-primary);
+  text-align: left;
+`;
+
+const Separator = styled.span`
+  margin: 0 0.4em;
   color: var(--text-secondary);
 `;
 
-const CompanyNameLink = styled.a`
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-bold);
-  color: var(--text-primary);
+const CompanyName = styled.span`
+  color: var(--accent-green);
+`;
 
+const CompanyLink = styled.a`
+  color: var(--accent-green);
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: var(--text-secondary);
+  text-decoration-thickness: 1px;
 
-  transition:
-    color var(--transition-fast),
-    text-decoration-color var(--transition-fast);
+  transition: opacity var(--transition-fast);
 
   &:hover,
   &:focus-visible {
-    color: var(--accent-green);
-    text-decoration-color: var(--accent-green);
+    opacity: 0.8;
   }
 `;
 
-const CompanyNameText = styled.span`
+const Description = styled.p`
   font-size: var(--font-size-base);
-  font-weight: var(--font-weight-bold);
-  color: var(--text-primary);
-`;
-
-const Summary = styled.p`
-  margin-top: 0.25rem;
-  font-size: var(--font-size-sm);
   color: var(--text-secondary);
-`;
-
-const ToggleButton = styled.button<{ $expanded: boolean }>`
-  position: absolute;
-  top: var(--spacing-md);
-  right: var(--spacing-md);
-
-  display: grid;
-  place-items: center;
-
-  width: 2rem;
-  height: 2rem;
-
-  background: none;
-  border: var(--border-default);
-  border-radius: var(--radius-circle);
-  cursor: pointer;
-  color: var(--text-secondary);
-
-  transform: rotate(${({ $expanded }) => ($expanded ? "180deg" : "0deg")});
-
-  transition:
-    transform var(--transition-slow),
-    border-color var(--transition-fast),
-    color var(--transition-fast);
-
-  &:hover,
-  &:focus-visible {
-    border-color: var(--accent-green);
-    color: var(--accent-green);
-  }
+  opacity: 0.7;
+  text-align: left;
 `;
 
 interface CompanyCardProps {
   company: Company;
-  expanded: boolean;
-  onToggle: () => void;
+  role: Role;
 }
 
-export default function CompanyCard({
-  company,
-  expanded,
-  onToggle,
-}: CompanyCardProps) {
-  const overall = getOverallRange(company.roles);
-  const trajectoryId = `trajectory-${company.id}`;
+export default function CompanyCard({ company, role }: CompanyCardProps) {
+  const range = getOverallRange([role]);
 
   return (
-    <Card $expanded={expanded}>
-      <CompanyLogo company={company} />
+    <Row aria-label={role.ariaLabel}>
+      <Period>
+        <RangeText {...range} />
+      </Period>
 
-      <CompanyBody>
-        <OverallPeriod>
-          <RangeText {...overall} />
-        </OverallPeriod>
-
-        {company.link ? (
-          <CompanyNameLink
-            href={company.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {company.name}
-          </CompanyNameLink>
-        ) : (
-          <CompanyNameText>{company.name}</CompanyNameText>
-        )}
-
-        <Summary>{company.summary}</Summary>
-
-        <RoleTrajectory
-          roles={company.roles}
-          expanded={expanded}
-          id={trajectoryId}
-        />
-      </CompanyBody>
-
-      <ToggleButton
-        type="button"
-        $expanded={expanded}
-        onClick={onToggle}
-        aria-expanded={expanded}
-        aria-controls={trajectoryId}
-        aria-label={`Ver trajetória em ${company.name}`}
-      >
-        <svg width="12" height="12" viewBox="0 0 14 14" fill="none">
-          <path
-            d="M2 4.5L7 9.5L12 4.5"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </ToggleButton>
-    </Card>
+      <Content>
+        <RoleTitle>
+          {role.title}
+          <Separator aria-hidden="true">—</Separator>
+          {company.link ? (
+            <CompanyLink
+              href={company.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {company.name}
+            </CompanyLink>
+          ) : (
+            <CompanyName>{company.name}</CompanyName>
+          )}
+        </RoleTitle>
+        <Description>{role.description}</Description>
+      </Content>
+    </Row>
   );
 }

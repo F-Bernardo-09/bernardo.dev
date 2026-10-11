@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../SectionHeader/SectionHeader";
@@ -10,9 +9,14 @@ const Section = styled.section`
 `;
 
 const CompanyList = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
+  display: grid;
+  grid-template-columns: minmax(10rem, 30%) 1fr;
+  row-gap: var(--spacing-xl);
+  column-gap: var(--spacing-lg);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default function ExperienceSection() {
@@ -21,24 +25,17 @@ export default function ExperienceSection() {
     returnObjects: true,
   }) as Company[];
 
-  const [activeId, setActiveId] = useState<string | null>(null);
-
-  function toggle(id: string) {
-    setActiveId((current) => (current === id ? null : id));
-  }
+  const experiences = companies
+    .flatMap((company) => company.roles.map((role) => ({ company, role })))
+    .sort((a, b) => b.role.period.start.localeCompare(a.role.period.start));
 
   return (
     <Section id="experience">
       <div className="container">
         <SectionHeader title={t("title")} subtitle={t("subtitle")} />
         <CompanyList>
-          {companies.map((company) => (
-            <CompanyCard
-              key={company.id}
-              company={company}
-              expanded={activeId === company.id}
-              onToggle={() => toggle(company.id)}
-            />
+          {experiences.map(({ company, role }) => (
+            <CompanyCard key={role.id} company={company} role={role} />
           ))}
         </CompanyList>
       </div>
