@@ -116,8 +116,10 @@ const DrawerFooter = styled.div`
   display: flex;
   align-items: center;
   gap: var(--spacing-md);
-  margin-top: auto;
-  padding-top: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: var(--border-default);
+  width: 100%;
 `;
 
 export default function MobileMenu() {
