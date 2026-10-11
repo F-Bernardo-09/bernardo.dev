@@ -5,6 +5,7 @@ import {
   SiHtml5,
   SiCss,
   SiSass,
+  SiTailwindcss,
   SiJavascript,
   SiTypescript,
   SiReact,
@@ -12,6 +13,7 @@ import {
   SiExpress,
   SiVite,
   SiPython,
+  SiC,
   SiJsonwebtokens,
   SiPostgresql,
   SiMysql,
@@ -41,7 +43,7 @@ import {
   SiDiscord,
 } from "react-icons/si";
 import { FaJava, FaGithub, FaSlack } from "react-icons/fa";
-import { TbSql, TbApi, TbMap, TbLayoutGrid } from "react-icons/tb";
+import { TbSql, TbApi, TbMap, TbLayoutGrid, TbCode } from "react-icons/tb";
 import { DiPhotoshop, DiIllustrator } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
 import { BsMicrosoftTeams } from "react-icons/bs";
@@ -57,11 +59,15 @@ interface ToolCategory {
   items: ToolItem[];
 }
 
-// Ferramentas sem ícone de marca disponível no react-icons usam um ícone genérico.
+const FallbackIcon: IconType = TbCode;
+
 const icons: Record<string, IconType> = {
   HTML: SiHtml5,
+  HTML5: SiHtml5,
   CSS: SiCss,
   SCSS: SiSass,
+  "CSS3 / SCSS": SiSass,
+  "Tailwind CSS": SiTailwindcss,
   JavaScript: SiJavascript,
   TypeScript: SiTypescript,
   React: SiReact,
@@ -70,7 +76,7 @@ const icons: Record<string, IconType> = {
   Vite: SiVite,
   Java: FaJava,
   Python: SiPython,
-  C: TbSql,
+  C: SiC,
   "REST APIs": TbApi,
   JWT: SiJsonwebtokens,
   SQL: TbSql,
@@ -84,6 +90,7 @@ const icons: Record<string, IconType> = {
   Sequelize: SiSequelize,
   Git: SiGit,
   GitHub: SiGithub,
+  "Git & GitHub": SiGithub,
   "GitHub Pages": FaGithub,
   "GitHub Projects": FaGithub,
   "GitHub Issues": FaGithub,
@@ -119,48 +126,71 @@ const ToolsSection = styled.section``;
 const Categories = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-xl);
 `;
 
 const Category = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
 `;
 
 const CategoryTitle = styled.h3`
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
 `;
 
-const Grid = styled.nav`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: var(--spacing-sm);
+const ToolList = styled.nav`
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+`;
+
+const ToolName = styled.span`
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.35em;
+  text-decoration-color: currentColor;
+  transition: text-decoration-color var(--transition-fast);
 `;
 
 const ToolLink = styled.a`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);
-  padding: var(--spacing-sm);
-  border-radius: 8px;
-  color: var(--text-secondary);
-  font-size: var(--font-size-sm);
-  transition:
-    color 0.2s ease,
-    background 0.2s ease;
 
-  &:hover {
-    color: var(--accent-green);
-    background: var(--surface-hover, rgba(255, 255, 255, 0.04));
-  }
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-color);
+
+  font-size: var(--font-size-sm);
+  line-height: 1.2;
+  color: var(--text-secondary);
+  background-color: var(--bg-dark-accent);
+
+  text-decoration: none;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
 
   svg {
-    font-size: 1.4rem;
+    font-size: var(--font-size-base);
     flex-shrink: 0;
+    color: var(--text-secondary);
+    transition: color var(--transition-fast);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--accent-green);
+    border-color: var(--accent-green);
+    text-decoration: none;
+
+    svg {
+      color: var(--accent-green);
+    }
   }
 `;
 
@@ -171,17 +201,16 @@ export default function ToolsShowcase() {
   }) as ToolCategory[];
 
   return (
-    <ToolsSection aria-label={t("ariaLabel")}>
+    <ToolsSection aria-label={t("sectionAriaLabel")}>
       <div className="container">
-        <SectionHeader title={t("title")} />
+        <SectionHeader title={t("title")} subtitle={t("subtitle")} />
         <Categories>
           {categories.map((category) => (
             <Category key={category.name}>
               <CategoryTitle>{category.name}</CategoryTitle>
-              <Grid aria-label={category.name}>
+              <ToolList aria-label={category.name}>
                 {category.items.map((tool) => {
-                  const Icon = icons[tool.name];
-                  if (!Icon) return null;
+                  const Icon = icons[tool.name] ?? FallbackIcon;
 
                   return (
                     <ToolLink
@@ -191,11 +220,11 @@ export default function ToolsShowcase() {
                       rel="noopener noreferrer"
                     >
                       <Icon aria-hidden="true" />
-                      <span>{tool.name}</span>
+                      <ToolName>{tool.name}</ToolName>
                     </ToolLink>
                   );
                 })}
-              </Grid>
+              </ToolList>
             </Category>
           ))}
         </Categories>

@@ -5,6 +5,7 @@ import { withTranslation } from "react-i18next";
 import type { WithTranslation } from "react-i18next";
 import FaceIcon from "../FaceIcon/FaceIcon";
 import Button from "../Button/Button";
+import { localizedPath } from "../../utils/localizedPath";
 
 const fadeIn = keyframes`
   from {
@@ -49,7 +50,12 @@ const Message = styled.p`
   }
 `;
 
-const ButtonWrapper = styled.div`
+const ButtonsWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
   animation: ${fadeIn} 0.6s ease-out 0.4s both;
 
   @media (prefers-reduced-motion: reduce) {
@@ -92,7 +98,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 
   render() {
     const { hasError } = this.state;
-    const { t, children } = this.props;
+    const { t, i18n, children } = this.props;
 
     if (!hasError) {
       return children;
@@ -108,18 +114,29 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
           <Message>
             {t("errorBoundary.message", { ns: "systemErrors" })}
           </Message>
-          <ButtonWrapper>
+          <ButtonsWrapper>
             <Button
               as="button"
               type="button"
-              aria-label={t("errorBoundary.buttonAriaLabel", {
+              showIcon={false}
+              aria-label={t("errorBoundary.reloadButtonAriaLabel", {
                 ns: "systemErrors",
               })}
               onClick={this.handleReload}
             >
-              {t("errorBoundary.buttonLabel", { ns: "systemErrors" })}
+              {t("errorBoundary.reloadButtonLabel", { ns: "systemErrors" })}
             </Button>
-          </ButtonWrapper>
+
+            <Button
+              href={localizedPath("/", i18n.language)}
+              showIcon={false}
+              aria-label={t("errorBoundary.homeButtonAriaLabel", {
+                ns: "systemErrors",
+              })}
+            >
+              {t("errorBoundary.homeButtonLabel", { ns: "systemErrors" })}
+            </Button>
+          </ButtonsWrapper>
         </Wrapper>
       </div>
     );
