@@ -1,46 +1,55 @@
 {
-  "ariaLabel": "Professional experience section for Bernardo Alencar",
+  "sectionAriaLabel": "Professional Experience",
   "title": "Professional Experience",
-  "subtitle": "My professional path and the areas I've been working in.",
+  "subtitle": "My professional journey and the areas I have been working in.",
+  "present": "Present",
   "companies": [
     {
       "id": "company-loopis",
-      "name": "Loopis Jr — Junior Enterprise",
-      "logoInitial": "L",
-      "logo": { "src": "/assets/logos/loopis.webp", "alt": "Loopis Jr logo" },
-      "link": null,
-      "summary": "Work in the company's sales area, focused on structuring contracts and proposals.",
+      "name": "Loopis Jr.",
+      "link": "https://www.instagram.com/loopisjr/",
       "roles": [
         {
           "id": "role-loopis-consultor",
-          "title": "Sales Consultant",
+          "title": "Commercial Consultant",
           "period": { "start": "2026-06", "end": null },
-          "ariaLabel": "Sales Consultant at Loopis Jr, since June 2026"
+          "description": "I prepare commercial proposals, contracts, and pricing for technology projects. I bridge the gap between client needs and the development team, defining clear and feasible scopes.",
+          "ariaLabel": "Commercial Consultant at Loopis Jr., since June 2026"
         },
         {
           "id": "role-loopis-trainee",
-          "title": "Sales Consultant — Trainee",
+          "title": "Commercial Trainee",
           "period": { "start": "2026-01", "end": "2026-06" },
-          "ariaLabel": "Sales Consultant Trainee at Loopis Jr, from January to June 2026"
+          "description": "I followed the analysis of technology demands, helping to prepare commercial proposals and contracts and to calculate project pricing.",
+          "ariaLabel": "Commercial Trainee at Loopis Jr., from January to June 2026"
         }
       ]
     },
     {
       "id": "company-solitu",
       "name": "Solitu — Creative Agency",
-      "logoInitial": "S",
-      "logo": {
-        "src": "/assets/logos/solitu.webp",
-        "alt": "Solitu — Creative Agency logo"
-      },
-      "link": null,
-      "summary": "Visual identity and UI design projects for international clients.",
+      "link": "https://solitu.pt/",
       "roles": [
         {
           "id": "role-solitu-designer",
           "title": "Freelance Designer",
           "period": { "start": "2024-08", "end": null },
+          "description": "I develop visual identities, logos, and digital campaign materials for international clients, ensuring visual consistency and interfaces with intuitive navigation.",
           "ariaLabel": "Freelance Designer at Solitu Creative Agency, since August 2024"
+        }
+      ]
+    },
+    {
+      "id": "company-freelance",
+      "name": "Independent Work",
+      "link": null,
+      "roles": [
+        {
+          "id": "role-freelance-designer",
+          "title": "Freelance Designer & Web Developer",
+          "period": { "start": "2020-01", "end": null },
+          "description": "I create visual identities, social media graphics, and web layouts. I follow the entire project cycle, from the initial alignment with the client to the final delivery of the interface, prioritizing clarity and functionality.",
+          "ariaLabel": "Freelance Designer and Web Developer, since 2020"
         }
       ]
     }

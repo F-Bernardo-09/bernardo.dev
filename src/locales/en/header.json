@@ -1,7 +1,7 @@
 {
   "name": "Bernardo Alencar",
-  "title": "Web Developer & Designer",
-  "logoAlt": "Logo with the letter B representing Bernardo",
+  "title": "Web Developer, Graphic Designer, UI & UX Design",
+  "logoAlt": "Logo with the name Bernardo Alencar",
   "nav": {
     "home": {
       "label": "Home",
@@ -16,12 +16,16 @@
     "about": {
       "label": "About",
       "link": "/about",
-      "ariaLabel": "Go to the about section"
+      "ariaLabel": "Go to the about me section"
     },
     "contact": {
       "label": "Contact",
       "link": "/#contact",
       "ariaLabel": "Go to the contact section"
+    },
+    "menuToggle": {
+      "open": "Open menu",
+      "close": "Close menu"
     }
   }
 }

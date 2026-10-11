@@ -1,12 +1,12 @@
 {
   "themeToggle": {
     "ariaLabel": "Alternar tema do site",
-    "activeLight": "Ativar tema claro",
-    "activeDark": "Ativar tema escuro"
+    "switchToLight": "Mudar para o tema claro",
+    "switchToDark": "Mudar para o tema escuro"
   },
   "languageToggle": {
-    "aria-label": "Alternar idioma do site",
-    "activateEnglish": "Ativar inglês",
-    "activatePortuguese": "Ativar português"
+    "ariaLabel": "Alternar idioma do site",
+    "switchToEnglish": "Mudar idioma para inglês",
+    "switchToPortuguese": "Mudar idioma para português"
   }
 }

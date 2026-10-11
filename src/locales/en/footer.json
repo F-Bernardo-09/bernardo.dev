@@ -1,7 +1,7 @@
 {
-  "ariaLabel": "Footer of Bernardo Alencar's portfolio",
-  "tagline": "Design and development, with consistency.",
-  "copyrightTemplate": "© {{startYear}} Bernardo Alencar",
-  "copyrightStartYear": "2025",
-  "homeLinkAriaLabel": "Go back to the home page"
+  "footerAriaLabel": "Page footer",
+  "tagline": "Interface design and web development.",
+  "copyrightTemplate": "© {{startYear}} Bernardo Alencar. All rights reserved.",
+  "startYear": "2025",
+  "homeLinkAriaLabel": "Back to the home page"
 }

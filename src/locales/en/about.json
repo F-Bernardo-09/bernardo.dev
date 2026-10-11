@@ -1,14 +1,17 @@
 {
-  "ariaLabel": "About section for Bernardo Alencar",
-  "title": "Hi, I'm Bernardo Alencar — design and technology, side by side.",
+  "ariaLabel": "About Bernardo Alencar",
+  "title": "Nice to meet you, I'm Bernardo Alencar. Designer and developer.",
   "subtitle": null,
   "paragraphs": [
-    "I work in design and development, bringing interfaces and visual identity together in a single process. I'm currently a freelance Graphic Designer at Solitu and a Sales Consultant at Loopis Jr, and I take part in team projects like Verde Árido and Guardiões da Bandeira. I started out in graphic design, and over time my interest in technology led me to study Systems Analysis and Development.",
-    "I'm naturally curious and enjoy understanding how things work. What drives me most in this work is putting ideas into practice: turning a visual identity on paper into something working on screen."
+    "I work on creating interfaces and visual identities in an integrated way. I am currently a freelance Graphic Designer at Solitu, a Commercial Consultant at Loopis Jr., and a contributor to projects such as Verde Árido and Guardiões da Bandeira. My journey began in design, and as my interest in technology grew, I started studying Systems Analysis and Development.",
+    "I like understanding how things work and following the process from start to finish: taking a visual idea and turning it into a real, working application."
   ],
   "cvButton": {
-    "label": "Download Resume",
-    "link": "/assets/cv-bernardo-pt.pdf",
-    "ariaLabel": "Download Bernardo Alencar's resume as a PDF"
+    "label": "Download CV",
+    "link": "/assets/cv-bernardo-en.pdf",
+    "ariaLabel": "Download Bernardo Alencar's CV as a PDF"
+  },
+  "image": {
+    "alt": "Photo of Bernardo Alencar, web developer and graphic designer"
   }
 }

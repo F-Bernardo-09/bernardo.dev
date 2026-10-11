@@ -1,6 +1,6 @@
 {
   "title": "Projetos",
-  "subtitle": "Projetos em design e tecnologia — concluídos ou em desenvolvimento.",
+  "subtitle": "Uma seleção com alguns dos meus projetos favoritos.",
   "viewAllButton": {
     "label": "Ver Todos",
     "link": "/projects",
@@ -9,6 +9,15 @@
   "loadMoreButton": {
     "label": "Ver mais",
     "ariaLabel": "Carregar mais projetos no grid"
+  },
+  "learnMoreButton": {
+    "label": "Saiba mais",
+    "ariaLabel": "Saiba mais sobre o projeto {{title}}"
+  },
+  "detail": {
+    "back": "Voltar para projetos",
+    "notFound": "Não encontramos esse projeto.",
+    "linksTitle": "Conheça o projeto em outros canais"
   },
   "filterAllLabel": "Todos"
 }

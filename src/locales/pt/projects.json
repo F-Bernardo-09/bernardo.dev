@@ -4,20 +4,63 @@
       "id": "proj-verde-arido",
       "title": "Verde Árido",
       "subtitle": "Inteligência e Sustentabilidade no Semiárido",
-      "summary": "Plataforma Agtech de manejo da palma forrageira e nutrição de rebanho para o semiárido brasileiro.",
+      "summary": "Plataforma Agtech de manejo da palma forrageira e nutrição de rebanho selecionada para a final do Campus Mobile.",
       "period": {
         "start": "2025-11",
         "end": null,
         "label": "Desde nov 2025"
       },
-      "context": "14ª Edição do Campus Mobile — Instituto Claro / USP",
+      "context": "14ª Edição do Campus Mobile — Instituto Claro / POLI-USP",
       "relevance": 1,
       "featured": true,
-      "status": "Concluído",
+      "status": "Em andamento",
       "categories": ["Tecnologia", "Design"],
-      "description": "O Verde Árido é uma plataforma Agtech pensada para fortalecer a pecuária no semiárido brasileiro, selecionada para a 14ª edição do Campus Mobile. Trabalhamos o manejo tecnológico da palma forrageira e a nutrição de precisão do rebanho, reduzindo a vulnerabilidade dos produtores aos períodos de seca. A solução usa georreferenciamento e dados como o Zoneamento Agrícola de Risco Climático para apoiar a tomada de decisão no campo, atendendo produtores rurais e empresas de consultoria agrícola com um modelo de negócio escalável. O objetivo central é simples: manter o produtor no campo e reduzir o êxodo rural.",
+      "description": "O Verde Árido é uma plataforma Agtech desenvolvida por estudantes de ADS do IFSertãoPB (Campus Cajazeiras) para fortalecer a pecuária no semiárido brasileiro no enfrentamento da seca. Selecionado entre 477 projetos no 14º Campus Mobile (Instituto Claro/POLI-USP), o projeto avançou para a final na categoria Green Tech & Agtech após imersão em São Paulo, conquistando premiação e desenvolvendo protótipos focados no manejo da palma forrageira e na precisão nutricional do rebanho.",
+      "content": [
+        { "type": "heading", "text": "Sobre o projeto" },
+        {
+          "type": "paragraph",
+          "text": "O Verde Árido é uma plataforma Agtech concebida para atuar diretamente junto a agricultores e produtores rurais no enfrentamento da seca no semiárido brasileiro."
+        },
+        {
+          "type": "paragraph",
+          "text": "A solução foca na resiliência climática por meio do manejo tecnológico da palma forrageira e orientações que vão desde o preparo do solo até a nutrição de precisão do rebanho, buscando aumentar a produtividade e o lucro dos produtores."
+        },
+        { "type": "heading", "text": "Reconhecimento e Campus Mobile" },
+        {
+          "type": "paragraph",
+          "text": "Selecionado em um recorde nacional com 477 projetos e cerca de 900 inscritos na 14ª edição do Campus Mobile (promovido pelo Instituto Claro em parceria com a POLI-USP), o Verde Árido representou o IFSertãoPB na Semana Imersiva em São Paulo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Classificado para a final na categoria Green Tech & Agtech com premiação na etapa imersiva em São Paulo.",
+            "Acompanhamento em mentoria e desenvolvimento de protótipos avaliados por banca especializada.",
+            "Na disputa pela imersão internacional no Vale do Silício (EUA), o projeto não foi o vencedor, mas a Claro nos convidou ao Web Summit Rio, no Rio de Janeiro, para acompanhar o anúncio dos selecionados."
+          ]
+        },
+        { "type": "heading", "text": "Validação e desenvolvimento" },
+        {
+          "type": "paragraph",
+          "text": "A ideia, a interface e o protótipo já foram validados em campo, em mais de 50 validações com produtores de fazendas pequenas, médias e grandes."
+        },
+        {
+          "type": "paragraph",
+          "text": "O aplicativo segue em construção: após a validação, a equipe está desenvolvendo a plataforma."
+        },
+        { "type": "heading", "text": "Equipe e meu papel" },
+        {
+          "type": "paragraph",
+          "text": "O Verde Árido é feito por três pessoas: eu, André Pamplona e João Batista, que trabalhamos juntos do conceito ao desenvolvimento."
+        },
+        {
+          "type": "paragraph",
+          "text": "Minha participação envolve design e experiência do usuário, com a definição das funcionalidades, a prototipagem da plataforma e a identidade visual. Também colaborei na construção do Business Model Canvas e na pesquisa de usabilidade em campo com os produtores, e contribuo no desenvolvimento do aplicativo e na comunicação do projeto."
+        }
+      ],
       "tags": [
         "Agtech",
+        "Green Tech",
         "UI/UX",
         "Identidade Visual",
         "Social Impact",
@@ -27,7 +70,7 @@
         "src": "/assets/projects/proj-verde-arido.webp",
         "alt": "Interface do aplicativo Verde Árido mostrando o painel de monitoramento de palma forrageira no semiárido"
       },
-      "primaryLink": 2,
+      "primaryLink": 0,
       "links": [
         {
           "label": "Vídeo",
@@ -50,18 +93,55 @@
       "id": "proj-guardioes",
       "title": "Guardiões da Bandeira",
       "subtitle": "A nossa infância em jogo",
-      "summary": "Jogo mobile de estratégia baseado no folclore brasileiro, adaptando o 'Pega Bandeira' para o digital.",
+      "summary": "Jogo mobile de estratégia baseado no folclore brasileiro, adaptando o Pega-Bandeira para o digital.",
       "period": {
         "start": "2025-11",
         "end": null,
         "label": "Desde nov 2025"
       },
-      "context": "Game Dev Quest — Circuito de Incentivo a Jogos da Paraíba",
+      "context": "Game Dev Quest — Mandacaru Studio",
       "relevance": 1,
       "featured": true,
       "status": "Em andamento",
       "categories": ["Tecnologia", "Design"],
-      "description": "O Guardiões da Bandeira é um jogo mobile de estratégia e aventura selecionado para o Game Dev Quest. Adaptamos a brincadeira popular 'Pega Bandeira' para um ambiente digital competitivo, com base no folclore brasileiro. A interface foi pensada para mecânicas de visão limitada e movimentação tática, mantendo a navegação intuitiva em partidas cooperativas. A identidade visual usa arte 2D estilizada com personagens folclóricos e poderes especiais, além de sistema de progressão, rankings individuais e trilha sonora inspirada em ritmos brasileiros.",
+      "description": "O Guardiões da Bandeira é um jogo digital multiplayer de estratégia 2D desenvolvido pela Mandacaru Studio, inspirado na tradicional brincadeira do Pega-Bandeira. O projeto destacou-se no Game Dev Quest entre os 5 maiores projetos do circuito, conquistando o troféu de melhor trajetória e garantindo uma premiação internacional com viagem para a Alemanha.",
+      "content": [
+        { "type": "heading", "text": "Sobre o jogo" },
+        {
+          "type": "paragraph",
+          "text": "O Guardiões da Bandeira é um jogo digital multiplayer de estratégia 2D inspirado em uma das brincadeiras mais tradicionais do Brasil: o Pega-Bandeira. Ambientado no folclore brasileiro, reúne personagens lendários em uma batalha estratégica que transforma uma brincadeira tradicional em uma experiência digital competitiva e divertida, valorizando a identidade cultural do país."
+        },
+        { "type": "heading", "text": "Reconhecimento e Competição" },
+        {
+          "type": "paragraph",
+          "text": "Desenvolvido pela Mandacaru Studio — estúdio formado por jovens do Sertão da Paraíba e do Ceará, alunos do IFSertãoPB em Cajazeiras (PB) —, o jogo foi selecionado para o Game Dev Quest, circuito de fomento a jogos independentes da Paraíba. O projeto venceu a competição e chegou ao Covil dos Dragões, a etapa final, em que os estúdios finalistas apresentam seus jogos e modelos de negócio a investidores, publishers e mentores. Ficou entre os 5 maiores da competição, faturou o troféu de melhor trajetória e garantiu uma premiação marcante com viagem para a Alemanha."
+        },
+        { "type": "heading", "text": "Como funciona" },
+        {
+          "type": "paragraph",
+          "text": "Duas equipes, de 1 a 5 membros cada, entram em território inimigo para capturar a bandeira adversária e levá-la de volta à base, protegendo simultaneamente o seu próprio território. (Nota: o jogo funciona localmente via mesma rede Wi-Fi)."
+        },
+        { "type": "heading", "text": "Os Guardiões" },
+        {
+          "type": "list",
+          "items": [
+            "Saci: veloz e travesso, acelera o movimento próprio e de aliados com o redemoinho.",
+            "Curupira: protetor da floresta com pés ao contrário, torna aliados invisíveis temporariamente.",
+            "Cuca: a bruxa em forma de jacaré espalha gosma invisível para prender oponentes.",
+            "Boto Cor-de-Rosa: usa seu charme para deixar oponentes apaixonados e desorientados.",
+            "Mãe de Ouro: entidade luminosa misteriosa que revela sua verdadeira forma para aterrorizar adversários."
+          ]
+        },
+        { "type": "heading", "text": "Desenvolvimento e meu papel" },
+        {
+          "type": "paragraph",
+          "text": "O jogo segue em desenvolvimento. A equipe ainda não recebeu o apoio de mentoria, mas ele está previsto."
+        },
+        {
+          "type": "paragraph",
+          "text": "Atuei em prototipagem de UI, design de mapas e na identidade de marca do estúdio, além da gestão de equipe e orçamento sob o edital de fomento (FAPESQ/SECTIES)."
+        }
+      ],
       "tags": [
         "Game Dev",
         "UI/UX",
@@ -75,6 +155,11 @@
       },
       "primaryLink": 0,
       "links": [
+        {
+          "label": "Itch.io",
+          "url": "https://mandacaru-studio-games.itch.io/guardioes-da-bandeira",
+          "type": "itchio"
+        },
         {
           "label": "Trailer",
           "url": "https://youtu.be/YEsMxkqr8zg",
@@ -97,12 +182,23 @@
         "end": "2025-12",
         "label": "Dez 2025"
       },
-      "context": "Semana da Tecnologia — IFPB Campus Cajazeiras",
+      "context": "Semana da Tecnologia — IFSertãoPB Campus Cajazeiras",
       "relevance": 1,
       "featured": true,
       "status": "Concluído",
       "categories": ["Pesquisa", "Tecnologia"],
-      "description": "Projeto premiado com o 1º lugar na competição intercursos da Semana da Tecnologia do IFPB. A proposta transforma resíduos plásticos gerados pela própria instituição em filamento para impressão 3D, para uso nos laboratórios de prototipagem. A banca avaliadora destacou a análise de viabilidade e o potencial de impacto ambiental como os pontos mais fortes do trabalho — um exemplo de como reaproveitar material pode suprir demandas técnicas reais com baixo custo.",
+      "description": "Projeto premiado com o 1º lugar na competição intercurso da Semana da Tecnologia do IFSertãoPB, focado na implementação de soluções sustentáveis dentro do ambiente acadêmico, reaproveitando resíduos para criar filamento de impressão 3D com baixo custo.",
+      "content": [
+        { "type": "heading", "text": "Sobre o projeto" },
+        {
+          "type": "paragraph",
+          "text": "Projeto premiado com o 1º lugar na competição intercurso da Semana da Tecnologia do IFSertãoPB, focado na implementação de soluções sustentáveis dentro do ambiente acadêmico."
+        },
+        {
+          "type": "paragraph",
+          "text": "A proposta transforma resíduos plásticos gerados pela própria instituição em filamento para impressão 3D, suprindo demandas dos laboratórios com foco em viabilidade e baixo custo."
+        }
+      ],
       "tags": ["Sustentabilidade", "Prototipagem", "Apresentação Técnica"],
       "image": {
         "src": "/assets/projects/proj-replast3d.webp",
@@ -114,20 +210,47 @@
     {
       "id": "proj-plot-twist",
       "title": "Plot Twist Club",
-      "subtitle": "Identidade Visual",
-      "summary": "Identidade visual de um projeto de extensão do IFPB voltado à democratização do acesso ao cinema.",
+      "subtitle": "Cineclube, Arte e Pensamento Crítico",
+      "summary": "Projeto de extensão do IFSertãoPB voltado à democratização do acesso ao cinema e debates sobre tecnologia e sociedade.",
       "period": {
         "start": "2025-01",
         "end": "2025-08",
         "label": "Jan – Ago 2025"
       },
-      "context": "Projeto de Extensão — IFPB Campus Cajazeiras",
+      "context": "Projeto de Extensão (NUCCA) — IFSertãoPB Campus Cajazeiras",
       "relevance": 1,
       "featured": true,
       "status": "Concluído",
-      "categories": ["Design", "Comunicação"],
-      "description": "O Plot Twist Club é um projeto de extensão do IFPB voltado à democratização do acesso ao cinema e ao estímulo ao pensamento crítico entre estudantes da rede pública e a comunidade local. Com sessões semanais gratuitas e foco em produções nacionais, promove debates que conectam as obras a questões sociais, históricas e de cidadania. Desenvolvi a identidade visual do projeto, do conceito inicial à versão final.",
-      "tags": ["Identidade Visual", "Branding", "Extensão Universitária"],
+      "categories": ["Design", "Comunicação", "Extensão"],
+      "description": "O Plot Twist Club é um projeto de extensão vinculado ao NUCCA do IFSertãoPB Campus Cajazeiras, estruturado na forma de cineclube com encontros semanais para estudantes da rede pública e comunidade. Além de promover o cinema nacional e a leitura crítica da realidade, o projeto dedica parte de suas exibições a obras que dialogam com a área de Análise e Desenvolvimento de Sistemas, explorando computação, programação e tecnologia.",
+      "content": [
+        { "type": "heading", "text": "Sobre o projeto" },
+        {
+          "type": "paragraph",
+          "text": "O Plot Twist Club é um projeto de extensão vinculado ao Núcleo de Comunicação, Cultura e Artes (NUCCA) do IFSertãoPB Campus Cajazeiras, criado para promover o acesso democrático à linguagem cinematográfica."
+        },
+        {
+          "type": "paragraph",
+          "text": "Com encontros semanais voltados a discentes do ensino médio de escolas públicas e da comunidade local, o cineclube utiliza o audiovisual como ferramenta educativa para desenvolver o pensamento crítico, a argumentação e a formação cidadã."
+        },
+        { "type": "heading", "text": "Conexão com Tecnologia e ADS" },
+        {
+          "type": "paragraph",
+          "text": "O projeto conta com um foco especial na exibição e debate de filmes relacionados à área de computação, programação e tecnologia — abordando tanto a história real quanto aspectos fictícios do ecossistema digital."
+        },
+        { "type": "heading", "text": "Meu papel" },
+        {
+          "type": "paragraph",
+          "text": "Desenvolvi a identidade visual completa do projeto, traduzindo visualmente sua essência cultural, moderna e voltada ao pensamento crítico, além de apoiar na estruturação e divulgação das exibições."
+        }
+      ],
+      "tags": [
+        "Identidade Visual",
+        "Branding",
+        "Extensão Universitária",
+        "Cultura",
+        "Cineclube"
+      ],
       "image": {
         "src": "/assets/projects/plot-twist-club.webp",
         "alt": "Identidade visual do Plot Twist Club com elementos gráficos relacionados a cinema e cultura"
@@ -141,7 +264,6 @@
         }
       ]
     },
-
     {
       "id": "proj-pod-adm",
       "title": "Pod Adm",
@@ -152,12 +274,24 @@
         "end": "2023-12",
         "label": "Jul – Dez 2023"
       },
-      "context": "Projeto de Conclusão do Curso Técnico em Administração — EEEP",
+      "context": "Projeto de Conclusão do Curso Técnico em Administração — EEEP Prof. Gustavo Augusto Lima",
       "relevance": 2,
       "featured": false,
       "status": "Concluído",
       "categories": ["Comunicação", "Design"],
-      "description": "Projeto de conclusão do curso técnico em Administração, feito em equipe, para conectar empresários locais à comunidade de Lavras da Mangabeira (CE). O Pod Adm transformou conversas sobre gestão em conteúdo acessível, com histórias reais de quem empreende na região. Cuidei da identidade visual do projeto e da gestão das redes sociais (Instagram e YouTube) para ampliar o alcance das publicações.",
+      "description": "O Pod Adm foi o projeto de conclusão do meu curso técnico em Administração. A ideia foi criar um canal de troca entre empresários locais e a comunidade de Lavras da Mangabeira (CE), transformando conhecimento de gestão em algo acessível para todos.",
+      "content": [
+        { "type": "heading", "text": "Sobre o projeto" },
+        {
+          "type": "paragraph",
+          "text": "O Pod Adm foi o projeto de conclusão do meu curso técnico em Administração. A ideia foi criar um canal de troca entre empresários locais e a comunidade de Lavras da Mangabeira (CE), transformando conhecimento de gestão em algo acessível para todos."
+        },
+        { "type": "heading", "text": "Como funciona" },
+        {
+          "type": "paragraph",
+          "text": "O Pod Adm é o projeto social da Quarta Turma de Administração da EEEP Prof. Gustavo Augusto Lima. A proposta é convidar empresários de Lavras da Mangabeira para uma conversa e repassar aos telespectadores conteúdo informativo, com transmissão pelos canais do YouTube e do Instagram."
+        }
+      ],
       "tags": ["Identidade Visual", "Redes Sociais", "Comunicação", "Gestão"],
       "image": {
         "src": "/assets/projects/pod-adm.webp",

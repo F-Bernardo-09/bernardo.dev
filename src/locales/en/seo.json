@@ -1,14 +1,14 @@
 {
   "home": {
-    "title": "Bernardo Alencar — Graphic Designer, Web Designer & UI/UX",
-    "description": "Portfolio of Bernardo Alencar, a graphic designer and web developer focused on visual identity, UI/UX and front-end development."
+    "title": "Bernardo Alencar — Design & Web Development",
+    "description": "Bernardo Alencar's portfolio. Projects in visual identity, UI/UX, and front-end development focused on clarity and usability."
   },
   "about": {
-    "title": "About Bernardo Alencar — Design and Web Development",
-    "description": "Learn about Bernardo Alencar's background, education and experience in graphic design, UI/UX and web development."
+    "title": "About Bernardo Alencar — Background, Design, and Technology",
+    "description": "Learn about the background, education, and professional experience of Bernardo Alencar in design and development."
   },
   "projects": {
-    "title": "Bernardo Alencar's Projects — Design, UI/UX and Web",
-    "description": "Explore visual identity, interface design and web development projects by Bernardo Alencar."
+    "title": "Projects — Bernardo Alencar",
+    "description": "A selection of projects in visual identity, interfaces, and web development created by Bernardo Alencar."
   }
 }

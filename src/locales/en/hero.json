@@ -1,12 +1,10 @@
 {
-  "ariaLabel": "Introduction section for Bernardo Alencar",
-  "specialties": "Web Developer, Graphic Designer, UI & UX Design",
-  "description": "I work at the intersection of design and technology, shaping interfaces and visual identities.",
-  "socialLinksAriaLabel": "Social media",
+  "sectionAriaLabel": "Bernardo Alencar's main introduction",
+  "specialties": "Web Development, Graphic Design, UI & UX Design",
+  "description": "Hi, I'm Bernardo. I create interfaces and visual identities by combining design and web development.",
   "aboutButton": {
-    "label": "About Me",
-    "link": "/about",
-    "ariaLabel": "Learn more about Bernardo Alencar"
+    "label": "About me",
+    "link": "/about"
   },
-  "image": { "alt": "Photo of Bernardo Alencar, designer and web developer" }
+  "socialNavAriaLabel": "Social media and contact"
 }

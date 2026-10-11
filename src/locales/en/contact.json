@@ -1,43 +1,43 @@
 {
-  "ariaLabel": "Contact section for Bernardo Alencar",
+  "ariaLabel": "Bernardo Alencar's contact section",
   "title": "Contact",
-  "subtitle": "Have a project, an idea, or a proposal? Leave your name and email and I'll get back to you soon.",
+  "subtitle": "Whether to talk about a project, ask a question, or expand your network, feel free to send me a message.",
   "form": {
-    "name": "Name",
-    "namePlaceholder": "Your name",
-    "email": "Email",
-    "emailPlaceholder": "Your email",
-    "submit": "Send message",
-    "emailSubject": "Someone wants to talk to you",
-    "emailBody": "{{name}} ({{email}}) left a message on the site to talk to you.",
-    "sending": "Sending...",
-    "success": "Message received — I'll get back to you soon!",
-    "error": "Something went wrong. Please try again shortly."
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@email.com",
+    "submitButton": "Send message",
+    "emailSubject": "New message from the portfolio website",
+    "emailBody": "{{name}} ({{email}}) sent a message through your portfolio.",
+    "sendingState": "Sending message...",
+    "successMessage": "Message sent successfully! I'll get back to you soon.",
+    "errorMessage": "Unable to send right now. Please try again in a moment."
   },
   "social": [
     {
       "name": "Behance",
-      "label": "https://www.behance.net/bernardoalencar1",
+      "displayText": "behance.net/bernardoalencar1",
       "link": "https://www.behance.net/bernardoalencar1",
       "ariaLabel": "View Bernardo Alencar's design portfolio on Behance"
     },
     {
       "name": "GitHub",
-      "label": "https://github.com/F-Bernardo-09",
+      "displayText": "github.com/F-Bernardo-09",
       "link": "https://github.com/F-Bernardo-09",
       "ariaLabel": "View Bernardo Alencar's repositories on GitHub"
     },
     {
       "name": "LinkedIn",
-      "label": "https://www.linkedin.com/in/bernardo-alencar/",
+      "displayText": "linkedin.com/in/bernardo-alencar",
       "link": "https://www.linkedin.com/in/bernardo-alencar/",
       "ariaLabel": "View Bernardo Alencar's professional profile on LinkedIn"
     },
     {
       "name": "Instagram",
-      "label": "https://www.instagram.com/f.bernardo.09/",
+      "displayText": "instagram.com/f.bernardo.09",
       "link": "https://www.instagram.com/f.bernardo.09/",
-      "ariaLabel": "View Bernardo Alencar's Instagram"
+      "ariaLabel": "View Bernardo Alencar's profile on Instagram"
     }
   ]
 }

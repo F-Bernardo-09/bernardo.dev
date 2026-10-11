@@ -1,14 +1,17 @@
 {
   "notFound": {
+    "title": "Page not found",
     "code": "404",
-    "message": "The page you're looking for doesn't exist or has been moved.",
+    "message": "The page you are looking for doesn't exist or has moved.",
     "buttonLabel": "Back to home",
-    "buttonAriaLabel": "Go back to the home page"
+    "buttonAriaLabel": "Back to the portfolio home page"
   },
   "errorBoundary": {
-    "title": "Something went wrong",
-    "message": "An unexpected error occurred on this page. Try reloading to continue.",
-    "buttonLabel": "Reload page",
-    "buttonAriaLabel": "Reload the page"
+    "title": "Oops! Something went wrong",
+    "message": "An unexpected error occurred. Try reloading the page or going back to the home page.",
+    "reloadButtonLabel": "Reload page",
+    "reloadButtonAriaLabel": "Reload the current page",
+    "homeButtonLabel": "Go to home",
+    "homeButtonAriaLabel": "Back to the portfolio home page"
   }
 }

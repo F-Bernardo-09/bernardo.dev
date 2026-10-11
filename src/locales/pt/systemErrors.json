@@ -1,14 +1,17 @@
 {
   "notFound": {
+    "title": "Página não encontrada",
     "code": "404",
-    "message": "A página que você procura não existe ou foi movida.",
-    "buttonLabel": "Voltar para o início",
-    "buttonAriaLabel": "Voltar para a página inicial"
+    "message": "A página que você procura não existe ou mudou de endereço.",
+    "buttonLabel": "Voltar ao início",
+    "buttonAriaLabel": "Voltar para a página inicial do portfólio"
   },
   "errorBoundary": {
-    "title": "Algo deu errado",
-    "message": "Ocorreu um erro inesperado nesta página. Tente recarregar para continuar.",
-    "buttonLabel": "Recarregar página",
-    "buttonAriaLabel": "Recarregar a página"
+    "title": "Ops! Algo deu errado",
+    "message": "Ocorreu um erro inesperado. Tente recarregar a página ou voltar ao início.",
+    "reloadButtonLabel": "Recarregar página",
+    "reloadButtonAriaLabel": "Recarregar a página atual",
+    "homeButtonLabel": "Ir para o início",
+    "homeButtonAriaLabel": "Voltar para a página inicial do portfólio"
   }
 }

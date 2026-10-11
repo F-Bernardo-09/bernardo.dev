@@ -1,7 +1,7 @@
 {
-  "ariaLabel": "Academic background section for Bernardo Alencar",
+  "sectionAriaLabel": "Education",
   "title": "Education",
-  "subtitle": "My technical and academic background",
+  "subtitle": "My learning foundation in technology, systems, and management.",
   "items": [
     {
       "id": "edu-eeep",
@@ -13,17 +13,21 @@
         "end": "2023-12",
         "label": "2021 — 2023"
       },
-      "description": "Technical program integrated with high school, including involvement in scientific and cultural projects and serving as class vice-president, recognized with top-performance certificates. This was the first contact with graphic design and visual identity — the field that would become the starting point of a professional path.",
-      "ariaLabel": "Technical Degree in Administration at EEEP Prof. Gustavo Augusto Lima, 2021 to 2023"
+      "description": "Technical program integrated with high school, focused on administrative processes, project management, organizational routines, and class leadership. This period helped me develop strategic vision and workflow organization skills.",
+      "ariaLabel": "Technical Degree in Administration at EEEP Professor Gustavo Augusto Lima, from 2021 to 2023"
     },
     {
-      "id": "edu-ifpb",
-      "role": "Associate Degree in Systems Analysis and Development",
-      "organization": "Federal Institute of Paraíba — Cajazeiras Campus",
+      "id": "edu-ifsertaopb",
+      "role": "Systems Analysis and Development",
+      "organization": "Federal Institute of the Paraíba Sertão (IFSertãoPB) — Cajazeiras Campus",
       "location": "Cajazeiras, PB",
-      "period": { "start": "2024-10", "end": null, "label": "2024 — ongoing" },
-      "description": "Higher education program focused on programming, databases, and software engineering. Participation in hands-on projects, competitions, and outreach initiatives, bridging technical training with work in design and web development.",
-      "ariaLabel": "Associate Degree in Systems Analysis and Development at IFPB Cajazeiras Campus, since 2024"
+      "period": {
+        "start": "2024-10",
+        "end": null,
+        "label": "2024 — In progress"
+      },
+      "description": "Undergraduate program focused on software development, covering logical reasoning, systems architecture, databases, agile methodologies, usability, and code quality. I take part in hands-on projects and academic outreach activities.",
+      "ariaLabel": "Systems Analysis and Development at IFSertãoPB Cajazeiras Campus, started in 2024, in progress"
     }
   ]
 }

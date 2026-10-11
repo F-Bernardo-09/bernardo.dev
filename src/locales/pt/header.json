@@ -1,7 +1,7 @@
 {
   "name": "Bernardo Alencar",
-  "title": "Designer e Desenvolvedor Web",
-  "logoAlt": "Logotipo com a inicial B representando Bernardo",
+  "title": "Desenvolvedor Web, Designer Gráfico, UI & UX Design",
+  "logoAlt": "Logotipo com o nome Bernardo Alencar",
   "nav": {
     "home": {
       "label": "Início",
@@ -22,6 +22,10 @@
       "label": "Contato",
       "link": "/#contact",
       "ariaLabel": "Ir para a seção de contato"
+    },
+    "menuToggle": {
+      "open": "Abrir menu",
+      "close": "Fechar menu"
     }
   }
 }

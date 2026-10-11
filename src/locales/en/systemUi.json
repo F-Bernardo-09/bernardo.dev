@@ -1,11 +1,12 @@
 {
   "themeToggle": {
-    "activeLight": "Activate light theme",
-    "activeDark": "Activate dark theme"
+    "ariaLabel": "Toggle site theme",
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme"
   },
   "languageToggle": {
-    "aria-label": "Toggle site language",
-    "activateEnglish": "Activate English",
-    "activatePortuguese": "Activate Portuguese"
+    "ariaLabel": "Toggle site language",
+    "switchToEnglish": "Switch language to English",
+    "switchToPortuguese": "Switch language to Portuguese"
   }
 }

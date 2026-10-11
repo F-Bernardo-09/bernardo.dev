@@ -1,49 +1,55 @@
 {
-  "ariaLabel": "Seção de experiência profissional de Bernardo Alencar",
+  "sectionAriaLabel": "Experiência Profissional",
   "title": "Experiência Profissional",
-  "subtitle": "Trajetória profissional e as áreas em que venho atuando.",
+  "subtitle": "Minha trajetória profissional e as áreas em que venho atuando.",
+  "present": "Atualmente",
   "companies": [
     {
       "id": "company-loopis",
-      "name": "Loopis Jr — Empresa Júnior",
-      "logoInitial": "L",
-      "logo": {
-        "src": "/assets/logos/loopis.webp",
-        "alt": "Logotipo da Loopis Jr"
-      },
-      "link": null,
-      "summary": "Atuação na área comercial da empresa júnior, com foco na estruturação de contratos e propostas.",
+      "name": "Loopis Jr.",
+      "link": "https://www.instagram.com/loopisjr/",
       "roles": [
         {
           "id": "role-loopis-consultor",
           "title": "Consultor Comercial",
           "period": { "start": "2026-06", "end": null },
-          "ariaLabel": "Consultor Comercial na Loopis Jr, desde junho de 2026"
+          "description": "Elaboro propostas comerciais, contratos e precificação para projetos de tecnologia. Faço a ponte entre as necessidades dos clientes e a equipe de desenvolvimento, definindo escopos claros e viáveis.",
+          "ariaLabel": "Consultor Comercial na Loopis Jr., desde junho de 2026"
         },
         {
           "id": "role-loopis-trainee",
-          "title": "Consultor Comercial — Trainee",
+          "title": "Trainee Comercial",
           "period": { "start": "2026-01", "end": "2026-06" },
-          "ariaLabel": "Consultor Comercial Trainee na Loopis Jr, de janeiro a junho de 2026"
+          "description": "Acompanhei a análise de demandas de tecnologia, auxiliando na elaboração de propostas comerciais, contratos e no cálculo de precificação de projetos.",
+          "ariaLabel": "Trainee Comercial na Loopis Jr., de janeiro a junho de 2026"
         }
       ]
     },
     {
       "id": "company-solitu",
       "name": "Solitu — Agência Criativa",
-      "logoInitial": "S",
-      "logo": {
-        "src": "/assets/logos/solitu.webp",
-        "alt": "Logotipo da Solitu — Agência Criativa"
-      },
-      "link": null,
-      "summary": "Projetos de identidade visual e UI design para clientes internacionais.",
+      "link": "https://solitu.pt/",
       "roles": [
         {
           "id": "role-solitu-designer",
           "title": "Designer Freelancer",
           "period": { "start": "2024-08", "end": null },
+          "description": "Desenvolvo identidades visuais, logotipos e materiais para campanhas digitais de clientes internacionais, garantindo consistência visual e interfaces com navegação intuitiva.",
           "ariaLabel": "Designer Freelancer na Solitu Agência Criativa, desde agosto de 2024"
+        }
+      ]
+    },
+    {
+      "id": "company-freelance",
+      "name": "Atuação Independente",
+      "link": null,
+      "roles": [
+        {
+          "id": "role-freelance-designer",
+          "title": "Designer & Desenvolvedor Web Freelancer",
+          "period": { "start": "2020-01", "end": null },
+          "description": "Crio identidades visuais, peças para redes sociais e layouts para a web. Acompanho todo o ciclo do projeto, desde o alinhamento inicial com o cliente até a entrega final da interface, priorizando clareza e funcionalidade.",
+          "ariaLabel": "Designer e Desenvolvedor Web Freelancer, desde 2020"
         }
       ]
     }
