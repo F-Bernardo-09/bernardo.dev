@@ -20,10 +20,11 @@ const icons: Record<string, IconType> = {
 const List = styled.nav`
   display: flex;
   gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
 `;
 
 const SocialLink = styled.a`
+  position: relative;
+  isolation: isolate;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,8 +32,23 @@ const SocialLink = styled.a`
   font-size: var(--font-size-md);
   transition: color 0.2s ease;
 
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: var(--radius-circle);
+    background: var(--bg-dark-accent);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -1;
+  }
+
   &:hover {
     color: var(--accent-green);
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 `;
 

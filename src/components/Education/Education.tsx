@@ -9,8 +9,8 @@ const EducationSection = styled.section`
 
 const EducationList = styled.div`
   display: grid;
-  grid-template-columns: minmax(8rem, max-content) 1fr;
-  row-gap: var(--spacing-lg);
+  grid-template-columns: minmax(10rem, 30%) 1fr;
+  row-gap: var(--spacing-xl);
   column-gap: var(--spacing-lg);
 
   @media (max-width: 768px) {
@@ -22,7 +22,7 @@ const EducationRow = styled.article`
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: subgrid;
-  align-items: start;
+  align-items: baseline;
   row-gap: var(--spacing-xs);
 
   @media (max-width: 768px) {
@@ -31,7 +31,9 @@ const EducationRow = styled.article`
 `;
 
 const EducationPeriodLabel = styled.span`
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-heading);
   color: var(--text-secondary);
   white-space: nowrap;
 `;
@@ -43,14 +45,17 @@ const EducationContent = styled.div`
 `;
 
 const EducationRole = styled.h3`
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
   color: var(--text-primary);
+  text-align: left;
 `;
 
 const EducationOrganization = styled.span`
   font-size: var(--font-size-base);
   color: var(--text-secondary);
+  opacity: 0.7;
 `;
 
 export default function Education() {

@@ -22,16 +22,14 @@ export default function About() {
   const paragraphs = t("paragraphs", {
     returnObjects: true,
   }) as string[];
+  const subtitle = t("subtitle", { defaultValue: "" }) || undefined;
 
   return (
-    <AboutSection id="about">
+    <AboutSection id="about" aria-label={t("ariaLabel")}>
       <div className="container">
         <HeroImage />
 
-        <SectionHeader
-          title={t("title")}
-          subtitle={t("subtitle", { defaultValue: "" })}
-        />
+        <SectionHeader title={t("title")} subtitle={subtitle} />
         <AboutContent>
           {paragraphs.map((text, index) => (
             <p key={index}>{text}</p>
@@ -40,6 +38,7 @@ export default function About() {
           <Button
             href={t("cvButton.link")}
             download
+            iconDirection="down"
             aria-label={t("cvButton.ariaLabel")}
           >
             {t("cvButton.label")}

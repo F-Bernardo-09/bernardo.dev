@@ -28,12 +28,15 @@ const FooterContent = styled.div`
 `;
 
 const Copyright = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
   text-decoration: none;
 
   &:hover {
-    color: var(--text-primary);
+    color: var(--accent-green);
   }
 `;
 
@@ -41,7 +44,7 @@ export default function Footer() {
   const { t, i18n } = useTranslation("footer");
 
   return (
-    <StyledFooter aria-label={t("ariaLabel")}>
+    <StyledFooter aria-label={t("footerAriaLabel")}>
       <div className="container">
         <FooterContent>
           <Copyright
@@ -49,7 +52,7 @@ export default function Footer() {
             aria-label={t("homeLinkAriaLabel")}
           >
             {t("copyrightTemplate", {
-              startYear: t("copyrightStartYear"),
+              startYear: t("startYear"),
             })}
           </Copyright>
           <SocialLinks />
