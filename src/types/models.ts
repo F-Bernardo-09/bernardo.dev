@@ -6,6 +6,7 @@ export interface Role {
     start: string;
     end: string | null;
   };
+  description: string;
   ariaLabel: string;
 }
 
@@ -15,7 +16,6 @@ export interface Company {
   logoInitial: string;
   logo: { src: string; alt: string } | null;
   link: string | null;
-  summary: string;
   roles: Role[];
 }
 
@@ -37,26 +37,73 @@ export interface EducationItem {
 }
 
 /* --- Projects --- */
+export interface HeadingBlock {
+  type: "heading";
+  text: string;
+  level?: 2 | 3;
+}
+
+export interface ParagraphBlock {
+  type: "paragraph";
+  text: string;
+}
+
+export interface ListBlock {
+  type: "list";
+  items: string[];
+  ordered?: boolean;
+}
+
+export interface ImageBlock {
+  type: "image";
+  src: string;
+  alt: string;
+  caption?: string;
+  width?: number;
+  height?: number;
+}
+
+export interface GalleryBlock {
+  type: "gallery";
+  images: Array<{
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+  }>;
+}
+
+export type ProjectContentBlock =
+  | HeadingBlock
+  | ParagraphBlock
+  | ListBlock
+  | ImageBlock
+  | GalleryBlock;
+
 export interface ProjectData {
   id: string;
   title: string;
   subtitle: string;
+  summary?: string;
   period: {
     start: string;
     end: string | null;
     label: string;
   };
+
   context: string;
   relevance: number;
   featured: boolean;
   status: string;
   categories: string[];
   description: string;
+  content?: ProjectContentBlock[];
   tags: string[];
   image: {
     src: string;
     alt: string;
   };
+
   primaryLink: number | null;
   links: Array<{
     label: string;

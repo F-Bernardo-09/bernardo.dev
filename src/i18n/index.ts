@@ -1,90 +1,61 @@
 import i18n from "i18next";
+import type { Resource } from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import projectsPt from "../locales/pt/projects.json";
-import projectsUiPt from "../locales/pt/projectsUi.json";
-import systemErrorsPt from "../locales/pt/systemErrors.json";
-import systemUiPt from "../locales/pt/systemUi.json";
-import aboutPt from "../locales/pt/about.json";
-import contactPt from "../locales/pt/contact.json";
-import educationPt from "../locales/pt/education.json";
-import experiencePt from "../locales/pt/experience.json";
-import footerPt from "../locales/pt/footer.json";
-import headerPt from "../locales/pt/header.json";
-import heroPt from "../locales/pt/hero.json";
-import highlightsPt from "../locales/pt/highlights.json";
-import seoPt from "../locales/pt/seo.json";
-import toolsPt from "../locales/pt/tools.json";
-import projectsEn from "../locales/en/projects.json";
-import projectsUiEn from "../locales/en/projectsUi.json";
-import systemErrorsEn from "../locales/en/systemErrors.json";
-import systemUiEn from "../locales/en/systemUi.json";
-import aboutEn from "../locales/en/about.json";
-import contactEn from "../locales/en/contact.json";
-import educationEn from "../locales/en/education.json";
-import experienceEn from "../locales/en/experience.json";
-import footerEn from "../locales/en/footer.json";
-import headerEn from "../locales/en/header.json";
-import heroEn from "../locales/en/hero.json";
-import highlightsEn from "../locales/en/highlights.json";
-import seoEn from "../locales/en/seo.json";
-import toolsEn from "../locales/en/tools.json";
+const SUPPORTED_LANGS = ["pt", "en"] as const;
+type Lang = (typeof SUPPORTED_LANGS)[number];
+
+const DEFAULT_LANG: Lang = "pt";
+const STORAGE_KEY = "lang";
+
+const modules = import.meta.glob("../locales/*/*.json", {
+  eager: true,
+  import: "default",
+});
+
+const resources: Resource = {};
+
+for (const [path, content] of Object.entries(modules)) {
+  const match = path.match(/locales\/([^/]+)\/([^/]+)\.json$/);
+  if (!match) continue;
+
+  const [, lang, namespace] = match;
+  resources[lang] ??= {};
+  resources[lang][namespace] = content as Resource[string][string];
+}
+
+function isSupported(lang: string | null): lang is Lang {
+  return SUPPORTED_LANGS.includes(lang as Lang);
+}
+
+function getSavedLang(): Lang {
+  try {
+    if (typeof window === "undefined") return DEFAULT_LANG;
+    const saved = window.localStorage.getItem(STORAGE_KEY);
+    return isSupported(saved) ? saved : DEFAULT_LANG;
+  } catch {
+    return DEFAULT_LANG;
+  }
+}
+
+function syncHtmlLang(lang: string) {
+  if (typeof document !== "undefined") {
+    document.documentElement.lang = lang;
+  }
+}
 
 i18n.use(initReactI18next).init({
-  resources: {
-    pt: {
-      projects: projectsPt,
-      projectsUi: projectsUiPt,
-      systemErrors: systemErrorsPt,
-      systemUi: systemUiPt,
-      about: aboutPt,
-      contact: contactPt,
-      education: educationPt,
-      experience: experiencePt,
-      footer: footerPt,
-      header: headerPt,
-      hero: heroPt,
-      highlights: highlightsPt,
-      seo: seoPt,
-      tools: toolsPt,
-    },
-    en: {
-      projects: projectsEn,
-      projectsUi: projectsUiEn,
-      systemErrors: systemErrorsEn,
-      systemUi: systemUiEn,
-      about: aboutEn,
-      contact: contactEn,
-      education: educationEn,
-      experience: experienceEn,
-      footer: footerEn,
-      header: headerEn,
-      hero: heroEn,
-      highlights: highlightsEn,
-      seo: seoEn,
-      tools: toolsEn,
-    },
-  },
-  lng: localStorage.getItem("lang") || "pt",
-  fallbackLng: "pt",
-  ns: [
-    "projects",
-    "projectsUi",
-    "systemErrors",
-    "systemUi",
-    "about",
-    "contact",
-    "education",
-    "experience",
-    "footer",
-    "header",
-    "hero",
-    "highlights",
-    "seo",
-    "tools",
-  ],
+  resources,
+  lng: getSavedLang(),
+  fallbackLng: DEFAULT_LANG,
+  supportedLngs: SUPPORTED_LANGS,
+  load: "languageOnly",
+  ns: Object.keys(resources[DEFAULT_LANG] ?? {}),
   defaultNS: "about",
   interpolation: { escapeValue: false },
 });
+
+syncHtmlLang(i18n.language);
+i18n.on("languageChanged", syncHtmlLang);
 
 export default i18n;
