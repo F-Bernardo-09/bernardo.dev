@@ -1,31 +1,13 @@
-import { useState } from "react";
 import styled from "styled-components";
-import {
-  FaGithub,
-  FaInstagram,
-  FaYoutube,
-  FaGoogleDrive,
-} from "react-icons/fa";
-import { SiBehance } from "react-icons/si";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import type { ProjectData } from "../../types/models";
 import LazyImage from "../LazyImage/LazyImage";
+import AnimatedArrow from "../AnimatedArrow/AnimatedArrow";
+import { localizedPath } from "../../utils/localizedPath";
 
 interface ProjectCardProps {
   project: ProjectData;
-}
-
-const ICONS_BY_TYPE: Record<string, React.ElementType> = {
-  video: FaYoutube,
-  youtube: FaYoutube,
-  github: FaGithub,
-  instagram: FaInstagram,
-  drive: FaGoogleDrive,
-  behance: SiBehance,
-};
-
-function getIconForType(type: string) {
-  return ICONS_BY_TYPE[type] ?? HiOutlineExternalLink;
 }
 
 const ProjectCardWrapper = styled.article`
@@ -52,50 +34,14 @@ const ImageWrapper = styled(LazyImage)`
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: var(--radius-card) var(--radius-card) 0 0;
-  cursor: pointer;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      160deg,
-      color-mix(in srgb, var(--accent-green) 16%, transparent),
-      transparent 65%
-    );
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.45s ease-out;
-    z-index: 1;
-  }
-
-  &:hover::after {
-    opacity: 1;
-  }
 `;
 
-const LinksOverlay = styled.div<{ $visible: boolean }>`
+const DetailLink = styled(Link)`
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-xs);
-  background: color-mix(in srgb, var(--accent-green) 10%, transparent);
-  backdrop-filter: blur(1px);
-  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
-  pointer-events: ${({ $visible }) => ($visible ? "auto" : "none")};
-  transition: opacity 0.3s ease-out;
-  z-index: 2;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  z-index: 1;
 
-  ${ImageWrapper}:hover &,
-  ${ImageWrapper}:focus-within & {
-    opacity: 1;
-    pointer-events: auto;
-  }
-`;
-
-const IconLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,13 +49,16 @@ const IconLink = styled.a`
   height: 42px;
   border-radius: var(--radius-circle);
   background-color: color-mix(in srgb, var(--bg-dark) 60%, transparent);
+  backdrop-filter: blur(4px);
   color: var(--text-primary);
-  transition:
-    transform 0.25s ease-out,
-    color 0.25s ease-out,
-    background-color 0.25s ease-out;
+  overflow: hidden;
 
-  &:hover {
+  transition:
+    background-color 0.25s ease-out,
+    color 0.25s ease-out;
+
+  &:hover,
+  &:focus-visible {
     background-color: var(--accent-green);
     color: var(--text-dark);
   }
@@ -117,12 +66,6 @@ const IconLink = styled.a`
   &:focus-visible {
     outline: 2px solid var(--accent-green);
     outline-offset: 3px;
-  }
-
-  svg {
-    width: 19px;
-    height: 19px;
-    opacity: 1;
   }
 `;
 
@@ -138,17 +81,9 @@ const ProjectInfo = styled.div`
 
 const ProjectTitle = styled.h2`
   margin-bottom: var(--spacing-sm);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-h3);
   color: var(--text-primary);
   transition: color 0.3s ease-out;
-
-  ${ProjectCardWrapper}:hover & {
-    color: var(--accent-green);
-  }
-
-  @media (max-width: 480px) {
-    font-size: var(--font-size-base);
-  }
 `;
 
 const TagList = styled.ul`
@@ -156,7 +91,7 @@ const TagList = styled.ul`
   flex-wrap: wrap;
   gap: var(--spacing-xs);
   padding: 0;
-  margin: 0;
+  margin: 0 0 var(--spacing-xs) 0;
   list-style: none;
 `;
 
@@ -169,15 +104,6 @@ const Tag = styled.li`
   font-size: var(--font-size-sm);
   white-space: nowrap;
 
-  transition:
-    border-color 0.3s ease-out,
-    color 0.3s ease-out;
-
-  ${ProjectCardWrapper}:hover & {
-    border-color: var(--accent-green);
-    color: var(--text-primary);
-  }
-
   @media (max-width: 480px) {
     padding: 3px 10px;
     font-size: 0.7rem;
@@ -185,8 +111,10 @@ const Tag = styled.li`
 `;
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const [showLinks, setShowLinks] = useState(false);
-  const hasLinks = project.links.length > 0;
+  const { i18n } = useTranslation();
+  const { t: tUi } = useTranslation("projectsUi");
+
+  const detailPath = localizedPath(`/projects/${project.id}`, i18n.language);
 
   return (
     <ProjectCardWrapper>
@@ -195,31 +123,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         alt={project.image.alt}
         width={1600}
         height={900}
-        loading="lazy"
-        decoding="async"
-        onClick={() => hasLinks && setShowLinks((visible) => !visible)}
-        onMouseLeave={() => setShowLinks(false)}
       >
-        {hasLinks && (
-          <LinksOverlay $visible={showLinks}>
-            {project.links.map((link) => {
-              const Icon = getIconForType(link.type);
-
-              return (
-                <IconLink
-                  key={link.url}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.label}
-                  onClick={(event) => event.stopPropagation()}
-                >
-                  <Icon aria-hidden="true" />
-                </IconLink>
-              );
-            })}
-          </LinksOverlay>
-        )}
+        <DetailLink
+          to={detailPath}
+          className="arrow-trigger"
+          aria-label={tUi("learnMoreButton.ariaLabel", {
+            title: project.title,
+          })}
+        >
+          <AnimatedArrow size={16} />
+        </DetailLink>
       </ImageWrapper>
 
       <ProjectInfo>

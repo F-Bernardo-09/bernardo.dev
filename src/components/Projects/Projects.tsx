@@ -9,14 +9,32 @@ import ProjectFilter from "./ProjectFilter";
 const ProjectsSection = styled.section``;
 
 const ProjectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: flex-start;
   gap: var(--spacing-lg);
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 `;
+
+const Column = styled.div`
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  min-width: 0;
+
+  @media (max-width: 768px) {
+    display: contents;
+  }
+`;
+
+const CardSlot = styled.div<{ $order: number }>`
+  order: ${({ $order }) => $order};
+`;
+
+const COLUMN_COUNT = 2;
 
 export default function Projects() {
   const { t } = useTranslation("projects");
@@ -46,6 +64,19 @@ export default function Projects() {
     return [...filtered].sort((a, b) => a.relevance - b.relevance);
   }, [items, selectedCategories]);
 
+  const columns = useMemo(() => {
+    const result: { project: ProjectData; order: number }[][] = Array.from(
+      { length: COLUMN_COUNT },
+      () => [],
+    );
+
+    filteredProjects.forEach((project, index) => {
+      result[index % COLUMN_COUNT].push({ project, order: index });
+    });
+
+    return result;
+  }, [filteredProjects]);
+
   function handleToggleCategory(category: string) {
     setSelectedCategories((current) =>
       current.includes(category)
@@ -72,8 +103,14 @@ export default function Projects() {
         />
 
         <ProjectsGrid>
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {columns.map((column, columnIndex) => (
+            <Column key={columnIndex}>
+              {column.map(({ project, order }) => (
+                <CardSlot key={project.id} $order={order}>
+                  <ProjectCard project={project} />
+                </CardSlot>
+              ))}
+            </Column>
           ))}
         </ProjectsGrid>
       </div>

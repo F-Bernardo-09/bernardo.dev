@@ -12,33 +12,33 @@ const FilterList = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
-
   margin-bottom: var(--spacing-lg);
 `;
 
 const FilterPill = styled.button<{ $active: boolean }>`
-  padding: 6px 18px;
-  border: 1px solid var(--text-secondary);
-  border-radius: var(--radius-pill);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid
+    ${({ $active }) =>
+      $active ? "var(--accent-green)" : "var(--text-secondary)"};
 
+  border-radius: var(--radius-pill);
   background-color: ${({ $active }) =>
-    $active ? "var(--accent-green)" : "transparent"};
+    $active ? "var(--accent-green)" : "var(--bg-dark-accent)"};
   color: ${({ $active }) =>
     $active ? "var(--text-dark)" : "var(--text-secondary)"};
-  border-color: ${({ $active }) =>
-    $active ? "var(--accent-green)" : "var(--text-secondary)"};
 
   font-family: var(--font-family-base);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-body);
 
   cursor: pointer;
   white-space: nowrap;
 
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease;
+    background-color var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
 
   &:hover {
     border-color: var(--accent-green);
@@ -47,11 +47,6 @@ const FilterPill = styled.button<{ $active: boolean }>`
   &:focus-visible {
     outline: 2px solid var(--accent-green);
     outline-offset: 3px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 4px 14px;
-    font-size: 0.75rem;
   }
 `;
 

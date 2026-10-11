@@ -11,13 +11,29 @@ import { localizedPath } from "../../utils/localizedPath";
 const ProjectsSection = styled.section``;
 
 const ProjectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: flex-start;
   gap: var(--spacing-lg);
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
+`;
+
+const Column = styled.div`
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  min-width: 0;
+
+  @media (max-width: 768px) {
+    display: contents;
+  }
+`;
+
+const CardSlot = styled.div<{ $order: number }>`
+  order: ${({ $order }) => $order};
 `;
 
 const ButtonWrapper = styled.div`
@@ -28,6 +44,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const PREVIEW_COUNT = 4;
+const COLUMN_COUNT = 2;
 
 export default function ProjectsPreview() {
   const { t, i18n } = useTranslation("projects");
@@ -40,14 +57,33 @@ export default function ProjectsPreview() {
       .slice(0, PREVIEW_COUNT);
   }, [items]);
 
+  const columns = useMemo(() => {
+    const result: { project: ProjectData; order: number }[][] = Array.from(
+      { length: COLUMN_COUNT },
+      () => [],
+    );
+
+    previewProjects.forEach((project, index) => {
+      result[index % COLUMN_COUNT].push({ project, order: index });
+    });
+
+    return result;
+  }, [previewProjects]);
+
   return (
     <ProjectsSection>
       <div className="container">
         <SectionHeader title={tUi("title")} subtitle={tUi("subtitle")} />
 
         <ProjectsGrid>
-          {previewProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {columns.map((column, columnIndex) => (
+            <Column key={columnIndex}>
+              {column.map(({ project, order }) => (
+                <CardSlot key={project.id} $order={order}>
+                  <ProjectCard project={project} />
+                </CardSlot>
+              ))}
+            </Column>
           ))}
         </ProjectsGrid>
 
