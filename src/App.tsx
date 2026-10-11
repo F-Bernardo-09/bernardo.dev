@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import ProjectDetail from "./components/Projects/ProjectDetail";
 import NotFoundPage from "./pages/NotFoundPage";
 import SEO from "./components/SEO/SEO";
 import { getSupportedLanguage } from "./utils/localizedPath";
@@ -43,12 +44,18 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:id" element={<ProjectDetail />} />
+
             <Route path="/pt" element={<HomePage />} />
             <Route path="/pt/about" element={<AboutPage />} />
             <Route path="/pt/projects" element={<ProjectsPage />} />
+            <Route path="/pt/projects/:id" element={<ProjectDetail />} />
+
             <Route path="/en" element={<HomePage />} />
             <Route path="/en/about" element={<AboutPage />} />
             <Route path="/en/projects" element={<ProjectsPage />} />
+            <Route path="/en/projects/:id" element={<ProjectDetail />} />
+
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
