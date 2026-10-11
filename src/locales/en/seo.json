@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "Bernardo Alencar — Design & Web Development",
+    "description": "Bernardo Alencar's portfolio. Projects in visual identity, UI/UX, and front-end development focused on clarity and usability."
+  },
+  "about": {
+    "title": "About Bernardo Alencar — Background, Design, and Technology",
+    "description": "Learn about the background, education, and professional experience of Bernardo Alencar in design and development."
+  },
+  "projects": {
+    "title": "Projects — Bernardo Alencar",
+    "description": "A selection of projects in visual identity, interfaces, and web development created by Bernardo Alencar."
+  }
+}

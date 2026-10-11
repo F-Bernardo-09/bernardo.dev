@@ -1,0 +1,394 @@
+{
+  "items": [
+    {
+      "id": "proj-verde-arido",
+      "title": "Verde Árido",
+      "subtitle": "Intelligence and Sustainability in the Semi-Arid Region",
+      "summary": "Agtech platform for forage cactus management and herd nutrition, selected for the Campus Mobile final.",
+      "period": {
+        "start": "2025-11",
+        "end": null,
+        "label": "Since Nov 2025"
+      },
+      "context": "14th Edition of Campus Mobile — Instituto Claro / POLI-USP",
+      "relevance": 1,
+      "featured": true,
+      "status": "In progress",
+      "categories": ["Technology", "Design"],
+      "description": "Verde Árido is an Agtech platform developed by Systems Analysis and Development students at IFSertãoPB (Cajazeiras Campus) to strengthen livestock farming in the Brazilian semi-arid region in the face of drought. Selected among 477 projects at the 14th Campus Mobile (Instituto Claro/POLI-USP), the project advanced to the final in the Green Tech & Agtech category after an immersion in São Paulo, winning an award and developing prototypes focused on forage cactus management and precision herd nutrition.",
+      "content": [
+        { "type": "heading", "text": "About the project" },
+        {
+          "type": "paragraph",
+          "text": "Verde Árido is an Agtech platform designed to work directly with farmers and rural producers in tackling drought in the Brazilian semi-arid region."
+        },
+        {
+          "type": "paragraph",
+          "text": "The solution focuses on climate resilience through technology-driven management of forage cactus and guidance ranging from soil preparation to precision herd nutrition, aiming to increase producers' productivity and profit."
+        },
+        { "type": "heading", "text": "Recognition and Campus Mobile" },
+        {
+          "type": "paragraph",
+          "text": "Selected in a national record of 477 projects and around 900 participants in the 14th edition of Campus Mobile (organized by Instituto Claro in partnership with POLI-USP), Verde Árido represented IFSertãoPB at the Immersive Week in São Paulo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Qualified for the final in the Green Tech & Agtech category, with an award at the immersive stage in São Paulo.",
+            "Mentorship and prototype development assessed by a panel of specialists.",
+            "In the race for the international immersion in Silicon Valley (USA), the project was not the winner, but Claro invited us to Web Summit Rio, in Rio de Janeiro, to watch the announcement of the selected teams."
+          ]
+        },
+        { "type": "heading", "text": "Validation and development" },
+        {
+          "type": "paragraph",
+          "text": "The idea, the interface, and the prototype have already been validated in the field, through more than 50 validations with producers from small, medium, and large farms."
+        },
+        {
+          "type": "paragraph",
+          "text": "The app is still under construction: after validation, the team is building the platform."
+        },
+        { "type": "heading", "text": "Team and my role" },
+        {
+          "type": "paragraph",
+          "text": "Verde Árido is built by three people: me, André Pamplona, and João Batista, working together from concept to development."
+        },
+        {
+          "type": "paragraph",
+          "text": "My involvement covers design and user experience, including defining features, prototyping the platform, and creating the visual identity. I also helped build the Business Model Canvas and conducted field usability research with producers, and I contribute to the app's development and the project's communication."
+        }
+      ],
+      "tags": [
+        "Agtech",
+        "Green Tech",
+        "UI/UX",
+        "Visual Identity",
+        "Social Impact",
+        "Mobile"
+      ],
+      "image": {
+        "src": "/assets/projects/proj-verde-arido.webp",
+        "alt": "Verde Árido app interface showing the forage cactus monitoring dashboard in the semi-arid region"
+      },
+      "primaryLink": 0,
+      "links": [
+        {
+          "label": "Video",
+          "url": "https://youtu.be/sgvT0G0R-C4",
+          "type": "video"
+        },
+        {
+          "label": "Behance",
+          "url": "https://www.behance.net/gallery/239086931/Verde-Arido-Identidade-Visual",
+          "type": "behance"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/verde_arido/",
+          "type": "instagram"
+        }
+      ]
+    },
+    {
+      "id": "proj-guardioes",
+      "title": "Guardiões da Bandeira",
+      "subtitle": "Our childhood at play",
+      "summary": "Mobile strategy game based on Brazilian folklore, adapting Pega-Bandeira (Capture the Flag) to digital.",
+      "period": {
+        "start": "2025-11",
+        "end": null,
+        "label": "Since Nov 2025"
+      },
+      "context": "Game Dev Quest — Mandacaru Studio",
+      "relevance": 1,
+      "featured": true,
+      "status": "In progress",
+      "categories": ["Technology", "Design"],
+      "description": "Guardiões da Bandeira is a 2D multiplayer strategy game developed by Mandacaru Studio, inspired by the traditional children's game Pega-Bandeira (Capture the Flag). The project stood out at Game Dev Quest among the 5 biggest projects of the circuit, winning the best trajectory trophy and securing an international prize with a trip to Germany.",
+      "content": [
+        { "type": "heading", "text": "About the game" },
+        {
+          "type": "paragraph",
+          "text": "Guardiões da Bandeira is a 2D multiplayer strategy game inspired by one of Brazil's most traditional children's games: Pega-Bandeira (Capture the Flag). Set in Brazilian folklore, it brings legendary characters together in a strategic battle that turns a traditional game into a competitive and fun digital experience, celebrating the country's cultural identity."
+        },
+        { "type": "heading", "text": "Recognition and Competition" },
+        {
+          "type": "paragraph",
+          "text": "Developed by Mandacaru Studio — a studio formed by young people from the backlands of Paraíba and Ceará, students at IFSertãoPB in Cajazeiras (PB) — the game was selected for Game Dev Quest, a circuit that supports independent games in Paraíba. The project won the competition and reached the Covil dos Dragões (Dragons' Den), the final stage, in which finalist studios present their games and business models to investors, publishers, and mentors. It ranked among the 5 biggest in the competition, earned the best trajectory trophy, and secured a remarkable prize with a trip to Germany."
+        },
+        { "type": "heading", "text": "How it works" },
+        {
+          "type": "paragraph",
+          "text": "Two teams, of 1 to 5 members each, enter enemy territory to capture the opposing flag and bring it back to their base, while simultaneously protecting their own territory. (Note: the game works locally over the same Wi-Fi network.)"
+        },
+        { "type": "heading", "text": "The Guardians" },
+        {
+          "type": "list",
+          "items": [
+            "Saci: swift and mischievous, speeds up his own and his allies' movement with the whirlwind.",
+            "Curupira: forest protector with backward-facing feet, makes allies temporarily invisible.",
+            "Cuca: the witch in the shape of an alligator spreads invisible slime to trap opponents.",
+            "Boto Cor-de-Rosa (Pink River Dolphin): uses his charm to leave opponents infatuated and disoriented.",
+            "Mãe de Ouro: a mysterious luminous entity that reveals her true form to terrify adversaries."
+          ]
+        },
+        { "type": "heading", "text": "Development and my role" },
+        {
+          "type": "paragraph",
+          "text": "The game is still in development. The team has not yet received mentorship support, but it is planned."
+        },
+        {
+          "type": "paragraph",
+          "text": "I worked on UI prototyping, map design, and the studio's brand identity, as well as team and budget management under the funding call (FAPESQ/SECTIES)."
+        }
+      ],
+      "tags": [
+        "Game Dev",
+        "UI/UX",
+        "Visual Identity",
+        "Mobile",
+        "Brazilian Folklore"
+      ],
+      "image": {
+        "src": "/assets/projects/proj-guardioes.webp",
+        "alt": "Guardiões da Bandeira gameplay screen showing a tactical map with Brazilian folklore characters"
+      },
+      "primaryLink": 0,
+      "links": [
+        {
+          "label": "Itch.io",
+          "url": "https://mandacaru-studio-games.itch.io/guardioes-da-bandeira",
+          "type": "itchio"
+        },
+        {
+          "label": "Trailer",
+          "url": "https://youtu.be/YEsMxkqr8zg",
+          "type": "video"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/mandacaru.studio_/",
+          "type": "instagram"
+        }
+      ]
+    },
+    {
+      "id": "proj-bernardo-dev",
+      "title": "Website Portfolio",
+      "subtitle": "Design and code in a single project",
+      "summary": "Bilingual personal portfolio built with React and TypeScript, featuring light and dark themes, project detail pages and a contact form protected by hCaptcha.",
+      "period": { "start": "2025-01", "end": null, "label": "Since 2025" },
+      "context": "Personal project",
+      "relevance": 1,
+      "featured": true,
+      "status": "In progress",
+      "categories": ["Technology", "Design"],
+      "description": "Personal portfolio created to bring design and development work together in one place. It is a single-page application built with React 19 and TypeScript, with routes and content in Portuguese and English, dynamic SEO, light and dark themes and a contact form with anti-spam verification.",
+      "content": [
+        { "type": "heading", "text": "About the project" },
+        {
+          "type": "paragraph",
+          "text": "bernardo.dev is this very website: a bilingual portfolio that presents my projects, education, experience and the tools I use. It was designed to bring the visual and technical sides together, with a consistent design system and a codebase organized into reusable components."
+        },
+        { "type": "heading", "text": "Features" },
+        {
+          "type": "list",
+          "items": [
+            "Localized routes in Portuguese and English (/pt and /en), with a language switcher and copy organized into JSON files by section.",
+            "Detail pages for each project, built from typed content blocks (heading, paragraph, list, image and gallery).",
+            "Light and dark themes that follow the system preference and remember the visitor's choice in the browser.",
+            "Side menu for small screens and active section highlighting on the home page.",
+            "Lazy-loaded images with an animated placeholder.",
+            "Contact form with Web3Forms, hCaptcha and a honeypot field, with translated sending, success and error states."
+          ]
+        },
+        { "type": "heading", "text": "Technologies" },
+        {
+          "type": "list",
+          "items": [
+            "React 19, TypeScript and Vite.",
+            "React Router for routing and styled-components for styling.",
+            "i18next and react-i18next for internationalization.",
+            "React Icons for iconography.",
+            "Deployed on Vercel, with security headers and a Content-Security-Policy configured."
+          ]
+        },
+        { "type": "heading", "text": "Technical decisions" },
+        {
+          "type": "list",
+          "items": [
+            "Dynamic SEO: title, description, canonical URL, Open Graph and hreflang links change with the page and language, and a sitemap describes the version in each language.",
+            "Theme managed with the Context API and a custom hook, persisted in localStorage.",
+            "Scroll-synchronized navigation through a hook that uses requestAnimationFrame to avoid running calculations on every event.",
+            "Accessibility: ARIA labels, alt text, visible focus and animations turned off when the user prefers reduced motion."
+          ]
+        },
+        { "type": "heading", "text": "My role" },
+        {
+          "type": "paragraph",
+          "text": "I designed the interface and built the whole application, from the design system and components to SEO, security and deployment setup."
+        }
+      ],
+      "tags": ["React", "TypeScript", "Vite", "i18n", "UI/UX", "SEO"],
+      "image": {
+        "src": "/assets/projects/proj-bernardo-dev.webp",
+        "alt": "Portfolio cover with the name Bernardo Alencar and the description Web Developer, Graphic Designer, UI & UX Design"
+      },
+      "primaryLink": 0,
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://bernardo-alencar.dev",
+          "type": "website"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/F-Bernardo-09/bernardo.dev",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "proj-replast3d",
+      "title": "RePlast3D",
+      "subtitle": "1st Place — Inter-Course Competition",
+      "summary": "Turning the institution's plastic waste into filament for 3D printing.",
+      "period": {
+        "start": "2025-12",
+        "end": "2025-12",
+        "label": "Dec 2025"
+      },
+      "context": "Technology Week — IFSertãoPB Cajazeiras Campus",
+      "relevance": 1,
+      "featured": true,
+      "status": "Completed",
+      "categories": ["Research", "Technology"],
+      "description": "Project awarded 1st place in the inter-course competition of IFSertãoPB's Technology Week, focused on implementing sustainable solutions within the academic environment, reusing waste to create low-cost 3D printing filament.",
+      "content": [
+        { "type": "heading", "text": "About the project" },
+        {
+          "type": "paragraph",
+          "text": "Project awarded 1st place in the inter-course competition of IFSertãoPB's Technology Week, focused on implementing sustainable solutions within the academic environment."
+        },
+        {
+          "type": "paragraph",
+          "text": "The proposal turns plastic waste generated by the institution itself into 3D printing filament, meeting the labs' demands with a focus on feasibility and low cost."
+        }
+      ],
+      "tags": ["Sustainability", "Prototyping", "Technical Presentation"],
+      "image": {
+        "src": "/assets/projects/proj-replast3d.webp",
+        "alt": "RePlast3D project presentation showing the process of turning recycled plastic into 3D printing filament"
+      },
+      "primaryLink": null,
+      "links": []
+    },
+    {
+      "id": "proj-plot-twist",
+      "title": "Plot Twist Club",
+      "subtitle": "Film Club, Art, and Critical Thinking",
+      "summary": "IFSertãoPB outreach project aimed at democratizing access to cinema and fostering discussions about technology and society.",
+      "period": {
+        "start": "2025-01",
+        "end": "2025-08",
+        "label": "Jan – Aug 2025"
+      },
+      "context": "Outreach Project (NUCCA) — IFSertãoPB Cajazeiras Campus",
+      "relevance": 1,
+      "featured": true,
+      "status": "Completed",
+      "categories": ["Design", "Communication", "Outreach"],
+      "description": "Plot Twist Club is an outreach project linked to NUCCA at IFSertãoPB Cajazeiras Campus, structured as a film club with weekly meetings for public school students and the community. Besides promoting Brazilian cinema and a critical reading of reality, the project dedicates part of its screenings to works that relate to the field of Systems Analysis and Development, exploring computing, programming, and technology.",
+      "content": [
+        { "type": "heading", "text": "About the project" },
+        {
+          "type": "paragraph",
+          "text": "Plot Twist Club is an outreach project linked to the Communication, Culture, and Arts Center (NUCCA) at IFSertãoPB Cajazeiras Campus, created to promote democratic access to cinematic language."
+        },
+        {
+          "type": "paragraph",
+          "text": "With weekly meetings aimed at public high school students and the local community, the film club uses audiovisual media as an educational tool to develop critical thinking, argumentation, and civic education."
+        },
+        {
+          "type": "heading",
+          "text": "Connection with Technology and Systems Development"
+        },
+        {
+          "type": "paragraph",
+          "text": "The project has a special focus on screening and discussing films related to computing, programming, and technology — covering both the real history and the fictional aspects of the digital ecosystem."
+        },
+        { "type": "heading", "text": "My role" },
+        {
+          "type": "paragraph",
+          "text": "I developed the project's complete visual identity, visually translating its cultural, modern essence focused on critical thinking, and I also supported the organization and promotion of the screenings."
+        }
+      ],
+      "tags": [
+        "Visual Identity",
+        "Branding",
+        "University Outreach",
+        "Culture",
+        "Film Club"
+      ],
+      "image": {
+        "src": "/assets/projects/plot-twist-club.webp",
+        "alt": "Plot Twist Club visual identity with graphic elements related to cinema and culture"
+      },
+      "primaryLink": 0,
+      "links": [
+        {
+          "label": "Final version",
+          "url": "https://www.behance.net/gallery/228475283/Plot-Twist-Club-Nova-Id-Visual",
+          "type": "behance"
+        }
+      ]
+    },
+    {
+      "id": "proj-pod-adm",
+      "title": "Pod Adm",
+      "subtitle": "Management and Local Entrepreneurship Podcast",
+      "summary": "Podcast and visual identity connecting local business owners to the community of Lavras da Mangabeira.",
+      "period": {
+        "start": "2023-07",
+        "end": "2023-12",
+        "label": "Jul – Dec 2023"
+      },
+      "context": "Capstone Project of the Technical Degree in Administration — EEEP Prof. Gustavo Augusto Lima",
+      "relevance": 2,
+      "featured": false,
+      "status": "Completed",
+      "categories": ["Communication", "Design"],
+      "description": "Pod Adm was the capstone project of my technical degree in Administration. The idea was to create a channel of exchange between local business owners and the community of Lavras da Mangabeira (CE), turning management knowledge into something accessible to everyone.",
+      "content": [
+        { "type": "heading", "text": "About the project" },
+        {
+          "type": "paragraph",
+          "text": "Pod Adm was the capstone project of my technical degree in Administration. The idea was to create a channel of exchange between local business owners and the community of Lavras da Mangabeira (CE), turning management knowledge into something accessible to everyone."
+        },
+        { "type": "heading", "text": "How it works" },
+        {
+          "type": "paragraph",
+          "text": "Pod Adm is the social project of the Fourth Administration Class at EEEP Prof. Gustavo Augusto Lima. The proposal is to invite business owners from Lavras da Mangabeira for a conversation and pass informative content on to viewers, broadcast through YouTube and Instagram channels."
+        }
+      ],
+      "tags": [
+        "Visual Identity",
+        "Social Media",
+        "Communication",
+        "Management"
+      ],
+      "image": {
+        "src": "/assets/projects/pod-adm.webp",
+        "alt": "Pod Adm cover art with the visual identity of the administration podcast"
+      },
+      "primaryLink": 0,
+      "links": [
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@PODADM",
+          "type": "youtube"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "sectionAriaLabel": "Technologies and tools used by Bernardo Alencar",
+  "title": "Technologies & Tools",
+  "subtitle": "The set of technologies, software, and libraries I use day to day.",
+  "categories": [
+    {
+      "name": "Web Development & Languages",
+      "items": [
+        {
+          "name": "HTML5",
+          "link": "https://developer.mozilla.org/docs/Web/HTML"
+        },
+        {
+          "name": "CSS3 / SCSS",
+          "link": "https://sass-lang.com"
+        },
+        {
+          "name": "Tailwind CSS",
+          "link": "https://tailwindcss.com"
+        },
+        {
+          "name": "JavaScript",
+          "link": "https://developer.mozilla.org/docs/Web/JavaScript"
+        },
+        {
+          "name": "TypeScript",
+          "link": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "React",
+          "link": "https://react.dev"
+        },
+        {
+          "name": "Node.js",
+          "link": "https://nodejs.org"
+        },
+        {
+          "name": "Express",
+          "link": "https://expressjs.com"
+        },
+        {
+          "name": "Java",
+          "link": "https://www.java.com"
+        },
+        {
+          "name": "Python",
+          "link": "https://www.python.org"
+        },
+        {
+          "name": "REST APIs",
+          "link": "https://restfulapi.net"
+        }
+      ]
+    },
+    {
+      "name": "Databases & Backend",
+      "items": [
+        {
+          "name": "PostgreSQL",
+          "link": "https://www.postgresql.org"
+        },
+        {
+          "name": "MySQL",
+          "link": "https://www.mysql.com"
+        },
+        {
+          "name": "MongoDB",
+          "link": "https://www.mongodb.com"
+        },
+        {
+          "name": "Supabase",
+          "link": "https://supabase.com"
+        },
+        {
+          "name": "Redis",
+          "link": "https://redis.io"
+        },
+        {
+          "name": "Docker",
+          "link": "https://www.docker.com"
+        }
+      ]
+    },
+    {
+      "name": "Design & Prototyping",
+      "items": [
+        {
+          "name": "Figma",
+          "link": "https://www.figma.com"
+        },
+        {
+          "name": "Photoshop",
+          "link": "https://www.adobe.com/products/photoshop.html"
+        },
+        {
+          "name": "Illustrator",
+          "link": "https://www.adobe.com/products/illustrator.html"
+        },
+        {
+          "name": "InDesign",
+          "link": "https://www.adobe.com/products/indesign.html"
+        }
+      ]
+    },
+    {
+      "name": "Ecosystem & Productivity",
+      "items": [
+        {
+          "name": "Git & GitHub",
+          "link": "https://github.com"
+        },
+        {
+          "name": "VS Code",
+          "link": "https://code.visualstudio.com"
+        },
+        {
+          "name": "Insomnia",
+          "link": "https://insomnia.rest"
+        },
+        {
+          "name": "Vercel",
+          "link": "https://vercel.com"
+        },
+        {
+          "name": "Notion",
+          "link": "https://www.notion.so"
+        }
+      ]
+    }
+  ]
+}

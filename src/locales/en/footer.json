@@ -1,0 +1,7 @@
+{
+  "footerAriaLabel": "Page footer",
+  "tagline": "Interface design and web development.",
+  "copyrightTemplate": "© {{startYear}} Bernardo Alencar. All rights reserved.",
+  "startYear": "2025",
+  "homeLinkAriaLabel": "Back to the home page"
+}

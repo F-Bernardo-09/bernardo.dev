@@ -1,0 +1,12 @@
+{
+  "themeToggle": {
+    "ariaLabel": "Toggle site theme",
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme"
+  },
+  "languageToggle": {
+    "ariaLabel": "Toggle site language",
+    "switchToEnglish": "Switch language to English",
+    "switchToPortuguese": "Switch language to Portuguese"
+  }
+}

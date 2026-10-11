@@ -1,0 +1,17 @@
+{
+  "notFound": {
+    "title": "Page not found",
+    "code": "404",
+    "message": "The page you are looking for doesn't exist or has moved.",
+    "buttonLabel": "Back to home",
+    "buttonAriaLabel": "Back to the portfolio home page"
+  },
+  "errorBoundary": {
+    "title": "Oops! Something went wrong",
+    "message": "An unexpected error occurred. Try reloading the page or going back to the home page.",
+    "reloadButtonLabel": "Reload page",
+    "reloadButtonAriaLabel": "Reload the current page",
+    "homeButtonLabel": "Go to home",
+    "homeButtonAriaLabel": "Back to the portfolio home page"
+  }
+}

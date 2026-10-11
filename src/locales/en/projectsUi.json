@@ -1,0 +1,23 @@
+{
+  "title": "Projects",
+  "subtitle": "A selection of some of my favorite projects.",
+  "viewAllButton": {
+    "label": "View All",
+    "link": "/projects",
+    "ariaLabel": "View the full list of projects"
+  },
+  "loadMoreButton": {
+    "label": "Load more",
+    "ariaLabel": "Load more projects in the grid"
+  },
+  "learnMoreButton": {
+    "label": "Learn more",
+    "ariaLabel": "Learn more about the project {{title}}"
+  },
+  "detail": {
+    "back": "Back to projects",
+    "notFound": "We couldn't find this project.",
+    "linksTitle": "Check out the project on other channels"
+  },
+  "filterAllLabel": "All"
+}

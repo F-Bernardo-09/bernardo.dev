@@ -1,0 +1,31 @@
+{
+  "name": "Bernardo Alencar",
+  "title": "Web Developer, Graphic Designer, UI & UX Design",
+  "logoAlt": "Logo with the name Bernardo Alencar",
+  "nav": {
+    "home": {
+      "label": "Home",
+      "link": "/",
+      "ariaLabel": "Go to the home section"
+    },
+    "projects": {
+      "label": "Projects",
+      "link": "/projects",
+      "ariaLabel": "Go to the projects section"
+    },
+    "about": {
+      "label": "About",
+      "link": "/about",
+      "ariaLabel": "Go to the about me section"
+    },
+    "contact": {
+      "label": "Contact",
+      "link": "/#contact",
+      "ariaLabel": "Go to the contact section"
+    },
+    "menuToggle": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  }
+}

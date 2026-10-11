@@ -1,0 +1,33 @@
+{
+  "sectionAriaLabel": "Education",
+  "title": "Education",
+  "subtitle": "My learning foundation in technology, systems, and management.",
+  "items": [
+    {
+      "id": "edu-eeep",
+      "role": "Technical Degree in Administration",
+      "organization": "EEEP Prof. Gustavo Augusto Lima",
+      "location": "Lavras da Mangabeira, CE",
+      "period": {
+        "start": "2021-01",
+        "end": "2023-12",
+        "label": "2021 — 2023"
+      },
+      "description": "Technical program integrated with high school, focused on administrative processes, project management, organizational routines, and class leadership. This period helped me develop strategic vision and workflow organization skills.",
+      "ariaLabel": "Technical Degree in Administration at EEEP Professor Gustavo Augusto Lima, from 2021 to 2023"
+    },
+    {
+      "id": "edu-ifsertaopb",
+      "role": "Systems Analysis and Development",
+      "organization": "Federal Institute of the Paraíba Sertão (IFSertãoPB) — Cajazeiras Campus",
+      "location": "Cajazeiras, PB",
+      "period": {
+        "start": "2024-10",
+        "end": null,
+        "label": "2024 — In progress"
+      },
+      "description": "Undergraduate program focused on software development, covering logical reasoning, systems architecture, databases, agile methodologies, usability, and code quality. I take part in hands-on projects and academic outreach activities.",
+      "ariaLabel": "Systems Analysis and Development at IFSertãoPB Cajazeiras Campus, started in 2024, in progress"
+    }
+  ]
+}

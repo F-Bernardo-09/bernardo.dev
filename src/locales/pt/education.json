@@ -1,0 +1,33 @@
+{
+  "sectionAriaLabel": "Formação Acadêmica",
+  "title": "Formação Acadêmica",
+  "subtitle": "Minha base de aprendizado em tecnologia, sistemas e gestão.",
+  "items": [
+    {
+      "id": "edu-eeep",
+      "role": "Técnico em Administração",
+      "organization": "EEEP Prof. Gustavo Augusto Lima",
+      "location": "Lavras da Mangabeira, CE",
+      "period": {
+        "start": "2021-01",
+        "end": "2023-12",
+        "label": "2021 — 2023"
+      },
+      "description": "Formação técnica integrada ao ensino médio focada em processos administrativos, gestão de projetos, rotinas organizacionais e liderança de turma. O período contribuiu para desenvolver visão estratégica e organização de fluxo de trabalho.",
+      "ariaLabel": "Técnico em Administração na EEEP Professor Gustavo Augusto Lima, de 2021 a 2023"
+    },
+    {
+      "id": "edu-ifsertaopb",
+      "role": "Análise e Desenvolvimento de Sistemas",
+      "organization": "Instituto Federal do Sertão Paraibano (IFSertãoPB) — Campus Cajazeiras",
+      "location": "Cajazeiras, PB",
+      "period": {
+        "start": "2024-10",
+        "end": null,
+        "label": "2024 — Cursando"
+      },
+      "description": "Graduação com foco na construção de software, abordando raciocínio lógico, arquitetura de sistemas, bancos de dados, metodologias ágeis, usabilidade e qualidade de código. Participo de projetos práticos e atividades acadêmicas de extensão.",
+      "ariaLabel": "Análise e Desenvolvimento de Sistemas no IFSertãoPB Campus Cajazeiras, iniciado em 2024, em andamento"
+    }
+  ]
+}

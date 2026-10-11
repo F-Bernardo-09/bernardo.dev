@@ -1,0 +1,17 @@
+{
+  "ariaLabel": "Sobre Bernardo Alencar",
+  "title": "Prazer, Bernardo Alencar. Designer e desenvolvedor.",
+  "subtitle": null,
+  "paragraphs": [
+    "Trabalho criando interfaces e identidades visuais de forma integrada. Atualmente sou Designer Gráfico freelancer na Solitu, Consultor Comercial na Loopis Jr. e colaborador em projetos como o Verde Árido e o Guardiões da Bandeira. Minha trajetória começou no design e, conforme meu interesse por tecnologia cresceu, comecei a cursar Análise e Desenvolvimento de Sistemas.",
+    "Gosto de entender como as coisas funcionam e acompanhar o processo do início ao fim: pegar uma ideia visual e transformá-la em uma aplicação real e funcional."
+  ],
+  "cvButton": {
+    "label": "Baixar Currículo",
+    "link": "/assets/cv-bernardo-pt.pdf",
+    "ariaLabel": "Baixar o currículo de Bernardo Alencar em PDF"
+  },
+  "image": {
+    "alt": "Foto de Bernardo Alencar, desenvolvedor web e designer gráfico"
+  }
+}

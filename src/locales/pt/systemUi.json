@@ -1,0 +1,12 @@
+{
+  "themeToggle": {
+    "ariaLabel": "Alternar tema do site",
+    "switchToLight": "Mudar para o tema claro",
+    "switchToDark": "Mudar para o tema escuro"
+  },
+  "languageToggle": {
+    "ariaLabel": "Alternar idioma do site",
+    "switchToEnglish": "Mudar idioma para inglês",
+    "switchToPortuguese": "Mudar idioma para português"
+  }
+}
