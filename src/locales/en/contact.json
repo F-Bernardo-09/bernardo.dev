@@ -7,6 +7,8 @@
     "namePlaceholder": "Enter your name",
     "emailLabel": "Email",
     "emailPlaceholder": "example@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message...",
     "submitButton": "Send message",
     "emailSubject": "New message from the portfolio website",
     "emailBody": "{{name}} ({{email}}) sent a message through your portfolio.",

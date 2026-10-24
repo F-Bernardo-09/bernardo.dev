@@ -1,9 +1,13 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import type { FormEvent } from "react";
 import styled, { css } from "styled-components";
 import { useTranslation } from "react-i18next";
-import HCaptcha from "@hcaptcha/react-hcaptcha";
 import Button from "../Button/Button";
+
+// Limites de caracteres
+const MAX_NAME_LENGTH = 100;
+const MAX_EMAIL_LENGTH = 254;
+const MAX_MESSAGE_LENGTH = 500;
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -11,7 +15,7 @@ const fieldTypography = css`
   font-family: var(--font-family-secondary);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
-  line-height: 1;
+  line-height: 1.5;
 `;
 
 const Form = styled.form`
@@ -31,15 +35,16 @@ const VisuallyHiddenLabel = styled.label`
   white-space: nowrap;
 `;
 
-const Input = styled.input`
+const fieldStyles = css`
   ${fieldTypography}
 
   width: 100%;
+  box-sizing: border-box;
   background-color: var(--bg-dark-accent);
   border: var(--border-default);
   border-radius: var(--radius-pill);
   color: var(--text-primary);
-  padding: calc(0.8rem - 2px) 1.5rem calc(0.8rem - 2px) 1.5rem;
+  padding: 0.8rem 1.5rem;
   transition: border-color var(--transition-base);
 
   &::placeholder {
@@ -50,6 +55,32 @@ const Input = styled.input`
     outline: none;
     border-color: var(--accent-green);
   }
+`;
+
+const Input = styled.input`
+  ${fieldStyles}
+`;
+
+const TextareaWrapper = styled.div`
+  width: 100%;
+`;
+
+const Textarea = styled.textarea`
+  ${fieldStyles}
+
+  display: block;
+  height: 108px;
+  min-height: 108px;
+  max-height: 160px;
+  resize: vertical;
+  border-radius: 1rem;
+`;
+
+const CharacterCount = styled.p`
+  margin: 0.35rem 0 0;
+  text-align: right;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
 `;
 
 const SubmitButton = styled(Button)`
@@ -72,55 +103,56 @@ const StatusMessage = styled.p`
 export default function ContactForm() {
   const { t } = useTranslation("contact");
   const [status, setStatus] = useState<Status>("idle");
-  const [captchaToken, setCaptchaToken] = useState("");
-  const captchaRef = useRef<HCaptcha>(null);
+  const [messageLength, setMessageLength] = useState(0);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (status === "sending" || !captchaToken) return;
+
+    if (status === "sending") return;
 
     const form = event.currentTarget;
     const formData = new FormData(form);
 
+    // Honeypot para filtrar envios automatizados simples.
     if (formData.get("botcheck")) return;
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+    if (!accessKey) {
+      console.error(
+        "Web3Forms: VITE_WEB3FORMS_ACCESS_KEY não está configurada.",
+      );
+      setStatus("error");
+      return;
+    }
 
     setStatus("sending");
 
-    formData.append(
-      "access_key",
-      import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ?? "",
-    );
-    formData.set("h-captcha-response", captchaToken);
+    formData.append("access_key", accessKey);
     formData.append("subject", t("form.emailSubject"));
-    formData.append(
-      "message",
-      t("form.emailBody", {
-        name: formData.get("name"),
-        email: formData.get("email"),
-      }),
-    );
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { Accept: "application/json" },
+        headers: {
+          Accept: "application/json",
+        },
         body: formData,
       });
+
       const result = await response.json();
 
-      if (result.success) {
+      if (response.ok && result.success) {
         setStatus("success");
         form.reset();
+        setMessageLength(0);
       } else {
         console.error("Web3Forms:", response.status, result);
         setStatus("error");
       }
-    } catch (err) {
-      console.error("Falha na requisição:", err);
+    } catch (error) {
+      console.error("Falha na requisição ao Web3Forms:", error);
       setStatus("error");
-    } finally {
-      setCaptchaToken("");
-      captchaRef.current?.resetCaptcha();
     }
   }
 
@@ -134,6 +166,7 @@ export default function ContactForm() {
           autoComplete="off"
           style={{ display: "none" }}
         />
+
         <VisuallyHiddenLabel htmlFor="contact-name">
           {t("form.nameLabel")}
         </VisuallyHiddenLabel>
@@ -143,6 +176,7 @@ export default function ContactForm() {
           type="text"
           autoComplete="name"
           placeholder={t("form.namePlaceholder")}
+          maxLength={MAX_NAME_LENGTH}
           required
         />
 
@@ -155,23 +189,36 @@ export default function ContactForm() {
           type="email"
           autoComplete="email"
           placeholder={t("form.emailPlaceholder")}
+          maxLength={MAX_EMAIL_LENGTH}
           required
         />
 
-        <HCaptcha
-          ref={captchaRef}
-          sitekey={import.meta.env.VITE_HCAPTCHA_SITEKEY}
-          theme="dark"
-          onVerify={setCaptchaToken}
-          onExpire={() => setCaptchaToken("")}
-          onError={() => setCaptchaToken("")}
-        />
+        <TextareaWrapper>
+          <VisuallyHiddenLabel htmlFor="contact-message">
+            {t("form.messageLabel")}
+          </VisuallyHiddenLabel>
+          <Textarea
+            id="contact-message"
+            name="message"
+            placeholder={t("form.messagePlaceholder")}
+            rows={4}
+            maxLength={MAX_MESSAGE_LENGTH}
+            onChange={(event) => {
+              setMessageLength(event.currentTarget.value.length);
+              if (status !== "idle") setStatus("idle");
+            }}
+            required
+          />
+          <CharacterCount aria-live="polite">
+            {messageLength}/{MAX_MESSAGE_LENGTH}
+          </CharacterCount>
+        </TextareaWrapper>
 
         <SubmitButton
           forwardedAs="button"
           type="submit"
           iconDirection="up"
-          disabled={status === "sending" || !captchaToken}
+          disabled={status === "sending"}
         >
           {status === "sending"
             ? t("form.sendingState")
@@ -182,6 +229,7 @@ export default function ContactForm() {
       {status === "success" && (
         <StatusMessage role="status">{t("form.successMessage")}</StatusMessage>
       )}
+
       {status === "error" && (
         <StatusMessage role="alert">{t("form.errorMessage")}</StatusMessage>
       )}
