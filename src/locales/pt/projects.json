@@ -36,7 +36,7 @@
           "items": [
             "Classificado para a final na categoria Green Tech & Agtech com premiação na etapa imersiva em São Paulo.",
             "Acompanhamento em mentoria e desenvolvimento de protótipos avaliados por banca especializada.",
-            "Na disputa pela imersão internacional no Vale do Silício (EUA), o projeto não foi o vencedor, mas a Claro nos convidou ao Web Summit Rio, no Rio de Janeiro, para acompanhar o anúncio dos selecionados."
+            "Na disputa pela imersão internacional no Vale do Silício (EUA), seguimos competindo com as demais equipes até o anúncio do resultado. A convite da Claro, participamos do Web Summit Rio, no Rio de Janeiro, onde acompanhamos a divulgação dos projetos selecionados."
           ]
         },
         { "type": "heading", "text": "Validação e desenvolvimento" },
@@ -89,11 +89,12 @@
         }
       ]
     },
+
     {
       "id": "proj-guardioes",
       "title": "Guardiões da Bandeira",
       "subtitle": "A nossa infância em jogo",
-      "summary": "Jogo mobile de estratégia baseado no folclore brasileiro, adaptando o Pega-Bandeira para o digital.",
+      "summary": "Jogo mobile de estratégia multiplayer 2D inspirado no folclore brasileiro, que transforma a tradicional brincadeira de Pega-Bandeira em uma experiência digital competitiva.",
       "period": {
         "start": "2025-11",
         "end": null,
@@ -104,42 +105,57 @@
       "featured": true,
       "status": "Em andamento",
       "categories": ["Tecnologia", "Design"],
-      "description": "O Guardiões da Bandeira é um jogo digital multiplayer de estratégia 2D desenvolvido pela Mandacaru Studio, inspirado na tradicional brincadeira do Pega-Bandeira. O projeto destacou-se no Game Dev Quest entre os 5 maiores projetos do circuito, conquistando o troféu de melhor trajetória e garantindo uma premiação internacional com viagem para a Alemanha.",
+      "description": "O Guardiões da Bandeira é um jogo multiplayer de estratégia 2D desenvolvido pela Mandacaru Studio, que combina mecânicas competitivas com personagens do folclore brasileiro. O projeto ficou entre os cinco destaques do circuito Game Dev Quest, conquistando o troféu de Melhor Trajetória e uma premiação internacional que garantiu à equipe uma viagem à Alemanha, com destino à Gamescom, um dos principais eventos mundiais da indústria de jogos.",
       "content": [
-        { "type": "heading", "text": "Sobre o jogo" },
+        {
+          "type": "heading",
+          "text": "Sobre o jogo"
+        },
         {
           "type": "paragraph",
-          "text": "O Guardiões da Bandeira é um jogo digital multiplayer de estratégia 2D inspirado em uma das brincadeiras mais tradicionais do Brasil: o Pega-Bandeira. Ambientado no folclore brasileiro, reúne personagens lendários em uma batalha estratégica que transforma uma brincadeira tradicional em uma experiência digital competitiva e divertida, valorizando a identidade cultural do país."
+          "text": "O Guardiões da Bandeira é um jogo multiplayer de estratégia 2D inspirado em uma das brincadeiras mais tradicionais do Brasil: o Pega-Bandeira. Ambientado no folclore brasileiro, reúne personagens lendários em batalhas estratégicas nas quais as equipes precisam capturar a bandeira adversária e proteger seu próprio território. A proposta combina competição e trabalho em equipe, valorizando a cultura e a identidade brasileira por meio de uma experiência digital."
         },
-        { "type": "heading", "text": "Reconhecimento e Competição" },
+        {
+          "type": "heading",
+          "text": "Reconhecimento e competição"
+        },
         {
           "type": "paragraph",
-          "text": "Desenvolvido pela Mandacaru Studio — estúdio formado por jovens do Sertão da Paraíba e do Ceará, alunos do IFSertãoPB em Cajazeiras (PB) —, o jogo foi selecionado para o Game Dev Quest, circuito de fomento a jogos independentes da Paraíba. O projeto venceu a competição e chegou ao Covil dos Dragões, a etapa final, em que os estúdios finalistas apresentam seus jogos e modelos de negócio a investidores, publishers e mentores. Ficou entre os 5 maiores da competição, faturou o troféu de melhor trajetória e garantiu uma premiação marcante com viagem para a Alemanha."
+          "text": "Desenvolvido pela Mandacaru Studio, estúdio formado por jovens do Sertão da Paraíba e do Ceará, alunos do IFSertãoPB em Cajazeiras (PB), o jogo participou do Game Dev Quest, circuito de fomento a jogos independentes da Paraíba. O projeto chegou à etapa final, o Covil dos Dragões, na qual os estúdios apresentam seus jogos e modelos de negócio a investidores, publishers e mentores. Entre os cinco destaques do circuito, a equipe conquistou o troféu de Melhor Trajetória e uma premiação internacional que garantiu uma viagem à Alemanha para a Gamescom."
         },
-        { "type": "heading", "text": "Como funciona" },
+        {
+          "type": "heading",
+          "text": "Como funciona"
+        },
         {
           "type": "paragraph",
-          "text": "Duas equipes, de 1 a 5 membros cada, entram em território inimigo para capturar a bandeira adversária e levá-la de volta à base, protegendo simultaneamente o seu próprio território. (Nota: o jogo funciona localmente via mesma rede Wi-Fi)."
+          "text": "Duas equipes, com 1 a 5 jogadores cada, entram em território adversário para capturar a bandeira inimiga e levá-la de volta à própria base, enquanto protegem seu território. O jogo funciona localmente, com os participantes conectados à mesma rede Wi-Fi."
         },
-        { "type": "heading", "text": "Os Guardiões" },
+        {
+          "type": "heading",
+          "text": "Os Guardiões"
+        },
         {
           "type": "list",
           "items": [
-            "Saci: veloz e travesso, acelera o movimento próprio e de aliados com o redemoinho.",
-            "Curupira: protetor da floresta com pés ao contrário, torna aliados invisíveis temporariamente.",
-            "Cuca: a bruxa em forma de jacaré espalha gosma invisível para prender oponentes.",
-            "Boto Cor-de-Rosa: usa seu charme para deixar oponentes apaixonados e desorientados.",
-            "Mãe de Ouro: entidade luminosa misteriosa que revela sua verdadeira forma para aterrorizar adversários."
+            "Saci: veloz e travesso, acelera o movimento próprio e de aliados com seu redemoinho.",
+            "Curupira: protetor da floresta de pés ao contrário, torna aliados temporariamente invisíveis.",
+            "Cuca: a bruxa em forma de jacaré espalha gosma invisível para prender os oponentes.",
+            "Boto Cor-de-Rosa: usa seu charme para deixar adversários apaixonados e desorientados.",
+            "Mãe de Ouro: entidade luminosa misteriosa que revela sua verdadeira forma para aterrorizar os adversários."
           ]
         },
-        { "type": "heading", "text": "Desenvolvimento e meu papel" },
         {
-          "type": "paragraph",
-          "text": "O jogo segue em desenvolvimento. A equipe ainda não recebeu o apoio de mentoria, mas ele está previsto."
+          "type": "heading",
+          "text": "Desenvolvimento e minha atuação"
         },
         {
           "type": "paragraph",
-          "text": "Atuei em prototipagem de UI, design de mapas e na identidade de marca do estúdio, além da gestão de equipe e orçamento sob o edital de fomento (FAPESQ/SECTIES)."
+          "text": "O projeto segue em desenvolvimento, com foco na evolução da experiência de jogo e na consolidação de sua identidade visual."
+        },
+        {
+          "type": "paragraph",
+          "text": "Atuei na prototipagem de interfaces (UI), no design de mapas e na construção da identidade visual da Mandacaru Studio, além de contribuir para a gestão da equipe e do orçamento vinculado ao edital de fomento da FAPESQ/SECTIES."
         }
       ],
       "tags": [
@@ -188,7 +204,7 @@
         { "type": "heading", "text": "Sobre o projeto" },
         {
           "type": "paragraph",
-          "text": "O bernardo.dev é este site: um portfólio bilíngue que apresenta meus projetos, minha formação, minha experiência e as ferramentas que uso. Foi pensado para unir a parte visual e a parte técnica, com um sistema de design consistente e uma base de código organizada em componentes reutilizáveis."
+          "text": "O bernardo-alencar.dev é este site: um portfólio bilíngue que apresenta meus projetos, minha formação, minha experiência e as ferramentas que uso. Foi pensado para unir a parte visual e a parte técnica, com um sistema de design consistente e uma base de código organizada em componentes reutilizáveis."
         },
         { "type": "heading", "text": "Funcionalidades" },
         {
@@ -273,6 +289,11 @@
         {
           "type": "paragraph",
           "text": "A proposta transforma resíduos plásticos gerados pela própria instituição em filamento para impressão 3D, suprindo demandas dos laboratórios com foco em viabilidade e baixo custo."
+        },
+        { "type": "heading", "text": "Meu papel" },
+        {
+          "type": "paragraph",
+          "text": "Atuei como idealizador e na área de marketing do projeto."
         }
       ],
       "tags": ["Sustentabilidade", "Prototipagem", "Apresentação Técnica"],
@@ -366,6 +387,11 @@
         {
           "type": "paragraph",
           "text": "O Pod Adm é o projeto social da Quarta Turma de Administração da EEEP Prof. Gustavo Augusto Lima. A proposta é convidar empresários de Lavras da Mangabeira para uma conversa e repassar aos telespectadores conteúdo informativo, com transmissão pelos canais do YouTube e do Instagram."
+        },
+        { "type": "heading", "text": "Meu papel" },
+        {
+          "type": "paragraph",
+          "text": "Atuei como idealizador e na área de marketing do projeto."
         }
       ],
       "tags": ["Identidade Visual", "Redes Sociais", "Comunicação", "Gestão"],

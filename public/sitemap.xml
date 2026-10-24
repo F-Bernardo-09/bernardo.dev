@@ -55,4 +55,112 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/about" />
   </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/pt/projects/proj-verde-arido</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-verde-arido" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-verde-arido" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-verde-arido" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/pt/projects/proj-guardioes</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-guardioes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-guardioes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-guardioes" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/pt/projects/proj-bernardo-dev</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-bernardo-dev" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-bernardo-dev" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-bernardo-dev" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/pt/projects/proj-replast3d</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-replast3d" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-replast3d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-replast3d" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/pt/projects/proj-plot-twist</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-plot-twist" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-plot-twist" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-plot-twist" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/pt/projects/proj-pod-adm</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-pod-adm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-pod-adm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-pod-adm" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/en/projects/proj-verde-arido</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-verde-arido" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-verde-arido" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-verde-arido" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/en/projects/proj-guardioes</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-guardioes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-guardioes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-guardioes" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/en/projects/proj-bernardo-dev</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-bernardo-dev" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-bernardo-dev" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-bernardo-dev" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/en/projects/proj-replast3d</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-replast3d" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-replast3d" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-replast3d" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/en/projects/proj-plot-twist</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-plot-twist" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-plot-twist" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-plot-twist" />
+  </url>
+  <url>
+    <loc>https://bernardo-alencar.dev/en/projects/proj-pod-adm</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://bernardo-alencar.dev/pt/projects/proj-pod-adm" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://bernardo-alencar.dev/en/projects/proj-pod-adm" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bernardo-alencar.dev/pt/projects/proj-pod-adm" />
+  </url>
 </urlset>

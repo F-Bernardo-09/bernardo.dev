@@ -2,19 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap");
 
 /* --- Variáveis de Cor, Tipografia e Espaçamento --- */
+
 :root {
   /* Cores */
   --bg-dark: #0e1116;
-  --bg-dark-accent: #161b22;
-  --text-primary: #ffffff;
-  --text-secondary: #a9b1bd;
+  --bg-dark-accent: #171c24;
+  --text-primary: #f0f3f6;
+  --text-secondary: #a9b4c2;
   --text-on-accent: #0e1116;
   --accent-green: #1fd88a;
   --text-dark: #0e1116;
-  --border-color: #21262d;
+  --border-color: #262d36;
 
   /* Overlay */
-  --overlay-color: rgba(0, 0, 0, 0.5);
+  --overlay-color: rgba(0, 0, 0, 0.55);
 
   /* Tipografia */
   --font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -57,7 +58,7 @@
   --radius-circle: 50%;
 
   /* Sombras */
-  --shadow-button: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  --shadow-button: 0 0 20px 0 rgba(0, 0, 0, 0.35);
 
   /* Transições */
   --transition-fast: 0.2s ease;
@@ -75,19 +76,18 @@
 
 /* --- Tema Claro --- */
 html[data-theme="light"] {
-  --bg-dark: #ffffff;
-  --bg-dark-accent: #f1f3f5;
-  --text-primary: #0e1116;
-  --text-secondary: #57606a;
+  --bg-dark: #f4f5f2;
+  --bg-dark-accent: #ffffff;
+  --text-primary: #202720;
+  --text-secondary: #626b66;
   --text-on-accent: #ffffff;
-  --accent-green: #17a874;
-  --text-dark: #0e1116;
-  --border-color: #d0d7de;
+  --accent-green: #16845b;
+  --text-dark: #202720;
+  --border-color: #dce1dc;
 
-  --overlay-color: rgba(0, 0, 0, 0.35);
-  --shadow-button: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  --overlay-color: rgba(25, 32, 27, 0.25);
+  --shadow-button: 0 2px 12px rgba(25, 32, 27, 0.08);
 }
-
 /* --- Reset e Estilos Globais --- */
 * {
   margin: 0;
