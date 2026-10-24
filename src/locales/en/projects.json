@@ -91,9 +91,9 @@
     },
     {
       "id": "proj-guardioes",
-      "title": "Guardiões da Bandeira",
-      "subtitle": "Our childhood at play",
-      "summary": "Mobile strategy game based on Brazilian folklore, adapting Pega-Bandeira (Capture the Flag) to digital.",
+      "title": "Guardians of the Flag",
+      "subtitle": "Our Childhood, Reimagined",
+      "summary": "A 2D multiplayer mobile strategy game inspired by Brazilian folklore, transforming the traditional Capture the Flag game into a competitive digital experience.",
       "period": {
         "start": "2025-11",
         "end": null,
@@ -104,46 +104,61 @@
       "featured": true,
       "status": "In progress",
       "categories": ["Technology", "Design"],
-      "description": "Guardiões da Bandeira is a 2D multiplayer strategy game developed by Mandacaru Studio, inspired by the traditional children's game Pega-Bandeira (Capture the Flag). The project stood out at Game Dev Quest among the 5 biggest projects of the circuit, winning the best trajectory trophy and securing an international prize with a trip to Germany.",
+      "description": "Guardians of the Flag is a 2D multiplayer strategy game developed by Mandacaru Studio, combining competitive gameplay with characters from Brazilian folklore. The project ranked among the five standout projects in the Game Dev Quest circuit, winning the Best Trajectory award and an international prize that secured the team a trip to Germany, with Gamescom as its destination, one of the world's leading gaming industry events.",
       "content": [
-        { "type": "heading", "text": "About the game" },
+        {
+          "type": "heading",
+          "text": "About the Game"
+        },
         {
           "type": "paragraph",
-          "text": "Guardiões da Bandeira is a 2D multiplayer strategy game inspired by one of Brazil's most traditional children's games: Pega-Bandeira (Capture the Flag). Set in Brazilian folklore, it brings legendary characters together in a strategic battle that turns a traditional game into a competitive and fun digital experience, celebrating the country's cultural identity."
+          "text": "Guardians of the Flag is a 2D multiplayer strategy game inspired by one of Brazil's most traditional childhood games: Capture the Flag. Set in the world of Brazilian folklore, it brings legendary characters together in strategic battles where teams must capture the opposing team's flag while defending their own territory. The game combines competition and teamwork, celebrating Brazilian culture and identity through a digital experience."
         },
-        { "type": "heading", "text": "Recognition and Competition" },
+        {
+          "type": "heading",
+          "text": "Recognition and Competition"
+        },
         {
           "type": "paragraph",
-          "text": "Developed by Mandacaru Studio — a studio formed by young people from the backlands of Paraíba and Ceará, students at IFSertãoPB in Cajazeiras (PB) — the game was selected for Game Dev Quest, a circuit that supports independent games in Paraíba. The project won the competition and reached the Covil dos Dragões (Dragons' Den), the final stage, in which finalist studios present their games and business models to investors, publishers, and mentors. It ranked among the 5 biggest in the competition, earned the best trajectory trophy, and secured a remarkable prize with a trip to Germany."
+          "text": "Developed by Mandacaru Studio, a team of young developers from the Brazilian Sertão regions of Paraíba and Ceará who study at IFSertãoPB in Cajazeiras, Paraíba, the game took part in Game Dev Quest, an initiative supporting independent games in Paraíba. The project reached the final stage, known as the Dragon's Den, where finalist studios present their games and business models to investors, publishers, and mentors. Among the circuit's five standout projects, the team won the Best Trajectory award and an international prize that secured a trip to Germany for Gamescom."
         },
-        { "type": "heading", "text": "How it works" },
+        {
+          "type": "heading",
+          "text": "How It Works"
+        },
         {
           "type": "paragraph",
-          "text": "Two teams, of 1 to 5 members each, enter enemy territory to capture the opposing flag and bring it back to their base, while simultaneously protecting their own territory. (Note: the game works locally over the same Wi-Fi network.)"
+          "text": "Two teams, each consisting of 1 to 5 players, enter enemy territory to capture the opposing team's flag and bring it back to their own base while defending their territory. The game supports local multiplayer, with all players connected to the same Wi-Fi network."
         },
-        { "type": "heading", "text": "The Guardians" },
+        {
+          "type": "heading",
+          "text": "The Guardians"
+        },
         {
           "type": "list",
           "items": [
-            "Saci: swift and mischievous, speeds up his own and his allies' movement with the whirlwind.",
-            "Curupira: forest protector with backward-facing feet, makes allies temporarily invisible.",
-            "Cuca: the witch in the shape of an alligator spreads invisible slime to trap opponents.",
-            "Boto Cor-de-Rosa (Pink River Dolphin): uses his charm to leave opponents infatuated and disoriented.",
-            "Mãe de Ouro: a mysterious luminous entity that reveals her true form to terrify adversaries."
+            "Saci: A fast and mischievous trickster who uses whirlwinds to increase his own and his allies' movement speed.",
+            "Curupira: A forest guardian with backward-facing feet who can temporarily turn allies invisible.",
+            "Cuca: A crocodile-shaped witch who spreads invisible slime to trap opponents.",
+            "Pink River Dolphin (Boto Cor-de-Rosa): Uses his charm to make opponents fall in love and become disoriented.",
+            "Mãe de Ouro: A mysterious, luminous folkloric entity who reveals her true form to terrify her adversaries."
           ]
         },
-        { "type": "heading", "text": "Development and my role" },
         {
-          "type": "paragraph",
-          "text": "The game is still in development. The team has not yet received mentorship support, but it is planned."
+          "type": "heading",
+          "text": "Development and My Role"
         },
         {
           "type": "paragraph",
-          "text": "I worked on UI prototyping, map design, and the studio's brand identity, as well as team and budget management under the funding call (FAPESQ/SECTIES)."
+          "text": "The project is still in development, with a focus on improving the gameplay experience and consolidating its visual identity."
+        },
+        {
+          "type": "paragraph",
+          "text": "My contributions included UI prototyping, map design, and the development of Mandacaru Studio's visual identity. I also contributed to team and budget management under the FAPESQ/SECTIES funding program."
         }
       ],
       "tags": [
-        "Game Dev",
+        "Game Development",
         "UI/UX",
         "Visual Identity",
         "Mobile",
@@ -151,7 +166,7 @@
       ],
       "image": {
         "src": "/assets/projects/proj-guardioes.webp",
-        "alt": "Guardiões da Bandeira gameplay screen showing a tactical map with Brazilian folklore characters"
+        "alt": "Guardians of the Flag gameplay screen showing a tactical map with characters from Brazilian folklore"
       },
       "primaryLink": 0,
       "links": [
