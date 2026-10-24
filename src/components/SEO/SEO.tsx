@@ -3,8 +3,14 @@ import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { getSupportedLanguage, localizedPath } from "../../utils/localizedPath";
 
-const SITE_URL = "https://bernardo.dev";
+const SITE_URL = "https://bernardo-alencar.dev";
 const OG_IMAGE_URL = `${SITE_URL}/og-image.webp`;
+
+interface ProjectSeoData {
+  id: string;
+  title: string;
+  summary: string;
+}
 
 function setMeta(
   attribute: "name" | "property",
@@ -36,11 +42,26 @@ export default function SEO() {
     const page =
       segments[0] === "pt" || segments[0] === "en" ? segments[1] : segments[0];
     const pageKey = page === "about" || page === "projects" ? page : "home";
-    const routePath = pageKey === "home" ? "/" : `/${pageKey}`;
+    const hasLanguagePrefix = segments[0] === "pt" || segments[0] === "en";
+    const projectId =
+      pageKey === "projects" ? segments[hasLanguagePrefix ? 2 : 1] : undefined;
+    const projects = i18n.getFixedT(language, "projects")("items", {
+      returnObjects: true,
+    }) as ProjectSeoData[];
+    const project = projectId
+      ? projects.find((item) => item.id === projectId)
+      : undefined;
+    const routePath = project
+      ? `/projects/${project.id}`
+      : pageKey === "home"
+        ? "/"
+        : `/${pageKey}`;
     const canonicalPath = localizedPath(routePath, language);
     const canonicalUrl = `${SITE_URL}${canonicalPath}`;
-    const title = t(`${pageKey}.title`);
-    const description = t(`${pageKey}.description`);
+    const title = project
+      ? `${project.title} — Bernardo Alencar`
+      : t(`${pageKey}.title`);
+    const description = project ? project.summary : t(`${pageKey}.description`);
 
     document.title = title;
     document.documentElement.lang = language === "en" ? "en" : "pt-BR";
@@ -75,7 +96,7 @@ export default function SEO() {
     for (const alternateLanguage of ["pt", "en"] as const) {
       const alternate = document.createElement("link");
       alternate.rel = "alternate";
-      alternate.hreflang = alternateLanguage;
+      alternate.hreflang = alternateLanguage === "pt" ? "pt-BR" : "en";
       alternate.href = `${SITE_URL}${localizedPath(routePath, alternateLanguage)}`;
       alternate.dataset.seoLanguage = alternateLanguage;
       document.head.appendChild(alternate);
@@ -87,7 +108,7 @@ export default function SEO() {
     xDefault.href = `${SITE_URL}${localizedPath(routePath, "pt")}`;
     xDefault.dataset.seoLanguage = "x-default";
     document.head.appendChild(xDefault);
-  }, [i18n.language, pathname, t]);
+  }, [i18n, i18n.language, pathname, t]);
 
   return null;
 }
