@@ -66,7 +66,7 @@ const Description = styled.p`
   font-size: var(--font-size-base);
   color: var(--text-secondary);
   opacity: 0.7;
-  text-align: left;
+  text-align: justify;
 `;
 
 interface CompanyCardProps {
