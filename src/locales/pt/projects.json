@@ -204,7 +204,7 @@
         { "type": "heading", "text": "Sobre o projeto" },
         {
           "type": "paragraph",
-          "text": "O bernardo.dev é este site: um portfólio bilíngue que apresenta meus projetos, minha formação, minha experiência e as ferramentas que uso. Foi pensado para unir a parte visual e a parte técnica, com um sistema de design consistente e uma base de código organizada em componentes reutilizáveis."
+          "text": "O bernardo-alencar.dev é este site: um portfólio bilíngue que apresenta meus projetos, minha formação, minha experiência e as ferramentas que uso. Foi pensado para unir a parte visual e a parte técnica, com um sistema de design consistente e uma base de código organizada em componentes reutilizáveis."
         },
         { "type": "heading", "text": "Funcionalidades" },
         {
@@ -289,6 +289,11 @@
         {
           "type": "paragraph",
           "text": "A proposta transforma resíduos plásticos gerados pela própria instituição em filamento para impressão 3D, suprindo demandas dos laboratórios com foco em viabilidade e baixo custo."
+        },
+        { "type": "heading", "text": "Meu papel" },
+        {
+          "type": "paragraph",
+          "text": "Atuei como idealizador e na área de marketing do projeto."
         }
       ],
       "tags": ["Sustentabilidade", "Prototipagem", "Apresentação Técnica"],
@@ -382,6 +387,11 @@
         {
           "type": "paragraph",
           "text": "O Pod Adm é o projeto social da Quarta Turma de Administração da EEEP Prof. Gustavo Augusto Lima. A proposta é convidar empresários de Lavras da Mangabeira para uma conversa e repassar aos telespectadores conteúdo informativo, com transmissão pelos canais do YouTube e do Instagram."
+        },
+        { "type": "heading", "text": "Meu papel" },
+        {
+          "type": "paragraph",
+          "text": "Atuei como idealizador e na área de marketing do projeto."
         }
       ],
       "tags": ["Identidade Visual", "Redes Sociais", "Comunicação", "Gestão"],

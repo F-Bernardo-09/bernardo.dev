@@ -46,10 +46,10 @@
       "roles": [
         {
           "id": "role-freelance-designer",
-          "title": "Freelance Designer & Web Developer",
+          "title": "Freelance Designer",
           "period": { "start": "2020-01", "end": null },
           "description": "I create visual identities, social media graphics, and web layouts. I follow the entire project cycle, from the initial alignment with the client to the final delivery of the interface, prioritizing clarity and functionality.",
-          "ariaLabel": "Freelance Designer and Web Developer, since 2020"
+          "ariaLabel": "Freelance Designer, since 2020"
         }
       ]
     }

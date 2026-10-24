@@ -46,10 +46,10 @@
       "roles": [
         {
           "id": "role-freelance-designer",
-          "title": "Designer & Desenvolvedor Web Freelancer",
+          "title": "Designer Freelancer",
           "period": { "start": "2020-01", "end": null },
           "description": "Crio identidades visuais, peças para redes sociais e layouts para a web. Acompanho todo o ciclo do projeto, desde o alinhamento inicial com o cliente até a entrega final da interface, priorizando clareza e funcionalidade.",
-          "ariaLabel": "Designer e Desenvolvedor Web Freelancer, desde 2020"
+          "ariaLabel": "Designer Freelancer, desde 2020"
         }
       ]
     }
