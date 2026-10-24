@@ -29,7 +29,7 @@ Portfólio pessoal bilíngue (português e inglês) de Bernardo Alencar, desenvo
 - Menu lateral em telas pequenas, com bloqueio de rolagem e fechamento ao redimensionar.
 - Destaque da seção ativa na navegação da página inicial por scroll spy.
 - Imagens com carregamento preguiçoso e placeholder animado.
-- Formulário de contato protegido por hCaptcha e campo honeypot.
+- Formulário de contato com campo honeypot contra envios automatizados.
 - Animações de entrada que respeitam `prefers-reduced-motion`.
 
 ## Stack
@@ -42,7 +42,7 @@ Portfólio pessoal bilíngue (português e inglês) de Bernardo Alencar, desenvo
 | Roteamento          | React Router 7                                                          |
 | Internacionalização | i18next e react-i18next                                                 |
 | Ícones              | React Icons                                                             |
-| Formulário          | Web3Forms e hCaptcha (`@hcaptcha/react-hcaptcha`)                       |
+| Formulário          | Web3Forms                                                               |
 | Qualidade           | ESLint 9 com typescript-eslint e plugins de React Hooks e React Refresh |
 | Hospedagem          | Vercel                                                                  |
 
@@ -72,7 +72,6 @@ Copie `.env.example` para `.env` e preencha os valores:
 | Variável                    | Descrição                                                                           |
 | --------------------------- | ----------------------------------------------------------------------------------- |
 | `VITE_WEB3FORMS_ACCESS_KEY` | Chave de acesso do [Web3Forms](https://web3forms.com), usada no envio do formulário |
-| `VITE_HCAPTCHA_SITEKEY`     | Site key do [hCaptcha](https://www.hcaptcha.com), usada no widget de verificação    |
 
 O arquivo `.env` está no `.gitignore` e não deve ser versionado. Como as variáveis `VITE_*` são embutidas no bundle, use apenas chaves públicas.
 
@@ -171,7 +170,7 @@ Para adicionar um projeto:
 
 ## Formulário de contato
 
-O formulário em `src/components/Contact/ContactForm.tsx` envia os dados para a API do Web3Forms. O envio só é liberado depois da verificação do hCaptcha, e o widget é reiniciado após cada tentativa. Um campo honeypot (`botcheck`) descarta envios automatizados, e o estado do envio (`idle`, `sending`, `success` e `error`) é comunicado ao usuário com `role="status"` e `role="alert"`.
+O formulário em `src/components/Contact/ContactForm.tsx` envia os dados para a API do Web3Forms. Um campo honeypot (`botcheck`) descarta envios automatizados, e o estado do envio (`idle`, `sending`, `success` e `error`) é comunicado ao usuário com `role="status"` e `role="alert"`.
 
 ## SEO
 
@@ -192,11 +191,11 @@ O formulário em `src/components/Contact/ContactForm.tsx` envia os dados para a 
 O projeto está configurado para a Vercel. O `vercel.json` define:
 
 - **Rewrite da SPA:** direciona as rotas para `index.html`, preservando os arquivos estáticos.
-- **Cabeçalhos de segurança:** `Content-Security-Policy` (liberando apenas hCaptcha, Web3Forms e Google Fonts), `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` e `Permissions-Policy`.
+- **Cabeçalhos de segurança:** `Content-Security-Policy` (liberando apenas Web3Forms e Google Fonts), `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` e `Permissions-Policy`.
 
 Ao integrar um novo serviço externo (scripts, fontes, APIs ou iframes), atualize a política de CSP.
 
-Configure as variáveis `VITE_WEB3FORMS_ACCESS_KEY` e `VITE_HCAPTCHA_SITEKEY` no painel do projeto antes do build.
+Configure a variável `VITE_WEB3FORMS_ACCESS_KEY` no painel do projeto antes do build.
 
 ## Autor
 

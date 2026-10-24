@@ -192,7 +192,7 @@
       "id": "proj-bernardo-dev",
       "title": "Website Portfólio",
       "subtitle": "Design e código em um só projeto",
-      "summary": "Portfólio pessoal bilíngue em React e TypeScript, com tema claro e escuro, páginas de detalhe dos projetos e formulário de contato protegido por hCaptcha.",
+      "summary": "Portfólio pessoal bilíngue em React e TypeScript, com tema claro e escuro, páginas de detalhe dos projetos e formulário de contato com Web3Forms.",
       "period": { "start": "2025-01", "end": null, "label": "Desde 2025" },
       "context": "Projeto pessoal",
       "relevance": 1,
@@ -215,7 +215,7 @@
             "Tema claro e escuro, que segue a preferência do sistema e guarda a escolha da pessoa no navegador.",
             "Menu lateral para telas pequenas e destaque da seção ativa na página inicial.",
             "Imagens com carregamento preguiçoso e placeholder animado.",
-            "Formulário de contato com Web3Forms, hCaptcha e campo honeypot, com estados de envio, sucesso e erro traduzidos."
+            "Formulário de contato com Web3Forms e campo honeypot, com estados de envio, sucesso e erro traduzidos."
           ]
         },
         { "type": "heading", "text": "Tecnologias" },

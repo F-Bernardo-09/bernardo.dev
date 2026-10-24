@@ -36,7 +36,7 @@
           "items": [
             "Qualified for the final in the Green Tech & Agtech category, with an award at the immersive stage in São Paulo.",
             "Mentorship and prototype development assessed by a panel of specialists.",
-            "In the race for the international immersion in Silicon Valley (USA), we kept competing with the other teams until the result was announced. At Claro's invitation, we took part in Web Summit Rio, in Rio de Janeiro, where we watched the announcement of the selected projects."
+            "While competing for the international immersion program in Silicon Valley, USA, we traveled to Web Summit Rio in Rio de Janeiro at Claro’s invitation, while still competing alongside the other teams. We attended the event to follow the announcement of the selected projects."
           ]
         },
         { "type": "heading", "text": "Validation and development" },
@@ -91,9 +91,9 @@
     },
     {
       "id": "proj-guardioes",
-      "title": "Guardiões da Bandeira",
-      "subtitle": "Our childhood at play",
-      "summary": "2D multiplayer strategy mobile game inspired by Brazilian folklore, turning the traditional Pega-Bandeira (Capture the Flag) game into a competitive digital experience.",
+      "title": "Guardians of the Flag",
+      "subtitle": "Our Childhood, Reimagined",
+      "summary": "A 2D multiplayer mobile strategy game inspired by Brazilian folklore, transforming the traditional Capture the Flag game into a competitive digital experience.",
       "period": {
         "start": "2025-11",
         "end": null,
@@ -104,46 +104,61 @@
       "featured": true,
       "status": "In progress",
       "categories": ["Technology", "Design"],
-      "description": "Guardiões da Bandeira is a 2D multiplayer strategy game developed by Mandacaru Studio, combining competitive mechanics with characters from Brazilian folklore. The project was one of the five highlights of the Game Dev Quest circuit, earning the Best Trajectory trophy and an international prize that gave the team a trip to Germany for Gamescom, one of the world's leading game industry events.",
+      "description": "Guardians of the Flag is a 2D multiplayer strategy game developed by Mandacaru Studio, combining competitive gameplay with characters from Brazilian folklore. The project ranked among the five standout projects in the Game Dev Quest circuit, winning the Best Trajectory award and an international prize that secured the team a trip to Germany, with Gamescom as its destination, one of the world's leading gaming industry events.",
       "content": [
-        { "type": "heading", "text": "About the game" },
+        {
+          "type": "heading",
+          "text": "About the Game"
+        },
         {
           "type": "paragraph",
-          "text": "Guardiões da Bandeira is a 2D multiplayer strategy game inspired by one of Brazil's most traditional children's games: Pega-Bandeira (Capture the Flag). Set in Brazilian folklore, it brings legendary characters together in strategic battles in which teams must capture the opposing flag and protect their own territory. The proposal combines competition and teamwork, celebrating Brazilian culture and identity through a digital experience."
+          "text": "Guardians of the Flag is a 2D multiplayer strategy game inspired by one of Brazil's most traditional childhood games: Capture the Flag. Set in the world of Brazilian folklore, it brings legendary characters together in strategic battles where teams must capture the opposing team's flag while defending their own territory. The game combines competition and teamwork, celebrating Brazilian culture and identity through a digital experience."
         },
-        { "type": "heading", "text": "Recognition and competition" },
+        {
+          "type": "heading",
+          "text": "Recognition and Competition"
+        },
         {
           "type": "paragraph",
-          "text": "Developed by Mandacaru Studio, a studio formed by young people from the backlands of Paraíba and Ceará, students at IFSertãoPB in Cajazeiras (PB), the game took part in Game Dev Quest, a circuit that supports independent games in Paraíba. The project reached the final stage, the Covil dos Dragões (Dragons' Den), in which studios present their games and business models to investors, publishers, and mentors. Among the circuit's five highlights, the team won the Best Trajectory trophy and an international prize that gave them a trip to Germany for Gamescom."
+          "text": "Developed by Mandacaru Studio, a team of young developers from the Brazilian Sertão regions of Paraíba and Ceará who study at IFSertãoPB in Cajazeiras, Paraíba, the game took part in Game Dev Quest, an initiative supporting independent games in Paraíba. The project reached the final stage, known as the Dragon's Den, where finalist studios present their games and business models to investors, publishers, and mentors. Among the circuit's five standout projects, the team won the Best Trajectory award and an international prize that secured a trip to Germany for Gamescom."
         },
-        { "type": "heading", "text": "How it works" },
+        {
+          "type": "heading",
+          "text": "How It Works"
+        },
         {
           "type": "paragraph",
-          "text": "Two teams, with 1 to 5 players each, enter enemy territory to capture the opposing flag and bring it back to their own base while protecting their territory. The game works locally, with participants connected to the same Wi-Fi network."
+          "text": "Two teams, each consisting of 1 to 5 players, enter enemy territory to capture the opposing team's flag and bring it back to their own base while defending their territory. The game supports local multiplayer, with all players connected to the same Wi-Fi network."
         },
-        { "type": "heading", "text": "The Guardians" },
+        {
+          "type": "heading",
+          "text": "The Guardians"
+        },
         {
           "type": "list",
           "items": [
-            "Saci: swift and mischievous, speeds up his own and his allies' movement with his whirlwind.",
-            "Curupira: forest protector with backward-facing feet, makes allies temporarily invisible.",
-            "Cuca: the witch in the shape of an alligator spreads invisible slime to trap opponents.",
-            "Boto Cor-de-Rosa (Pink River Dolphin): uses his charm to leave opponents infatuated and disoriented.",
-            "Mãe de Ouro: a mysterious luminous entity that reveals her true form to terrify adversaries."
+            "Saci: A fast and mischievous trickster who uses whirlwinds to increase his own and his allies' movement speed.",
+            "Curupira: A forest guardian with backward-facing feet who can temporarily turn allies invisible.",
+            "Cuca: A crocodile-shaped witch who spreads invisible slime to trap opponents.",
+            "Pink River Dolphin (Boto Cor-de-Rosa): Uses his charm to make opponents fall in love and become disoriented.",
+            "Mãe de Ouro: A mysterious, luminous folkloric entity who reveals her true form to terrify her adversaries."
           ]
         },
-        { "type": "heading", "text": "Development and my role" },
         {
-          "type": "paragraph",
-          "text": "The project is still in development, focused on improving the gameplay experience and consolidating its visual identity."
+          "type": "heading",
+          "text": "Development and My Role"
         },
         {
           "type": "paragraph",
-          "text": "I worked on interface (UI) prototyping, map design, and building Mandacaru Studio's visual identity, and I also helped manage the team and the budget tied to the FAPESQ/SECTIES funding call."
+          "text": "The project is still in development, with a focus on improving the gameplay experience and consolidating its visual identity."
+        },
+        {
+          "type": "paragraph",
+          "text": "My contributions included UI prototyping, map design, and the development of Mandacaru Studio's visual identity. I also contributed to team and budget management under the FAPESQ/SECTIES funding program."
         }
       ],
       "tags": [
-        "Game Dev",
+        "Game Development",
         "UI/UX",
         "Visual Identity",
         "Mobile",
@@ -151,7 +166,7 @@
       ],
       "image": {
         "src": "/assets/projects/proj-guardioes.webp",
-        "alt": "Guardiões da Bandeira gameplay screen showing a tactical map with Brazilian folklore characters"
+        "alt": "Guardians of the Flag gameplay screen showing a tactical map with characters from Brazilian folklore"
       },
       "primaryLink": 0,
       "links": [
@@ -176,7 +191,7 @@
       "id": "proj-bernardo-dev",
       "title": "Website Portfolio",
       "subtitle": "Design and code in a single project",
-      "summary": "Bilingual personal portfolio built with React and TypeScript, featuring light and dark themes, project detail pages and a contact form protected by hCaptcha.",
+      "summary": "Bilingual personal portfolio built with React and TypeScript, featuring light and dark themes, project detail pages and a contact form built with Web3Forms.",
       "period": { "start": "2025-01", "end": null, "label": "Since 2025" },
       "context": "Personal project",
       "relevance": 1,
@@ -199,7 +214,7 @@
             "Light and dark themes that follow the system preference and remember the visitor's choice in the browser.",
             "Side menu for small screens and active section highlighting on the home page.",
             "Lazy-loaded images with an animated placeholder.",
-            "Contact form with Web3Forms, hCaptcha and a honeypot field, with translated sending, success and error states."
+            "Contact form with Web3Forms and a honeypot field, with translated sending, success and error states."
           ]
         },
         { "type": "heading", "text": "Technologies" },
