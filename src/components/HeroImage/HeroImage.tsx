@@ -4,11 +4,12 @@ import profile from "../../assets/profile-photo.webp";
 import LazyImage from "../LazyImage/LazyImage";
 
 const ProfileImage = styled(LazyImage)`
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  height: auto;
+  object-fit: cover;
   border: var(--border-accent);
-  border-radius: var(--radius-circle);
-  margin-bottom: var(--spacing-lg);
+  border-radius: var(--radius-md, 16px);
   background-color: var(--accent-green);
 `;
 
