@@ -54,7 +54,7 @@ const NavigationMenu = styled.ul`
     margin-left: var(--spacing-lg);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;
@@ -64,7 +64,7 @@ const DesktopControls = styled.div`
   align-items: center;
   gap: var(--spacing-lg);
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;

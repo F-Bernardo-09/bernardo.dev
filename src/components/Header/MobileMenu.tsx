@@ -6,6 +6,8 @@ import ThemeToggle from "./ThemeToggle";
 import LangSwitcher from "./LangSwitcher";
 import { useBodyScrollLock } from "../../hooks/useBodyScrollLock";
 
+const MOBILE_BREAKPOINT = 1000;
+
 const MenuToggle = styled.button<{ $isOpen: boolean }>`
   display: none;
   position: relative;
@@ -20,7 +22,7 @@ const MenuToggle = styled.button<{ $isOpen: boolean }>`
   justify-content: center;
   gap: 5px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
     display: flex;
   }
 `;
@@ -58,7 +60,7 @@ const Bar = styled.span<{ $isOpen: boolean }>`
 const Backdrop = styled.div<{ $isOpen: boolean }>`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
     display: block;
     position: fixed;
     top: var(--header-height);
@@ -79,7 +81,7 @@ const Backdrop = styled.div<{ $isOpen: boolean }>`
 const Drawer = styled.div<{ $isOpen: boolean }>`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -130,7 +132,7 @@ export default function MobileMenu() {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth > 768 && isOpen) {
+      if (window.innerWidth > MOBILE_BREAKPOINT && isOpen) {
         setIsOpen(false);
       }
     }
